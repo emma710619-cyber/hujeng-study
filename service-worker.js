@@ -1,4 +1,4 @@
-const CACHE='hujeng-v10-20260725-1';
+const CACHE='hujeng-v11-20260725-1';
 const BASE=self.registration.scope;
 const CORE=[BASE,new URL('index.html',BASE).href,new URL('manifest.webmanifest',BASE).href,new URL('icon-192.png',BASE).href,new URL('icon-512.png',BASE).href];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
