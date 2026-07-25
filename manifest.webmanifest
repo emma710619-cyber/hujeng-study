@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#075985">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="戶政國考">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>戶政國考學習平台 V6｜行政法第一章完整版</title>
+<style>
+:root{--bg:#eef2f7;--ink:#18212f;--nav:#111827;--blue:#075985;--line:#d8e0ea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
+header{background:linear-gradient(135deg,#075985,#172554);color:white;padding:34px max(5vw,24px)}header h1{margin:6px 0;font-size:clamp(28px,5vw,48px)}header p{max-width:900px;margin:8px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.meta span{background:#ffffff20;border:1px solid #ffffff30;padding:5px 10px;border-radius:999px;font-size:14px}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);max-width:1400px;margin:auto;gap:24px;padding:24px}
+aside{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto;background:var(--nav);padding:18px;border-radius:18px}
+aside a{display:block;color:#dbeafe;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:14px}aside a:hover{background:#1f2937}
+main{min-width:0}section,.quizbox,.sources{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,38px);margin-bottom:22px;box-shadow:0 4px 15px #0f172a0b}
+h2{color:var(--blue);border-bottom:3px solid #bae6fd;padding-bottom:10px;margin-top:0}h3{margin-top:28px;color:#334155}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}th{background:#0f172a;color:white}th,td{border:1px solid var(--line);padding:11px;vertical-align:top}
+.grid3,.grid2{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.grid2{grid-template-columns:repeat(2,1fr)}
+.mini,.summary{border:1px solid #cbd5e1;background:#f8fafc;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.note,.danger,.case,.memory{padding:14px 16px;border-radius:12px;margin:18px 0;background:#eff6ff;border-left:5px solid #0284c7}.danger{background:#fff7ed;border-color:#ea580c}.case{background:#f5f3ff;border-color:#7c3aed}.memory{background:#fefce8;border-color:#ca8a04}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}button,input,select{font:inherit}button{border:0;border-radius:9px;padding:9px 14px;cursor:pointer;background:#0369a1;color:white;font-weight:700}button.secondary{background:#475569}button.warn{background:#b91c1c}
+.progress{height:12px;background:#e2e8f0;border-radius:99px;overflow:hidden}#bar{height:100%;background:#0284c7;width:0}
+.question{border:1px solid #dbe3ec;border-radius:14px;padding:18px;margin:14px 0}.qhead{display:flex;justify-content:space-between;gap:12px}.tag{font-size:12px;background:#e0f2fe;color:#075985;border-radius:99px;padding:3px 8px;white-space:nowrap}
+.option{display:block;padding:8px 10px;margin:6px 0;border-radius:8px;background:#f8fafc;cursor:pointer}.option:hover{background:#eaf4fb}.explain{display:none;margin-top:12px;padding:12px;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:8px}.wrong{background:#fff1f2!important}.correct{background:#dcfce7!important}
+.sources a{word-break:break-all}footer{text-align:center;color:#64748b;padding:30px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}aside{position:relative;max-height:none}.grid3,.grid2{grid-template-columns:1fr}}
+@media print{aside,.toolbar,button{display:none!important}.layout{display:block;padding:0}section,.quizbox,.sources{box-shadow:none;break-inside:avoid}body{background:white}}
+
+.install-panel{position:fixed;right:16px;bottom:16px;z-index:50;background:white;border:1px solid #cbd5e1;
+box-shadow:0 10px 30px #0f172a33;border-radius:14px;padding:12px;max-width:310px}
+.install-panel[hidden]{display:none}.install-panel p{margin:0 0 8px;font-size:14px;line-height:1.5}
+.syncbox{background:#f8fafc;border:1px solid #cbd5e1;border-radius:14px;padding:16px;margin:18px 0}
+.syncbox input[type=file]{max-width:100%}
+@media(max-width:600px){body{font-size:16px}.layout{padding:10px}.question{padding:14px}.toolbar button{flex:1 1 45%}
+header{padding:24px 18px}.install-panel{left:10px;right:10px;bottom:10px;max-width:none}}
+</style>
+</head>
+<body>
+<header>
+<div>戶政國考 AI 學習系統｜V6 正式教材版</div>
+<h1>行政法第一章：基本原理</h1>
+<p>本版已由平台測試骨架升級為可實際研讀的教材：12個完整單元、比較表、解題架構、61題不重複題庫、錯題收藏與本機進度保存。</p>
+<div class="meta"><span>資料核對：2026-07-25</span><span>行政程序法：修正日期民國110年1月20日</span><span>命題大綱頁：民國115年6月25日版</span><span>完全離線可用</span></div>
+</header>
+<div class="layout">
+<aside><b style="color:white">章節目錄</b><a href="#chapter-map">第一章讀法與命題定位</a><a href="#concept">行政法的意義與範圍</a><a href="#sources">行政法法源與位階</a><a href="#legality">依法行政：法律優位與法律保留</a><a href="#authorization">授權明確性與規範明確性</a><a href="#equality">平等原則與行政自我拘束</a><a href="#proportionality">比例原則</a><a href="#trust">誠實信用與信賴保護</a><a href="#linkage">禁止不當聯結與有利不利一律注意</a><a href="#discretion">裁量、不確定法律概念與司法審查</a><a href="#jurisdiction">管轄與權限移轉基礎</a><a href="#exam">考前總整理</a><a href="#quiz">61題完整練習</a><a href="#sources">官方資料來源</a></aside>
+<main>
+<section id="chapter-map"><h2>第一章讀法與命題定位</h2>
+<p>本章處理行政法的「底層規則」：行政機關做任何事以前，先確認權限與法源，再檢查是否遵守一般法律原則，最後檢查裁量是否違法。後續行政處分、行政契約、行政命令、行政救濟，都會反覆使用本章觀念。</p>
+<div class="grid3">
+<div class="mini"><b>第一問：有無權限</b><span>機關是否依法取得事務、土地及層級管轄？</span></div>
+<div class="mini"><b>第二問：有無依據</b><span>限制人民權利是否有法律或明確授權？</span></div>
+<div class="mini"><b>第三問：手段合法</b><span>是否符合平等、比例、信賴保護與裁量目的？</span></div>
+</div>
+<div class="note"><b>命題大綱提醒：</b>考選部命題大綱是命題範圍的例示，不代表試題只能出現在列舉項目內。教材因此同時納入法條、一般原則與重要實務判斷方法。</div>
+</section><section id="concept"><h2>行政法的意義與範圍</h2>
+<h3>一、行政法不是單一法典</h3>
+<p>行政法是規範行政組織、行政作用及行政救濟的公法規範總稱。常見法源包括憲法、法律、法規命令、自治法規、行政規則，以及由憲法與法律體系發展出的一般法律原則。</p>
+<table><tr><th>領域</th><th>核心問題</th><th>戶政情境</th></tr>
+<tr><td>行政組織法</td><td>誰有權作成決定</td><td>中央、地方主管機關及戶政事務所權限</td></tr>
+<tr><td>行政作用法</td><td>用何種手段完成任務</td><td>戶籍登記、國籍案件、行政處分、行政指導</td></tr>
+<tr><td>行政救濟法</td><td>違法或不當時如何救濟</td><td>訴願、行政訴訟、國家賠償</td></tr></table>
+<h3>二、公法與私法區分</h3>
+<p>考題常用「主體說、利益說、權力說、修正主體說」判斷。實務解題以修正主體說最具操作性：規範是否專門賦予行政主體公權力地位或義務。單看國家是否為當事人並不足夠，政府購買文具仍可能是私法契約。</p>
+</section><section id="sources"><h2>行政法法源與位階</h2>
+<table><tr><th>法源</th><th>定位</th><th>考試判斷</th></tr>
+<tr><td>憲法</td><td>最高位階規範</td><td>法律及行政行為均不得牴觸</td></tr>
+<tr><td>法律</td><td>立法院通過、總統公布</td><td>重要權利限制原則上應由法律規定</td></tr>
+<tr><td>法規命令</td><td>行政機關基於法律授權，對多數不特定人民發生外部效力</td><td>不得逾越授權目的、內容及範圍</td></tr>
+<tr><td>自治法規</td><td>地方自治團體在自治權限內制定</td><td>不得牴觸憲法、法律及上位規範</td></tr>
+<tr><td>行政規則</td><td>原則上規範行政內部秩序與運作</td><td>不得直接取代法律創設人民義務</td></tr>
+<tr><td>一般法律原則</td><td>平等、比例、誠信、信賴保護等</td><td>行政程序法第4條明定行政行為受其拘束</td></tr></table>
+<div class="danger"><b>高頻陷阱：</b>行政規則不是完全沒有法律效果。解釋性規定與裁量基準雖主要在內部發生拘束力，但在平等原則、行政自我拘束及合法性前提下，可能間接影響人民。</div>
+</section><section id="legality"><h2>依法行政：法律優位與法律保留</h2>
+<h3>一、法律優位</h3><p>行政行為不得牴觸法律。它是「消極」要求：即使行政機關有權行動，也不能作出與法律相反的決定。所有行政領域原則上都受法律優位拘束。</p>
+<h3>二、法律保留</h3><p>特定行政事項必須有法律依據，尤其涉及基本權限制、重要公共事項或給付行政中具有重大影響的事項。法律保留是「積極」要求：沒有足夠法源，行政機關不得只以便利、政策或內規限制人民。</p>
+<table><tr><th>比較</th><th>法律優位</th><th>法律保留</th></tr>
+<tr><td>問題</td><td>行政行為是否違反法律</td><td>行政行為是否欠缺法律依據</td></tr>
+<tr><td>性質</td><td>消極不得牴觸</td><td>積極必須有依據</td></tr>
+<tr><td>典型題幹</td><td>命令內容與母法相反</td><td>僅憑內部要點限制人民權利</td></tr></table>
+</section><section id="authorization"><h2>授權明確性與規範明確性</h2>
+<h3>一、授權明確性</h3><p>立法機關可以授權行政機關制定法規命令，但授權目的、內容與範圍須達到可辨識程度。權利影響越重大，要求通常越嚴格；涉及刑罰或重大基本權限制時，更須能由母法整體規範預見。</p>
+<h3>二、規範明確性</h3><p>行政程序法第5條規定行政行為內容應明確。明確不等於完全不能使用不確定法律概念，而是人民可理解、可預見，並可接受行政及司法審查。</p>
+<div class="case"><b>最新實務基準：</b>憲法法庭112年憲判字第5號指出，授權是否明確應依母法整體解釋判斷，不拘泥於單一授權條款文字；授權明確程度並應與對人民權利影響相稱。</div>
+</section><section id="equality"><h2>平等原則與行政自我拘束</h2>
+<p>行政程序法第6條規定，行政行為非有正當理由不得差別待遇。平等原則要求「相同事物相同處理，不同事物依差異合理處理」，並非要求機械式一律相同。</p>
+<h3>行政自我拘束的成立條件</h3>
+<ol><li>行政機關已有持續且一致的合法處理實務或裁量基準。</li><li>本案與先前案件在重要事實上具有可比較性。</li><li>沒有足以支持差別處理的正當理由。</li><li>先前慣例本身合法；人民不能主張「違法也要平等」。</li></ol>
+<div class="memory">口訣：<b>慣例一致、案件相同、無正當差別、舊例合法。</b></div>
+</section><section id="proportionality"><h2>比例原則</h2>
+<p>行政程序法第7條將比例原則分成三層。解題時必須依序檢查，不能只寫「不得過度」。</p>
+<table><tr><th>子原則</th><th>問題</th><th>判斷</th></tr>
+<tr><td>適當性</td><td>手段有助於目的嗎</td><td>完全無助於目的即不適當</td></tr>
+<tr><td>必要性</td><td>是否有同樣有效但侵害較小的手段</td><td>有較溫和手段卻不用，違反必要性</td></tr>
+<tr><td>狹義比例</td><td>造成的損害與公共利益是否顯失均衡</td><td>利益衡量，禁止代價過大</td></tr></table>
+<div class="memory">口訣：<b>有沒有用 → 有沒有更小傷害 → 值不值得。</b></div>
+</section><section id="trust"><h2>誠實信用與信賴保護</h2>
+<p>行政程序法第8條規定，行政行為應以誠實信用方法為之，並保護人民正當合理信賴。信賴保護並非人民只要「相信」就成立。</p>
+<h3>通常檢查三要件</h3>
+<ol><li><b>信賴基礎：</b>行政機關的處分、表示、法規或持續實務。</li>
+<li><b>信賴表現：</b>人民基於信賴已作成安排、支出成本或改變法律地位。</li>
+<li><b>信賴值得保護：</b>人民無詐欺、脅迫、賄賂、重大過失或明知違法等情形。</li></ol>
+<p>即使成立，仍須與公益衡量；可能採取存續保護、過渡期間或財產補償，而非一律維持原狀。</p>
+</section><section id="linkage"><h2>禁止不當聯結與有利不利一律注意</h2>
+<h3>一、禁止不當聯結</h3><p>行政機關不得把欠缺實質關聯的利益、負擔或條件強行連結。判斷重點是要求與行政目的、法規目的間是否具有合理關聯。</p>
+<h3>二、有利不利一律注意</h3><p>行政程序法第9條及第36條要求行政機關依職權調查，對當事人有利與不利事項均須注意。行政程序不是只找不利證據，也不能完全被當事人主張範圍綁住。</p>
+</section><section id="discretion"><h2>裁量、不確定法律概念與司法審查</h2>
+<h3>一、裁量</h3><p>法規容許行政機關在多種合法結果間選擇。行政程序法第10條要求不得逾越法定範圍，並須符合授權目的。</p>
+<table><tr><th>裁量瑕疵</th><th>意義</th><th>例子</th></tr>
+<tr><td>裁量逾越</td><td>超過法定上限或選擇法律未容許結果</td><td>法定最高罰鍰10萬元卻裁罰15萬元</td></tr>
+<tr><td>裁量怠惰</td><td>法律要求裁量，機關卻誤認只能作唯一決定</td><td>機械套用內規，不考量個案</td></tr>
+<tr><td>裁量濫用</td><td>基於無關目的、錯誤事實或違反一般原則</td><td>因私人恩怨作成較重處分</td></tr></table>
+<h3>二、不確定法律概念</h3><p>如「重大危害」「公共利益」須先解釋概念再涵攝事實。原則上法院可審查；在高度專業、預測或評量領域，法律可能承認有限判斷餘地，但並非完全不受審查。</p>
+</section><section id="jurisdiction"><h2>管轄與權限移轉基礎</h2>
+<p>行政程序法第11條規定管轄權依組織法規或其他行政法規定之，且非依法規不得設定或變更。機關對有無管轄權應依職權調查；無管轄權時，原則上應移送有管轄權機關並通知當事人。</p>
+<table><tr><th>制度</th><th>對象</th><th>關鍵</th></tr>
+<tr><td>委任</td><td>所屬下級機關</td><td>依法規，並公告事項及依據</td></tr>
+<tr><td>委託</td><td>不相隸屬行政機關</td><td>依法規，並公告事項及依據</td></tr>
+<tr><td>公權力委託</td><td>民間團體或個人</td><td>受託範圍內視為行政機關</td></tr></table>
+</section><section id="exam"><h2>考前總整理</h2>
+<div class="grid2">
+<div class="summary"><b>看到「牴觸法律」</b><span>法律優位</span></div>
+<div class="summary"><b>看到「沒有法律依據」</b><span>法律保留</span></div>
+<div class="summary"><b>看到「授權目的內容範圍」</b><span>授權明確性</span></div>
+<div class="summary"><b>看到「較小侵害手段」</b><span>比例原則必要性</span></div>
+<div class="summary"><b>看到「合法一致慣例」</b><span>行政自我拘束</span></div>
+<div class="summary"><b>看到「有利不利都調查」</b><span>職權調查與客觀義務</span></div>
+<div class="summary"><b>看到「超過法定上限」</b><span>裁量逾越</span></div>
+<div class="summary"><b>看到「誤認沒有選擇」</b><span>裁量怠惰</span></div>
+</div>
+</section>
+<div class="quizbox" id="quiz">
+<h2>第一章 61 題完整練習</h2>
+<p>選答後按「顯示解析」。作答、收藏及錯題會儲存在這台電腦的瀏覽器中。</p>
+<div class="progress"><div id="bar"></div></div>
+<p id="status">已作答 0 / 61｜答對 0 題</p>
+<div class="toolbar">
+<button onclick="showAll()">顯示全部解析</button>
+<button class="secondary" onclick="filterWrong()">只看錯題</button>
+<button class="secondary" onclick="render()">顯示全部</button>
+<button class="warn" onclick="resetAll()">重設本章紀錄</button>
+<button class="secondary" onclick="window.print()">列印教材</button>
+</div>
+<div id="questions"></div>
+</div>
+
+<section id="portable">
+<h2>跨裝置備份與轉移</h2>
+<p>目前可將作答進度、錯題與收藏匯出成 JSON，再匯入另一支手機、平板或電腦。雲端帳號同步需要另外連接雲端資料庫與登入服務。</p>
+<div class="syncbox">
+<div class="toolbar">
+<button onclick="exportProgress()">匯出學習進度</button>
+<label style="display:inline-flex;align-items:center;gap:8px;background:#475569;color:white;padding:9px 14px;border-radius:9px;font-weight:700;cursor:pointer">
+匯入學習進度
+<input id="importFile" type="file" accept="application/json" onchange="importProgress(event)" style="display:none">
+</label>
+</div>
+<div id="syncMsg" aria-live="polite"></div>
+</div>
+</section>
+<div class="sources" id="sources">
+<h2>官方資料來源與版本註記</h2>
+<ul>
+<li>全國法規資料庫－行政程序法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055" target="_blank">官方法規頁面</a></li>
+<li>全國法規資料庫－中華民國憲法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001" target="_blank">官方法規頁面</a></li>
+<li>考選部－公務人員考試命題大綱：<a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&menu_id=154" target="_blank">官方命題大綱頁</a></li>
+<li>憲法法庭112年憲判字第5號判決摘要：<a href="https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=348179" target="_blank">憲法法庭官方頁面</a></li>
+</ul>
+<div class="danger"><b>版本管理：</b>本檔是第一章正式擴充版，不代表整套行政法已完成。後續章節將沿用同一深度逐章併入；法規修正時，以全國法規資料庫最新公布內容為準。</div>
+</div>
+</main></div>
+<footer>戶政國考學習平台 V6｜單一 HTML、無需安裝、資料只存於本機</footer>
+<div class="install-panel" id="installPanel" hidden>
+<p><b>安裝到手機或電腦</b><br>安裝後可像 App 一樣開啟，並支援離線閱讀。</p>
+<div class="toolbar" style="margin:0">
+<button id="installBtn">安裝</button>
+<button class="secondary" onclick="document.getElementById('installPanel').hidden=true">稍後</button>
+</div>
+</div>
+<script>
+const DATA=[{"q": "行政法最主要規範何種法律關係？", "o": ["私人間日常買賣", "行政主體行使公權力所生關係", "純道德關係", "國際私法關係"], "a": 1, "e": "行政法核心在行政主體行使公權力及其與人民、其他行政主體間的公法關係。", "tag": "基本概念"}, {"q": "判斷公法與私法時，何者最符合修正主體說？", "o": ["只要國家參與就是公法", "規範是否專門賦予行政主體公權力地位", "看金額大小", "看契約名稱"], "a": 1, "e": "修正主體說觀察規範是否專門以行政主體為權利義務歸屬者。", "tag": "公私法"}, {"q": "政府機關向文具行購買影印紙，通常屬於何種關係？", "o": ["必然公法", "通常私法買賣", "刑事關係", "國際法"], "a": 1, "e": "國家作為一般交易主體時，仍可能成立私法契約。", "tag": "公私法"}, {"q": "行政程序法第4條的核心為何？", "o": ["行政行為不受一般原則拘束", "行政行為受法律及一般法律原則拘束", "只有法院受法律拘束", "行政規則高於法律"], "a": 1, "e": "第4條明定依法行政及一般法律原則拘束。", "tag": "依法行政"}, {"q": "法律優位原則的核心意義為何？", "o": ["任何行政行為均須有明文授權", "行政行為不得牴觸法律", "命令可修改法律", "行政慣例高於法律"], "a": 1, "e": "法律優位是消極要求：行政行為不能違反法律。", "tag": "法律優位"}, {"q": "法律保留原則主要處理何種問題？", "o": ["是否有法律依據", "是否超過訴願期間", "是否公開開會", "是否使用書面"], "a": 0, "e": "法律保留要求一定重要事項須有法律或法律明確授權。", "tag": "法律保留"}, {"q": "法規命令與母法牴觸時，原則上如何？", "o": ["優先適用命令", "命令不得牴觸法律", "由機關任選", "兩者同效力"], "a": 1, "e": "下位規範不得牴觸上位法律。", "tag": "法源"}, {"q": "行政規則原則上主要規範何者？", "o": ["行政內部秩序與運作", "直接創設刑罰", "修改法律", "廢止憲法"], "a": 0, "e": "行政規則主要發生內部拘束力。", "tag": "法源"}, {"q": "下列何者屬法規命令典型特徵？", "o": ["針對特定人的一次決定", "基於法律授權對多數不特定人民發生外部效力", "純私人契約", "法院判決"], "a": 1, "e": "法規命令具有抽象、一般及外部效力。", "tag": "法規命令"}, {"q": "行政規則可否直接取代法律限制人民權利？", "o": ["原則可以", "原則不可以", "只要承辦人同意即可", "只要未公告即可"], "a": 1, "e": "內部規則不能成為欠缺法律依據的外部權利限制。", "tag": "行政規則"}, {"q": "授權明確性通常要求法律授權的哪些要素可得確定？", "o": ["目的、內容與範圍", "承辦人姓名", "預算科目", "新聞評價"], "a": 0, "e": "授權目的、內容與範圍須達具體明確程度。", "tag": "授權明確性"}, {"q": "授權明確程度與何者關係最密切？", "o": ["人民權利受影響程度", "機關辦公地點", "承辦年資", "文件顏色"], "a": 0, "e": "對權利影響越重大，授權明確要求通常越高。", "tag": "授權明確性"}, {"q": "依憲法法庭112年憲判字第5號，判斷授權明確性應如何？", "o": ["只看單一條文文字", "可從母法整體規範與關聯意義判斷", "只看行政機關解釋", "完全不需可預見"], "a": 1, "e": "該判決強調整體解釋，並要求與權利影響相稱。", "tag": "實務"}, {"q": "行政程序法第5條要求行政行為內容如何？", "o": ["抽象", "明確", "秘密", "一律口頭"], "a": 1, "e": "第5條為行政行為明確性要求。", "tag": "明確性"}, {"q": "使用「公共利益」等不確定概念必然違反明確性嗎？", "o": ["必然違反", "不必然，仍可經解釋、預見及審查", "只要機關說明即可免審查", "完全不受法院審查"], "a": 1, "e": "明確性不排除不確定法律概念，重點是可理解、可預見及可審查。", "tag": "明確性"}, {"q": "平等原則是否要求所有人一律完全相同處理？", "o": ["是", "否，合理差異可作不同處理", "只對公務員適用", "只對稅法適用"], "a": 1, "e": "平等要求禁止無正當理由差別待遇。", "tag": "平等"}, {"q": "行政機關對事實相同案件作不同處理，何者最重要？", "o": ["是否有正當理由", "是否同一承辦人", "是否同一天", "是否同一頁紙"], "a": 0, "e": "有合理、正當的差別理由，未必違反平等。", "tag": "平等"}, {"q": "人民可否主張其他人曾獲違法利益，自己也應同樣獲得？", "o": ["可以，違法也平等", "不可以，原則上無違法平等", "只要人數多即可", "只要媒體報導即可"], "a": 1, "e": "行政自我拘束不使違法慣例合法化。", "tag": "自我拘束"}, {"q": "行政自我拘束通常以何者為前提？", "o": ["一次偶發處理", "合法且持續一致的行政實務", "違法命令", "私人承諾"], "a": 1, "e": "須有合法、持續且一致的處理基準或實務。", "tag": "自我拘束"}, {"q": "比例原則第一層適當性在問什麼？", "o": ["手段是否有助目的達成", "是否有最小侵害手段", "利益是否顯失均衡", "是否有管轄"], "a": 0, "e": "適當性檢查手段與目的間的促進關係。", "tag": "比例"}, {"q": "必要性原則的判斷核心為何？", "o": ["有無更嚴厲手段", "有無同樣有效而侵害較小手段", "是否完全無成本", "是否有新聞支持"], "a": 1, "e": "在同等有效手段中，應選擇侵害最小者。", "tag": "比例"}, {"q": "狹義比例原則主要進行何種判斷？", "o": ["管轄判斷", "損害與公益的均衡", "法規公布程序", "代理權"], "a": 1, "e": "狹義比例是利益衡量，避免代價與目的顯失均衡。", "tag": "比例"}, {"q": "某措施完全無助於法定目的，違反比例原則哪一層？", "o": ["適當性", "必要性", "狹義比例", "平等"], "a": 0, "e": "無助於目的即欠缺適當性。", "tag": "比例"}, {"q": "已有同樣有效且侵害較小方式，機關仍採較嚴厲方式，主要違反何者？", "o": ["必要性", "法律優位", "管轄恆定", "誠信"], "a": 0, "e": "此為典型必要性問題。", "tag": "比例"}, {"q": "手段雖有效且無替代方案，但造成極端重大損害，可能違反何者？", "o": ["狹義比例", "適當性", "管轄", "行政協助"], "a": 0, "e": "須衡量手段損害與目的利益是否顯失均衡。", "tag": "比例"}, {"q": "行政程序法第8條同時規定哪些原則？", "o": ["誠實信用與信賴保護", "平等與比例", "公開與秘密", "管轄與代理"], "a": 0, "e": "第8條規定誠信方法及正當合理信賴保護。", "tag": "信賴保護"}, {"q": "信賴保護的「信賴基礎」通常來自何者？", "o": ["行政機關處分、表示或持續實務", "人民單方願望", "網路留言", "私人猜測"], "a": 0, "e": "須有可歸責於公權力的信賴基礎。", "tag": "信賴保護"}, {"q": "人民基於行政表示已投入成本，屬於何項要件？", "o": ["信賴表現", "信賴基礎", "管轄", "適當性"], "a": 0, "e": "人民須有基於信賴的具體安排或處分。", "tag": "信賴保護"}, {"q": "人民以詐欺取得有利處分，通常如何？", "o": ["信賴仍一律保護", "信賴通常不值得保護", "必須永久維持", "只看金額"], "a": 1, "e": "以詐欺、脅迫或賄賂取得者，通常不具值得保護性。", "tag": "信賴保護"}, {"q": "信賴保護成立後，是否必然維持原狀？", "o": ["必然", "不必然，仍須公益衡量並可採過渡或補償", "一律撤銷", "一律刑罰"], "a": 1, "e": "保護方式可能是存續、過渡或補償。", "tag": "信賴保護"}, {"q": "禁止不當聯結原則主要禁止什麼？", "o": ["將無實質關聯的利益與負擔強行連結", "依法收規費", "要求補正必要文件", "告知救濟"], "a": 0, "e": "條件、負擔與行政目的間須有合理關聯。", "tag": "不當聯結"}, {"q": "行政機關只蒐集不利證據、不理有利資料，可能違反何者？", "o": ["有利不利一律注意", "法律不溯及既往", "罪刑法定", "契約自由"], "a": 0, "e": "行政程序法第9條、第36條要求客觀、全面調查。", "tag": "職權調查"}, {"q": "行政程序中的證據調查原則上採何種模式？", "o": ["純當事人進行", "職權調查", "陪審制", "完全自由心證且無理由"], "a": 1, "e": "行政機關依職權調查，不受當事人主張拘束。", "tag": "職權調查"}, {"q": "行政機關作成決定時，對事實真偽應依何者判斷？", "o": ["論理及經驗法則", "首長個人偏好", "抽籤", "媒體票選"], "a": 0, "e": "行政程序法第43條要求斟酌全部資料並依論理及經驗法則。", "tag": "證據"}, {"q": "裁量是指何者？", "o": ["機關可在法律容許的多種結果中選擇", "完全不受法律拘束", "可任意違反目的", "法院不得審查任何事項"], "a": 0, "e": "裁量仍受範圍、目的及一般原則拘束。", "tag": "裁量"}, {"q": "超過法定裁罰上限，屬何種裁量瑕疵？", "o": ["裁量逾越", "裁量怠惰", "判斷餘地", "行政協助"], "a": 0, "e": "選擇超出法定界限即裁量逾越。", "tag": "裁量"}, {"q": "法律賦予裁量，機關卻認為只能作唯一決定，屬何者？", "o": ["裁量怠惰", "裁量逾越", "適當性", "信賴表現"], "a": 0, "e": "未實際行使應行使的裁量即裁量怠惰。", "tag": "裁量"}, {"q": "因私人恩怨作成較重處分，主要屬何種瑕疵？", "o": ["裁量濫用", "裁量怠惰", "管轄移送", "法規命令"], "a": 0, "e": "使用與法定目的無關的考量，屬裁量濫用。", "tag": "裁量"}, {"q": "行政程序法第10條要求裁量符合何者？", "o": ["法定範圍與授權目的", "承辦人偏好", "媒體意見", "私人契約"], "a": 0, "e": "裁量不得逾越範圍，並應符合法規授權目的。", "tag": "裁量"}, {"q": "裁量基準可否完全取代個案判斷？", "o": ["可以，永遠機械適用", "不可以，仍須保留個案衡量", "只要未公開即可", "由人民決定"], "a": 1, "e": "機械套用可能構成裁量怠惰。", "tag": "裁量"}, {"q": "不確定法律概念的典型例子為何？", "o": ["重大危害", "10日", "新臺幣5萬元", "上午9時"], "a": 0, "e": "重大、公共利益等概念須透過解釋與涵攝具體化。", "tag": "不確定概念"}, {"q": "不確定法律概念原則上是否受法院審查？", "o": ["原則受審查", "完全不受審查", "只由立法院審查", "由媒體審查"], "a": 0, "e": "原則上可全面審查；特殊領域才可能有有限判斷餘地。", "tag": "司法審查"}, {"q": "判斷餘地是否等於行政機關完全自由？", "o": ["是", "否，仍受程序、事實、目的與一般原則審查", "只要專業就完全免審查", "只限私法"], "a": 1, "e": "判斷餘地仍有審查界線。", "tag": "司法審查"}, {"q": "行政機關管轄權原則上依何者決定？", "o": ["組織法規或其他行政法規", "長官口頭決定", "新聞公告", "人民選擇"], "a": 0, "e": "行政程序法第11條。", "tag": "管轄"}, {"q": "管轄權可否未依法規任意設定或變更？", "o": ["可以", "不可以", "只要承辦同意即可", "只要對人民不利即可"], "a": 1, "e": "管轄權非依法規不得設定或變更。", "tag": "管轄"}, {"q": "機關發現自己無管轄權時，原則上應如何？", "o": ["逕行駁回不通知", "移送有管轄權機關並通知當事人", "自行保留案件", "銷毀資料"], "a": 1, "e": "行政程序法第17條採移送制度。", "tag": "管轄"}, {"q": "人民在法定期間向無管轄權機關提出申請，後移送有管轄權機關，期間效果如何？", "o": ["一律逾期", "視同已在法定期間向有管轄權機關提出", "重新起算且不計前次", "由承辦決定"], "a": 1, "e": "第17條保障人民期間利益。", "tag": "管轄"}, {"q": "委任通常是將權限交由何者執行？", "o": ["所屬下級機關", "私人公司", "法院", "立法院"], "a": 0, "e": "委任是上下隸屬機關間的權限移轉。", "tag": "權限移轉"}, {"q": "委託行政機關通常指交由何者？", "o": ["不相隸屬行政機關", "所屬下級機關", "當事人代理人", "法院"], "a": 0, "e": "行政程序法第15條第2項。", "tag": "權限移轉"}, {"q": "行政機關將部分公權力委託民間團體或個人，受託者在範圍內如何定位？", "o": ["視為行政機關", "視為法院", "純私人且不受行政法", "視為立法機關"], "a": 0, "e": "行政程序法第2條第3項。", "tag": "公權力委託"}, {"q": "委任、委託事項及法規依據通常應如何？", "o": ["公告並刊登政府公報或新聞紙", "完全保密", "只口頭告知承辦人", "只通知一位人民"], "a": 0, "e": "法定公告是權限移轉的重要要求。", "tag": "權限移轉"}, {"q": "行政程序法第3條所列不適用程序規定事項，是否表示完全不受任何行政法原則拘束？", "o": ["是", "否，通常只是本法程序規定不適用，不等於完全脫離憲法與一般原則", "只受民法", "只受刑法"], "a": 1, "e": "不適用特定程序規定，不代表公權力可恣意。", "tag": "適用範圍"}, {"q": "國籍變更行為依行政程序法第3條如何？", "o": ["不適用本法程序規定", "一律適用全部程序", "屬私法", "屬刑事偵查"], "a": 0, "e": "第3條第3項第2款明列國籍變更行為。", "tag": "適用範圍"}, {"q": "受託行使公權力的個人或團體，於何範圍內視為行政機關？", "o": ["委託範圍內", "所有私人活動", "僅收費時", "永遠"], "a": 0, "e": "僅於受託行使公權力的範圍內。", "tag": "行政機關"}, {"q": "行政機關對事件管轄權有無，應如何處理？", "o": ["依職權調查", "等待對造抗辯才調查", "完全不調查", "由媒體判斷"], "a": 0, "e": "管轄屬機關應主動確認事項。", "tag": "管轄"}, {"q": "法律優位與法律保留的正確比較為何？", "o": ["前者問不得牴觸，後者問須有依據", "兩者完全相同", "前者只適用給付行政", "後者只適用內規"], "a": 0, "e": "這是最核心的區分。", "tag": "依法行政"}, {"q": "某機關以內部作業要點新增人民必須繳納的費用，最直接涉及何原則？", "o": ["法律保留", "適當性", "管轄恆定", "信賴表現"], "a": 0, "e": "創設人民金錢義務須有足夠法律依據。", "tag": "法律保留"}, {"q": "某命令雖有授權，但增加母法明確排除的義務，主要違反何者？", "o": ["法律優位及授權界限", "信賴表現", "行政協助", "代理制度"], "a": 0, "e": "命令不得牴觸母法或逾越授權。", "tag": "法律優位"}, {"q": "相同案件長期均核准，本案無理由突然否准，最可能涉及何者？", "o": ["平等與行政自我拘束", "罪刑法定", "私法自治", "國際法"], "a": 0, "e": "合法一致實務可能形成自我拘束。", "tag": "自我拘束"}, {"q": "行政措施要求申請人捐款給與案件無關團體才予核准，最可能違反何者？", "o": ["禁止不當聯結", "適當性而已", "管轄", "代理"], "a": 0, "e": "捐款與核准目的若無實質關聯，即構成不當聯結。", "tag": "不當聯結"}, {"q": "本章解題最合理的順序為何？", "o": ["先權限、再法源、後一般原則與裁量", "先看結果喜不喜歡", "先看承辦年資", "先看媒體聲量"], "a": 0, "e": "行政法基本審查架構應先確認權限與法源，再審查手段。", "tag": "總整理"}];
+const KEY='hujeng_v6_admin_ch1';
+let state=JSON.parse(localStorage.getItem(KEY)||'{"answers":{},"revealed":{},"fav":{}}');
+function save(){localStorage.setItem(KEY,JSON.stringify(state));updateStatus()}
+function render(mode='all'){
+ const root=document.getElementById('questions'); root.innerHTML='';
+ DATA.forEach((x,i)=>{
+  if(mode==='wrong' && (state.answers[i]===undefined || state.answers[i]===x.a)) return;
+  const d=document.createElement('div');d.className='question';
+  let opts=x.o.map((o,j)=>`<label class="option ${state.revealed[i]?(j===x.a?'correct':(state.answers[i]===j?'wrong':'')):''}"><input type="radio" name="q${i}" value="${j}" ${state.answers[i]===j?'checked':''} onchange="answer(${i},${j})"> ${String.fromCharCode(65+j)}. ${o}</label>`).join('');
+  d.innerHTML=`<div class="qhead"><b>${i+1}. ${x.q}</b><span class="tag">${x.tag}</span></div>${opts}<div class="toolbar"><button onclick="reveal(${i})">顯示解析</button><button class="secondary" onclick="fav(${i})">${state.fav[i]?'★ 已收藏':'☆ 收藏'}</button></div><div class="explain" style="display:${state.revealed[i]?'block':'none'}"><b>答案：${String.fromCharCode(65+x.a)}</b><br>${x.e}</div>`;
+  root.appendChild(d);
+ });
+ updateStatus();
+}
+function answer(i,j){state.answers[i]=j;save()}
+function reveal(i){state.revealed[i]=true;save();render()}
+function fav(i){state.fav[i]=!state.fav[i];save();render()}
+function showAll(){DATA.forEach((_,i)=>state.revealed[i]=true);save();render()}
+function filterWrong(){render('wrong')}
+function resetAll(){if(confirm('確定清除本章所有作答、解析與收藏紀錄？')){state={answers:{},revealed:{},fav:{}};save();render()}}
+function updateStatus(){
+ let n=Object.keys(state.answers).length,c=0;DATA.forEach((x,i)=>{if(state.answers[i]===x.a)c++});
+ document.getElementById('status').textContent=`已作答 ${n} / ${DATA.length}｜答對 ${c} 題｜收藏 ${Object.values(state.fav).filter(Boolean).length} 題`;
+ document.getElementById('bar').style.width=(n/DATA.length*100)+'%';
+}
+
+function exportProgress(){
+  const payload={
+    app:"戶政國考學習平台",
+    version:"V7-PWA",
+    exportedAt:new Date().toISOString(),
+    storageKey:KEY,
+    data:state
+  };
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url;
+  a.download="戶政國考學習進度_"+new Date().toISOString().slice(0,10)+".json";
+  a.click();
+  URL.revokeObjectURL(url);
+  document.getElementById("syncMsg").textContent="已匯出學習進度。";
+}
+function importProgress(event){
+  const file=event.target.files[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const payload=JSON.parse(reader.result);
+      const imported=payload.data||payload;
+      if(!imported.answers||!imported.revealed||!imported.fav) throw new Error("格式不符");
+      state=imported;
+      save();
+      render();
+      document.getElementById("syncMsg").textContent="匯入成功，已套用學習進度。";
+    }catch(err){
+      document.getElementById("syncMsg").textContent="匯入失敗：檔案格式不正確。";
+    }
+  };
+  reader.readAsText(file);
+}
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js"));
+}
+let deferredPrompt=null;
+window.addEventListener("beforeinstallprompt",e=>{
+  e.preventDefault();
+  deferredPrompt=e;
+  document.getElementById("installPanel").hidden=false;
+});
+document.getElementById("installBtn")?.addEventListener("click",async()=>{
+  if(!deferredPrompt)return;
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt=null;
+  document.getElementById("installPanel").hidden=true;
+});
+
+render();
+</script>
+</body></html>
