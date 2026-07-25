@@ -13,7 +13,7 @@
 <meta name="description" content="戶政特考行政法離線教材、題庫與錯題複習工具">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>戶政國考學習平台 V11｜行政法第一至三章</title>
+<title>戶政國考學習平台 V11.1｜行政法第一至三章</title>
 <style>
 :root{--bg:#eef2f7;--ink:#18212f;--nav:#111827;--blue:#075985;--line:#d8e0ea}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
@@ -52,17 +52,162 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
   .qhead{align-items:flex-start}.tag{margin-top:2px}
   .option{padding:12px 10px}
 }
+
+.compact-nav{
+  position:sticky;
+  top:12px;
+  align-self:start;
+  max-height:calc(100vh - 24px);
+  overflow:auto;
+  background:#111827;
+  padding:14px;
+  border-radius:18px;
+  scrollbar-width:thin;
+  scrollbar-color:#64748b transparent;
+}
+.compact-nav .nav-title{
+  color:#fff;
+  font-weight:800;
+  font-size:17px;
+  margin:2px 4px 10px;
+}
+.compact-nav details{
+  border-top:1px solid #334155;
+  padding:2px 0;
+}
+.compact-nav summary{
+  color:#f8fafc;
+  cursor:pointer;
+  list-style:none;
+  padding:10px 8px;
+  border-radius:8px;
+  font-weight:700;
+  font-size:14px;
+  line-height:1.45;
+}
+.compact-nav summary::-webkit-details-marker{display:none}
+.compact-nav summary::before{
+  content:"▸";
+  display:inline-block;
+  width:18px;
+  color:#7dd3fc;
+  transition:transform .18s ease;
+}
+.compact-nav details[open] summary::before{transform:rotate(90deg)}
+.compact-nav summary:hover{background:#1f2937}
+.compact-nav .nav-group{
+  padding:0 0 7px 18px;
+}
+.compact-nav .nav-group a{
+  display:block;
+  color:#cbd5e1;
+  text-decoration:none;
+  padding:6px 8px;
+  margin:1px 0;
+  border-radius:7px;
+  font-size:13px;
+  line-height:1.4;
+}
+.compact-nav .nav-group a:hover,
+.compact-nav .nav-group a:focus{
+  background:#0c4a6e;
+  color:#fff;
+}
+.nav-collapse-btn{
+  width:100%;
+  margin-top:10px;
+  padding:8px 10px;
+  font-size:13px;
+  background:#334155;
+}
+@media(max-width:900px){
+  .compact-nav{
+    position:relative;
+    max-height:none;
+  }
+}
+@media(max-width:600px){
+  .compact-nav{
+    display:block;
+    overflow:visible;
+    white-space:normal;
+  }
+  .compact-nav .nav-title{display:block}
+  .compact-nav .nav-group a{font-size:14px}
+}
+
 </style>
 </head>
 <body>
 <header>
-<div>戶政國考 AI 學習系統｜V11 行政契約版</div>
+<div>戶政國考 AI 學習系統｜V11.1 導覽優化版</div>
 <h1>行政法第一至三章：基本原理、行政處分與行政契約</h1>
 <p>本版已由平台測試骨架升級為可實際研讀的教材：27個完整單元、比較表、解題架構、116題不重複題庫、錯題收藏與本機進度保存。</p>
 <div class="meta"><span>資料核對：2026-07-25</span><span>行政程序法：修正日期民國110年1月20日</span><span>命題大綱頁：民國115年6月25日版</span><span>完全離線可用</span></div>
 </header>
 <div class="layout">
-<aside><b style="color:white">章節目錄</b><a href="#chapter-map">第一章讀法與命題定位</a><a href="#concept">行政法的意義與範圍</a><a href="#sources">行政法法源與位階</a><a href="#legality">依法行政：法律優位與法律保留</a><a href="#authorization">授權明確性與規範明確性</a><a href="#equality">平等原則與行政自我拘束</a><a href="#proportionality">比例原則</a><a href="#trust">誠實信用與信賴保護</a><a href="#linkage">禁止不當聯結與有利不利一律注意</a><a href="#discretion">裁量、不確定法律概念與司法審查</a><a href="#jurisdiction">管轄與權限移轉基礎</a><a href="#exam">考前總整理</a><a href="#ch2-overview">第二章 行政處分</a><a href="#ch2-additions">附款</a><a href="#ch2-invalid">無效與補正</a><a href="#ch2-withdraw">撤銷與廢止</a><a href="#ch3-overview">第三章 行政契約</a><a href="#ch3-types">契約類型</a><a href="#ch3-adjust">契約調整與終止</a><a href="#ch3-enforcement">履行與救濟</a><a href="#quiz">116題完整練習</a><a href="#sources">官方資料來源</a></aside>
+
+<aside class="compact-nav">
+  <div class="nav-title">章節目錄</div>
+
+  <details open>
+    <summary>第一章｜行政法基本原理</summary>
+    <div class="nav-group">
+      <a href="#chapter-map">讀法與命題定位</a>
+      <a href="#concept">意義與範圍</a>
+      <a href="#sources">法源與位階</a>
+      <a href="#legality">法律優位與法律保留</a>
+      <a href="#authorization">授權與規範明確性</a>
+      <a href="#equality">平等與行政自我拘束</a>
+      <a href="#proportionality">比例原則</a>
+      <a href="#trust">誠信與信賴保護</a>
+      <a href="#linkage">不當聯結與職權調查</a>
+      <a href="#discretion">裁量與司法審查</a>
+      <a href="#jurisdiction">管轄與權限移轉</a>
+      <a href="#exam">第一章總整理</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>第二章｜行政處分</summary>
+    <div class="nav-group">
+      <a href="#ch2-overview">定義與判斷架構</a>
+      <a href="#ch2-definition">行政處分類型</a>
+      <a href="#ch2-form">方式、理由與程序</a>
+      <a href="#ch2-additions">附款</a>
+      <a href="#ch2-effect">生效與效力</a>
+      <a href="#ch2-invalid">無效、補正與轉換</a>
+      <a href="#ch2-withdraw">撤銷與廢止</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>第三章｜行政契約</summary>
+    <div class="nav-group">
+      <a href="#ch3-overview">定義與判斷</a>
+      <a href="#ch3-types">契約類型</a>
+      <a href="#ch3-form">成立與合法性</a>
+      <a href="#ch3-substitute">代替行政處分</a>
+      <a href="#ch3-invalid">契約無效</a>
+      <a href="#ch3-adjust">調整與終止</a>
+      <a href="#ch3-enforcement">履行與救濟</a>
+      <a href="#ch3-compare">處分與契約比較</a>
+    </div>
+  </details>
+
+  <details>
+    <summary>練習與工具</summary>
+    <div class="nav-group">
+      <a href="#quiz">116題完整練習</a>
+      <a href="#install-guide">手機平板安裝</a>
+      <a href="#portable">進度備份與轉移</a>
+      <a href="#sources">官方資料來源</a>
+    </div>
+  </details>
+
+  <button class="nav-collapse-btn" type="button" onclick="toggleAllNav()">全部收合／展開</button>
+</aside>
+
 <main>
 <section id="chapter-map"><h2>第一章讀法與命題定位</h2>
 <p>本章處理行政法的「底層規則」：行政機關做任何事以前，先確認權限與法源，再檢查是否遵守一般法律原則，最後檢查裁量是否違法。後續行政處分、行政契約、行政命令、行政救濟，都會反覆使用本章觀念。</p>
@@ -394,6 +539,12 @@ if("serviceWorker" in navigator){
      location.reload();
    }
  });
+}
+
+function toggleAllNav(){
+  const groups=[...document.querySelectorAll('.compact-nav details')];
+  const shouldOpen=groups.some(d=>!d.open);
+  groups.forEach(d=>d.open=shouldOpen);
 }
 
 render();
