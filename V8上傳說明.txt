@@ -1,0 +1,28 @@
+戶政國考學習平台 V8 正式版｜GitHub Pages 更新方式
+
+請在 GitHub 儲存庫 emma710619-cyber/hujeng-study：
+1. Code → Add file → Upload files。
+2. 將本資料夾內下列檔案全部拖入：
+   index.html
+   manifest.webmanifest
+   service-worker.js
+   icon-192.png
+   icon-512.png
+   .nojekyll
+3. GitHub 若顯示同名檔案，直接提交即會覆蓋更新。
+4. 按 Commit changes。
+5. 等待約 1–3 分鐘後，開啟：
+   https://emma710619-cyber.github.io/hujeng-study/
+
+安裝：
+- Android／Android 平板：Chrome 選單 → 安裝應用程式／加到主畫面。
+- iPhone／iPad：Safari 分享 → 加入主畫面。
+- 第一次需連網完整開啟，之後可離線使用。
+
+本版功能：
+- 正確 192×192 與 512×512 App 圖示
+- Android、iPhone、iPad、Windows PWA
+- GitHub Pages 子路徑相容
+- 離線快取與版本更新
+- 手機與平板版面優化
+- 學習進度匯出／匯入
