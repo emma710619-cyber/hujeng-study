@@ -1,44 +1,13 @@
-const CACHE='hujeng-v8-20260725-1';
+const CACHE='hujeng-v10-20260725-1';
 const BASE=self.registration.scope;
-const CORE=[
-  BASE,
-  new URL('index.html',BASE).href,
-  new URL('manifest.webmanifest',BASE).href,
-  new URL('icon-192.png',BASE).href,
-  new URL('icon-512.png',BASE).href
-];
-self.addEventListener('install',event=>{
-  self.skipWaiting();
-  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)));
-});
-self.addEventListener('activate',event=>{
-  event.waitUntil(Promise.all([
-    caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),
-    self.clients.claim()
-  ]));
-});
-self.addEventListener('fetch',event=>{
-  if(event.request.method!=='GET') return;
-  if(event.request.mode==='navigate'){
-    event.respondWith(
-      fetch(event.request).then(response=>{
-        const copy=response.clone();
-        caches.open(CACHE).then(cache=>cache.put(new URL('index.html',BASE).href,copy));
-        return response;
-      }).catch(()=>caches.match(new URL('index.html',BASE).href))
-    );
-    return;
-  }
-  event.respondWith(
-    caches.match(event.request).then(cached=>{
-      const network=fetch(event.request).then(response=>{
-        if(response && response.status===200){
-          const copy=response.clone();
-          caches.open(CACHE).then(cache=>cache.put(event.request,copy));
-        }
-        return response;
-      }).catch(()=>cached);
-      return cached || network;
-    })
-  );
+const CORE=[BASE,new URL('index.html',BASE).href,new URL('manifest.webmanifest',BASE).href,new URL('icon-192.png',BASE).href,new URL('icon-512.png',BASE).href];
+self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)))});
+self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
+self.addEventListener('fetch',e=>{
+ if(e.request.method!=='GET')return;
+ if(e.request.mode==='navigate'){
+  e.respondWith(fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(new URL('index.html',BASE).href,copy));return r}).catch(()=>caches.match(new URL('index.html',BASE).href)));
+  return;
+ }
+ e.respondWith(caches.match(e.request).then(cached=>cached||fetch(e.request).then(r=>{const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return r})));
 });

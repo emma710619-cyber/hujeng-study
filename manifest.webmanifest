@@ -2,23 +2,14 @@
   "id": "/hujeng-study/",
   "name": "戶政國考 AI 學習系統",
   "short_name": "戶政國考",
-  "description": "戶政特考行政法離線教材、題庫、錯題與收藏複習工具",
+  "description": "戶政特考行政法離線教材、題庫與錯題複習工具",
   "lang": "zh-Hant-TW",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "display_override": [
-    "window-controls-overlay",
-    "standalone",
-    "minimal-ui"
-  ],
   "orientation": "any",
   "background_color": "#eef2f7",
   "theme_color": "#075985",
-  "categories": [
-    "education",
-    "productivity"
-  ],
   "icons": [
     {
       "src": "./icon-192.png",
@@ -31,30 +22,6 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "開始練習",
-      "short_name": "練習",
-      "url": "./index.html#quiz",
-      "icons": [
-        {
-          "src": "./icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
-      "name": "跨裝置備份",
-      "short_name": "備份",
-      "url": "./index.html#portable",
-      "icons": [
-        {
-          "src": "./icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
     }
   ]
 }
