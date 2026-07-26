@@ -13,7 +13,7 @@
 <meta name="description" content="戶政特考行政法離線教材、題庫與錯題複習工具">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>戶政國考學習平台 V1.0｜題庫品質升級版</title>
+<title>戶政國考學習平台 V32｜最終整合版</title>
 <style>
 :root{--bg:#eef2f7;--ink:#18212f;--nav:#111827;--blue:#075985;--line:#d8e0ea}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
@@ -177,18 +177,30 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 .question-meta span{font-size:.78rem;background:#e2e8f0;color:#334155;padding:3px 8px;border-radius:999px;font-weight:700}
 .question-meta .trap-tag{background:#fee2e2;color:#991b1b}
 
+
+/* V32 最終整合版：官方歷屆題與考試形式核對 */
+.exam-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.exam-stat{border:1px solid #bae6fd;background:#f0f9ff;border-radius:13px;padding:15px;text-align:center}
+.exam-stat strong{display:block;color:#075985;font-size:1.25rem}.exam-stat span{font-size:.9rem;color:#475569}
+.exam-table a.official-link{display:inline-block;background:#075985;color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px;font-weight:700;line-height:1.4}
+.exam-table a.official-link:hover{background:#0c4a6e}.exam-table td:first-child{font-weight:800;text-align:center;white-space:nowrap}
+.verified-box{border:2px solid #86efac;background:#f0fdf4;border-radius:14px;padding:18px;margin:14px 0}
+.verified-box b{color:#166534}.scope-line{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.scope-badge{background:#e0f2fe;color:#075985;border:1px solid #7dd3fc;padding:5px 10px;border-radius:999px;font-weight:700;font-size:.88rem}
+@media(max-width:760px){.exam-stats{grid-template-columns:1fr}.exam-table{display:block;overflow-x:auto;white-space:nowrap}}
+
 </style>
 </head>
 <body>
 <header>
-<div>⚖ 戶政特考｜行政法概要完整教材</div>
-<h1>行政法20章＋866題分級題庫＋智慧複習</h1>
-<p>本版完成第16～20章題目品質重整，各章擴充至60題，新增基礎、進階、易錯分級與高頻標記；全站共866題。</p>
+<div>戶政國考學習系統｜V32 最終整合版</div>
+<h1>行政法20章＋866題分級題庫＋110～114年官方歷屆</h1>
+<p>保留原V32教材、866題分級題庫、智慧複習與錯題功能；新增110～114年普考戶政及地方特考四等戶政的考選部官方歷屆入口，並完成申論題型核對。</p>
 <div class="meta"><span>資料核對：2026-07-25</span><span>行政程序法：修正日期民國110年1月20日</span><span>命題大綱頁：民國115年6月25日版</span><span>完全離線可用</span></div>
 </header>
 <div class="layout">
 
-<aside class="compact-nav"><div class="nav-title">行政法完整目錄</div><a class="chapter-link" href="#chapter-map">第一章｜基本原理</a><a class="chapter-link" href="#ch2-overview">第二章｜行政處分</a><a class="chapter-link" href="#ch3-overview">第三章｜行政契約</a><a class="chapter-link" href="#ch4-overview">第四章｜行政命令</a><a class="chapter-link" href="#ch5-overview">第五章｜行政執行</a><a class="chapter-link" href="#ch6">第六章｜行政罰</a><a class="chapter-link" href="#ch7">第七章｜行政調查</a><a class="chapter-link" href="#ch8">第八章｜行政計畫</a><a class="chapter-link" href="#ch9">第九章｜行政指導</a><a class="chapter-link" href="#ch10">第十章｜行政事實行為</a><a class="chapter-link" href="#ch11">第十一章｜政府資訊公開</a><a class="chapter-link" href="#ch12">第十二章｜個人資料保護</a><a class="chapter-link" href="#ch13">第十三章｜訴願</a><a class="chapter-link" href="#ch14">第十四章｜行政訴訟</a><a class="chapter-link" href="#ch15">第十五章｜暫時權利保護</a><a class="chapter-link" href="#ch16">第十六章｜國家賠償</a><a class="chapter-link" href="#ch17">第十七章｜損失補償</a><a class="chapter-link" href="#ch18">第十八章｜行政組織法</a><a class="chapter-link" href="#ch19">第十九章｜公務員法制</a><a class="chapter-link" href="#ch20">第二十章｜地方制度與總複習</a><details><summary>練習與工具</summary><div class="nav-group"><a href="#smart-study">智慧複習與每日訓練</a><a href="#quiz">766題完整練習</a><a href="#search-tools">搜尋與篩選</a><a href="#portable">進度備份</a><a href="#sources">官方資料來源</a></div></details><button class="nav-collapse-btn" onclick="toggleSidebar()">收合／展開目錄</button></aside>
+<aside class="compact-nav"><div class="nav-title">行政法完整目錄</div><a class="chapter-link" href="#chapter-map">第一章｜基本原理</a><a class="chapter-link" href="#ch2-overview">第二章｜行政處分</a><a class="chapter-link" href="#ch3-overview">第三章｜行政契約</a><a class="chapter-link" href="#ch4-overview">第四章｜行政命令</a><a class="chapter-link" href="#ch5-overview">第五章｜行政執行</a><a class="chapter-link" href="#ch6">第六章｜行政罰</a><a class="chapter-link" href="#ch7">第七章｜行政調查</a><a class="chapter-link" href="#ch8">第八章｜行政計畫</a><a class="chapter-link" href="#ch9">第九章｜行政指導</a><a class="chapter-link" href="#ch10">第十章｜行政事實行為</a><a class="chapter-link" href="#ch11">第十一章｜政府資訊公開</a><a class="chapter-link" href="#ch12">第十二章｜個人資料保護</a><a class="chapter-link" href="#ch13">第十三章｜訴願</a><a class="chapter-link" href="#ch14">第十四章｜行政訴訟</a><a class="chapter-link" href="#ch15">第十五章｜暫時權利保護</a><a class="chapter-link" href="#ch16">第十六章｜國家賠償</a><a class="chapter-link" href="#ch17">第十七章｜損失補償</a><a class="chapter-link" href="#ch18">第十八章｜行政組織法</a><a class="chapter-link" href="#ch19">第十九章｜公務員法制</a><a class="chapter-link" href="#ch20">第二十章｜地方制度與總複習</a><details><summary>練習與工具</summary><div class="nav-group"><a href="#smart-study">智慧複習與每日訓練</a><a href="#past-exams">110～114官方歷屆</a><a href="#essay-status">申論題型核對</a><a href="#quiz">866題完整練習</a><a href="#search-tools">搜尋與篩選</a><a href="#portable">進度備份</a><a href="#sources">官方資料來源</a></div></details><button class="nav-collapse-btn" onclick="toggleSidebar()">收合／展開目錄</button></aside>
 
 <main>
 <section id="chapter-map"><h2>第一章讀法與命題定位</h2>
@@ -1029,7 +1041,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 
 
 <section id="smart-study" class="smart-panel">
-<h2>V1.0 智慧複習與每日訓練</h2>
+<h2>V31 智慧複習與每日訓練</h2>
 <p>系統依目前的作答紀錄，自動整理錯題、弱點章節與尚未完成的題目。所有分析都在瀏覽器本機完成，不會上傳個人資料。</p>
 
 <div class="smart-grid">
@@ -1069,6 +1081,36 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <button class="secondary" onclick="refreshLearningDashboard()">更新分析</button>
 <button class="secondary" onclick="startMock(100)">100題模擬考</button>
 </div>
+</section>
+
+
+<section id="past-exams">
+<h2>最新五年官方歷屆考題（110～114年）</h2>
+<p>本區依已確認範圍，只收錄<strong>公務人員普通考試戶政</strong>與<strong>地方政府公務人員考試四等戶政</strong>的行政法概要，不混入初等、五等、高考三級或地方三等。</p>
+<div class="scope-line"><span class="scope-badge">普通考試｜戶政</span><span class="scope-badge">地方特考四等｜戶政</span><span class="scope-badge">行政法概要</span><span class="scope-badge">110～114年</span></div>
+<div class="exam-stats">
+<div class="exam-stat"><strong>10份官方試卷</strong><span>5個年度 × 2種考試</span></div>
+<div class="exam-stat"><strong>每份50題</strong><span>單一選擇題，每題2分</span></div>
+<div class="exam-stat"><strong>原題庫866題</strong><span>原練習題完整保留，未重複灌入</span></div>
+</div>
+<table class="exam-table">
+<thead><tr><th>年度</th><th>普通考試戶政</th><th>地方特考四等戶政</th><th>官方內容</th></tr></thead>
+<tbody>
+<tr><td>114年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=114080&y=2025" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=114190&y=2025" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
+<tr><td>113年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113080&y=2024" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113200&y=2024" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
+<tr><td>112年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112090&y=2023" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112200&y=2023" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
+<tr><td>111年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=111090&y=2022" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=111190&y=2022" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
+<tr><td>110年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110090&y=2021" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110190&y=2021" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
+</tbody>
+</table>
+<div class="note"><b>開啟方式：</b>點選年度按鈕後，在考選部頁面找到「普通考試_戶政」或「四等／地方政府公務人員四等_戶政類科」，再點「行政法概要」旁的「試題／答案／更正答案」。本區直接連到考選部官方頁，避免轉載版本漏掉更正答案。</div>
+</section>
+
+<section id="essay-status">
+<h2>申論題核對結果</h2>
+<div class="verified-box"><b>核對結論：</b>你指定的考試範圍中，「行政法概要」是測驗式科目。114年普通考試與114年地方特考四等官方試卷均明載「單一選擇題，共50題，每題2分」。因此，110～114年的這個指定範圍沒有可收錄的行政法概要歷屆申論題。</div>
+<p>本版沒有自行編造 ADM-015、虛構年度或把其他等級的申論題冒充為戶政普考／地方四等題目。若網站出現「申論題」字樣，容易讓備考方向失真，所以本區改為正式的考試形式說明。</p>
+<div class="danger"><b>備考重點：</b>此科應集中在選擇題的法條要件、概念辨識、實務見解與選項陷阱，不需要口述、面試或行政法申論作答訓練。</div>
 </section>
 
 <section id="search-tools">
@@ -1145,13 +1187,14 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <ul>
 <li>全國法規資料庫－行政程序法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055" target="_blank">官方法規頁面</a></li>
 <li>全國法規資料庫－中華民國憲法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001" target="_blank">官方法規頁面</a></li>
+<li>考選部－110～114年普通考試戶政與地方特考四等戶政考畢試題：已整合於「最新五年官方歷屆考題」區。</li>
 <li>考選部－公務人員考試命題大綱：<a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&menu_id=154" target="_blank">官方命題大綱頁</a></li>
 <li>憲法法庭112年憲判字第5號判決摘要：<a href="https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=348179" target="_blank">憲法法庭官方頁面</a></li>
 </ul>
-<div class="danger"><b>版本管理：</b>本版為V1.0題庫品質升級版，第16～20章各60題，並加入難度與易錯標記。資料依2026-07-25可查得之現行法規與考選部命題資料整理。法規修正時，仍以全國法規資料庫最新公布內容與考選部命題大綱為準。</div>
+<div class="danger"><b>版本管理：</b>本版為V32最終整合版，完整保留原V32題庫與學習功能，修正目錄題數為866題，並新增110～114年指定範圍之考選部官方歷屆入口與申論題型核對。資料依2026-07-25可查得之現行法規與考選部命題資料整理。法規修正時，仍以全國法規資料庫最新公布內容與考選部命題大綱為準。</div>
 </div>
 </main></div>
-<footer>戶政國考學習平台 V1.0｜題庫品質升級版｜可安裝、可離線</footer>
+<footer>戶政國考學習平台 V32｜最終整合版｜原866題保留｜110～114官方歷屆</footer>
 <div class="install-panel" id="installPanel" hidden>
 <p><b>安裝到手機或電腦</b><br>安裝後可像 App 一樣開啟，並支援離線閱讀。</p>
 <div class="toolbar" style="margin:0">
@@ -1212,7 +1255,7 @@ function updateStatus(){
 function exportProgress(){
   const payload={
     app:"戶政國考學習平台",
-    version:"V1.0-PWA",
+    version:"V32-PWA",
     exportedAt:new Date().toISOString(),
     storageKey:KEY,
     data:state
