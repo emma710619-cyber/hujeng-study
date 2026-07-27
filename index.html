@@ -189,18 +189,40 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 .scope-badge{background:#e0f2fe;color:#075985;border:1px solid #7dd3fc;padding:5px 10px;border-radius:999px;font-weight:700;font-size:.88rem}
 @media(max-width:760px){.exam-stats{grid-template-columns:1fr}.exam-table{display:block;overflow-x:auto;white-space:nowrap}}
 
+
+/* V32 歷屆內建作答版 */
+.past-control{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:16px 0}
+.past-control label{font-weight:800;color:#334155}
+.past-control select{display:block;margin-top:5px;min-width:190px;padding:9px 11px;border:1px solid #cbd5e1;border-radius:9px;background:#fff}
+.past-status{padding:11px 13px;border-radius:10px;background:#f1f5f9;color:#334155;margin:12px 0}
+.past-status.loading{background:#fff7ed;color:#9a3412}
+.past-status.ok{background:#ecfdf5;color:#166534}
+.past-status.error{background:#fef2f2;color:#991b1b}
+.past-question{border:1px solid #cbd5e1;border-radius:14px;padding:18px;margin:16px 0;background:#fff}
+.past-question h3{margin:0 0 12px;color:#0f172a}
+.past-option{display:block;width:100%;text-align:left;margin:8px 0;padding:11px 13px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;color:#0f172a;cursor:pointer}
+.past-option:hover{background:#f8fafc}
+.past-option.correct{border-color:#16a34a;background:#ecfdf5;color:#166534}
+.past-option.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.past-option:disabled{cursor:default;opacity:1}
+.past-explain{margin-top:12px;padding:12px 14px;border-left:4px solid #0ea5e9;background:#f0f9ff;border-radius:8px;line-height:1.7}
+.past-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.past-score{font-weight:900;color:#075985}
+.past-source-note{font-size:.94rem;color:#475569;line-height:1.65}
+@media(max-width:700px){.past-control>div{width:100%}.past-control select{width:100%}}
+
 </style>
 </head>
 <body>
 <header>
 <div>戶政國考學習系統｜V32 最終整合版</div>
 <h1>行政法20章＋866題分級題庫＋110～114年官方歷屆</h1>
-<p>保留原V32教材、866題分級題庫、智慧複習與錯題功能；新增110～114年普考戶政及地方特考四等戶政的考選部官方歷屆入口，並完成申論題型核對。</p>
-<div class="meta"><span>資料核對：2026-07-25</span><span>行政程序法：修正日期民國110年1月20日</span><span>命題大綱頁：民國115年6月25日版</span><span>完全離線可用</span></div>
+<p>保留原V32教材、866題分級題庫、智慧複習與錯題功能；新增110～114年普考戶政及地方特考四等戶政的網頁內建歷屆作答功能。</p>
+<div class="meta"><span>資料核對：2026-07-25</span><span>行政程序法：修正日期民國110年1月20日</span><span>命題大綱頁：民國115年6月25日版</span><span>教材離線可用｜歷屆首次載入需網路</span></div>
 </header>
 <div class="layout">
 
-<aside class="compact-nav"><div class="nav-title">行政法完整目錄</div><a class="chapter-link" href="#chapter-map">第一章｜基本原理</a><a class="chapter-link" href="#ch2-overview">第二章｜行政處分</a><a class="chapter-link" href="#ch3-overview">第三章｜行政契約</a><a class="chapter-link" href="#ch4-overview">第四章｜行政命令</a><a class="chapter-link" href="#ch5-overview">第五章｜行政執行</a><a class="chapter-link" href="#ch6">第六章｜行政罰</a><a class="chapter-link" href="#ch7">第七章｜行政調查</a><a class="chapter-link" href="#ch8">第八章｜行政計畫</a><a class="chapter-link" href="#ch9">第九章｜行政指導</a><a class="chapter-link" href="#ch10">第十章｜行政事實行為</a><a class="chapter-link" href="#ch11">第十一章｜政府資訊公開</a><a class="chapter-link" href="#ch12">第十二章｜個人資料保護</a><a class="chapter-link" href="#ch13">第十三章｜訴願</a><a class="chapter-link" href="#ch14">第十四章｜行政訴訟</a><a class="chapter-link" href="#ch15">第十五章｜暫時權利保護</a><a class="chapter-link" href="#ch16">第十六章｜國家賠償</a><a class="chapter-link" href="#ch17">第十七章｜損失補償</a><a class="chapter-link" href="#ch18">第十八章｜行政組織法</a><a class="chapter-link" href="#ch19">第十九章｜公務員法制</a><a class="chapter-link" href="#ch20">第二十章｜地方制度與總複習</a><details><summary>練習與工具</summary><div class="nav-group"><a href="#smart-study">智慧複習與每日訓練</a><a href="#past-exams">110～114官方歷屆</a><a href="#essay-status">申論題型核對</a><a href="#quiz">866題完整練習</a><a href="#search-tools">搜尋與篩選</a><a href="#portable">進度備份</a><a href="#sources">官方資料來源</a></div></details><button class="nav-collapse-btn" onclick="toggleSidebar()">收合／展開目錄</button></aside>
+<aside class="compact-nav"><div class="nav-title">行政法完整目錄</div><a class="chapter-link" href="#chapter-map">第一章｜基本原理</a><a class="chapter-link" href="#ch2-overview">第二章｜行政處分</a><a class="chapter-link" href="#ch3-overview">第三章｜行政契約</a><a class="chapter-link" href="#ch4-overview">第四章｜行政命令</a><a class="chapter-link" href="#ch5-overview">第五章｜行政執行</a><a class="chapter-link" href="#ch6">第六章｜行政罰</a><a class="chapter-link" href="#ch7">第七章｜行政調查</a><a class="chapter-link" href="#ch8">第八章｜行政計畫</a><a class="chapter-link" href="#ch9">第九章｜行政指導</a><a class="chapter-link" href="#ch10">第十章｜行政事實行為</a><a class="chapter-link" href="#ch11">第十一章｜政府資訊公開</a><a class="chapter-link" href="#ch12">第十二章｜個人資料保護</a><a class="chapter-link" href="#ch13">第十三章｜訴願</a><a class="chapter-link" href="#ch14">第十四章｜行政訴訟</a><a class="chapter-link" href="#ch15">第十五章｜暫時權利保護</a><a class="chapter-link" href="#ch16">第十六章｜國家賠償</a><a class="chapter-link" href="#ch17">第十七章｜損失補償</a><a class="chapter-link" href="#ch18">第十八章｜行政組織法</a><a class="chapter-link" href="#ch19">第十九章｜公務員法制</a><a class="chapter-link" href="#ch20">第二十章｜地方制度與總複習</a><details><summary>練習與工具</summary><div class="nav-group"><a href="#smart-study">智慧複習與每日訓練</a><a href="#past-exams">110～114歷屆內建作答</a><a href="#quiz">866題完整練習</a><a href="#search-tools">搜尋與篩選</a><a href="#portable">進度備份</a><a href="#sources">官方資料來源</a></div></details><button class="nav-collapse-btn" onclick="toggleSidebar()">收合／展開目錄</button></aside>
 
 <main>
 <section id="chapter-map"><h2>第一章讀法與命題定位</h2>
@@ -1084,33 +1106,46 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </section>
 
 
-<section id="past-exams">
-<h2>最新五年官方歷屆考題（110～114年）</h2>
-<p>本區依已確認範圍，只收錄<strong>公務人員普通考試戶政</strong>與<strong>地方政府公務人員考試四等戶政</strong>的行政法概要，不混入初等、五等、高考三級或地方三等。</p>
-<div class="scope-line"><span class="scope-badge">普通考試｜戶政</span><span class="scope-badge">地方特考四等｜戶政</span><span class="scope-badge">行政法概要</span><span class="scope-badge">110～114年</span></div>
-<div class="exam-stats">
-<div class="exam-stat"><strong>10份官方試卷</strong><span>5個年度 × 2種考試</span></div>
-<div class="exam-stat"><strong>每份50題</strong><span>單一選擇題，每題2分</span></div>
-<div class="exam-stat"><strong>原題庫866題</strong><span>原練習題完整保留，未重複灌入</span></div>
-</div>
-<table class="exam-table">
-<thead><tr><th>年度</th><th>普通考試戶政</th><th>地方特考四等戶政</th><th>官方內容</th></tr></thead>
-<tbody>
-<tr><td>114年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=114080&y=2025" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=114190&y=2025" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
-<tr><td>113年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113080&y=2024" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113200&y=2024" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
-<tr><td>112年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112090&y=2023" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=112200&y=2023" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
-<tr><td>111年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=111090&y=2022" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=111190&y=2022" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
-<tr><td>110年</td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110090&y=2021" target="_blank" rel="noopener">普通考試｜戶政</a></td><td><a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=110190&y=2021" target="_blank" rel="noopener">地方特考四等｜戶政</a></td><td>行政法概要：官方試題、答案；有更正時以更正答案為準</td></tr>
-</tbody>
-</table>
-<div class="note"><b>開啟方式：</b>點選年度按鈕後，在考選部頁面找到「普通考試_戶政」或「四等／地方政府公務人員四等_戶政類科」，再點「行政法概要」旁的「試題／答案／更正答案」。本區直接連到考選部官方頁，避免轉載版本漏掉更正答案。</div>
-</section>
 
-<section id="essay-status">
-<h2>申論題核對結果</h2>
-<div class="verified-box"><b>核對結論：</b>你指定的考試範圍中，「行政法概要」是測驗式科目。114年普通考試與114年地方特考四等官方試卷均明載「單一選擇題，共50題，每題2分」。因此，110～114年的這個指定範圍沒有可收錄的行政法概要歷屆申論題。</div>
-<p>本版沒有自行編造 ADM-015、虛構年度或把其他等級的申論題冒充為戶政普考／地方四等題目。若網站出現「申論題」字樣，容易讓備考方向失真，所以本區改為正式的考試形式說明。</p>
-<div class="danger"><b>備考重點：</b>此科應集中在選擇題的法條要件、概念辨識、實務見解與選項陷阱，不需要口述、面試或行政法申論作答訓練。</div>
+<section id="past-exams">
+  <h2>最新五年歷屆試題｜網頁內直接作答</h2>
+  <p>範圍固定為<strong>普通考試戶政</strong>與<strong>地方特考四等戶政</strong>的「行政法概要」，年度為110～114年。題目與標準答案載入後會保存在本機，之後可直接開啟練習。</p>
+
+  <div class="scope-line">
+    <span class="scope-badge">普通考試｜戶政</span>
+    <span class="scope-badge">地方特考四等｜戶政</span>
+    <span class="scope-badge">每份50題</span>
+  </div>
+
+  <div class="past-control">
+    <div>
+      <label for="pastYear">年度</label>
+      <select id="pastYear">
+        <option value="114">114年（2025）</option>
+        <option value="113">113年（2024）</option>
+        <option value="112">112年（2023）</option>
+        <option value="111">111年（2022）</option>
+        <option value="110">110年（2021）</option>
+      </select>
+    </div>
+    <div>
+      <label for="pastType">考試</label>
+      <select id="pastType">
+        <option value="general">普通考試｜戶政</option>
+        <option value="local">地方特考四等｜戶政</option>
+      </select>
+    </div>
+    <button onclick="loadPastExam()">載入並開始作答</button>
+    <button class="secondary" onclick="resetPastExam()">清除本份作答紀錄</button>
+  </div>
+
+  <div id="pastStatus" class="past-status">請選擇年度與考試後，按「載入並開始作答」。</div>
+  <div id="pastProgress" class="past-score"></div>
+  <div id="pastPlayer"></div>
+
+  <div class="past-source-note">
+    題目及標準答案以考選部公開試題為準。本功能不再跳轉外部題目連結；系統會將官方試題文字載入本頁、拆成選項並立即判分。解析採「官方答案＋正確選項內容＋作答重點提示」，不虛構判決字號或法條內容。
+  </div>
 </section>
 
 <section id="search-tools">
@@ -1187,14 +1222,14 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <ul>
 <li>全國法規資料庫－行政程序法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055" target="_blank">官方法規頁面</a></li>
 <li>全國法規資料庫－中華民國憲法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001" target="_blank">官方法規頁面</a></li>
-<li>考選部－110～114年普通考試戶政與地方特考四等戶政考畢試題：已整合於「最新五年官方歷屆考題」區。</li>
+<li>考選部－110～114年普通考試戶政與地方特考四等戶政考畢試題：由「最新五年歷屆試題」區載入本頁作答。</li>
 <li>考選部－公務人員考試命題大綱：<a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&menu_id=154" target="_blank">官方命題大綱頁</a></li>
 <li>憲法法庭112年憲判字第5號判決摘要：<a href="https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=348179" target="_blank">憲法法庭官方頁面</a></li>
 </ul>
-<div class="danger"><b>版本管理：</b>本版為V32最終整合版，完整保留原V32題庫與學習功能，修正目錄題數為866題，並新增110～114年指定範圍之考選部官方歷屆入口與申論題型核對。資料依2026-07-25可查得之現行法規與考選部命題資料整理。法規修正時，仍以全國法規資料庫最新公布內容與考選部命題大綱為準。</div>
+<div class="danger"><b>版本管理：</b>本版為V32最終整合版，完整保留原V32題庫與學習功能，修正目錄題數為866題，並新增110～114年指定範圍之網頁內建歷屆作答功能。資料依2026-07-25可查得之現行法規與考選部命題資料整理。法規修正時，仍以全國法規資料庫最新公布內容與考選部命題大綱為準。</div>
 </div>
 </main></div>
-<footer>戶政國考學習平台 V32｜最終整合版｜原866題保留｜110～114官方歷屆</footer>
+<footer>戶政國考學習平台 V32｜最終整合版｜原866題保留｜110～114歷屆內建作答</footer>
 <div class="install-panel" id="installPanel" hidden>
 <p><b>安裝到手機或電腦</b><br>安裝後可像 App 一樣開啟，並支援離線閱讀。</p>
 <div class="toolbar" style="margin:0">
@@ -1571,4 +1606,242 @@ render();
 updateAllChapterScores();
 refreshLearningDashboard();
 </script>
+
+<script>
+const PAST_EXAM_FILES = {
+  "114-general": {
+    title:"114年普通考試｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=403&code=114080&q=1&s=0406&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=403&code=114080&q=1&s=0406&t=E"
+  },
+  "114-local": {
+    title:"114年地方特考四等｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=114190&q=1&s=0611&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=114190&q=1&s=0611&t=S"
+  },
+  "113-general": {
+    title:"113年普通考試｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=113080&q=1&s=0406&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=113080&q=1&s=0406&t=S"
+  },
+  "113-local": {
+    title:"113年地方特考四等｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=113200&q=1&s=0610&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=113200&q=1&s=0610&t=S"
+  },
+  "112-general": {
+    title:"112年普通考試｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=112090&q=1&s=0406&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=112090&q=1&s=0406&t=S"
+  },
+  "112-local": {
+    title:"112年地方特考四等｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=112200&q=1&s=0711&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=112200&q=1&s=0711&t=S"
+  },
+  "111-general": {
+    title:"111年普通考試｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=111090&q=1&s=0406&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=111090&q=1&s=0406&t=S"
+  },
+  "111-local": {
+    title:"111年地方特考四等｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=111190&q=1&s=0711&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=111190&q=1&s=0711&t=E"
+  },
+  "110-general": {
+    title:"110年普通考試｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=110090&q=1&s=0606&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=404&code=110090&q=1&s=0606&t=E"
+  },
+  "110-local": {
+    title:"110年地方特考四等｜戶政｜行政法概要",
+    q:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=403&code=110190&q=1&s=0609&t=Q",
+    a:"https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=403&code=110190&q=1&s=0609&t=S"
+  }
+};
+
+let pastState = {key:"", title:"", questions:[], current:0, answers:{}};
+
+function readerUrl(url){
+  return "https://r.jina.ai/http://" + url.replace(/^https?:\/\//,"");
+}
+function cleanOfficialText(text){
+  return text
+    .replace(/\r/g,"\n")
+    .replace(/[\u00a0\u3000]/g," ")
+    .replace(/[ \t]+/g," ")
+    .replace(/\n{3,}/g,"\n\n");
+}
+function parseOfficialQuestions(raw){
+  const text = cleanOfficialText(raw)
+    .replace(/代號[:：]?\s*\d+/g," ")
+    .replace(/頁次[:：]?\s*\d+\s*[－-]\s*\d+/g," ");
+  const starts = [];
+  const rx = /(?:^|\n)\s*(\d{1,2})\s+([^\n]+)/g;
+  let m;
+  while((m=rx.exec(text))){
+    const n=Number(m[1]);
+    if(n>=1 && n<=50 && (starts.length===0 || n===starts[starts.length-1].n+1)){
+      starts.push({n, index:m.index+(m[0].startsWith("\n")?1:0)});
+    }
+  }
+  if(starts.length<45){
+    throw new Error("官方試題文字解析不足（只辨識到 "+starts.length+" 題）");
+  }
+  const symbolRx=/[]/;
+  const questions=[];
+  for(let i=0;i<starts.length && questions.length<50;i++){
+    const start=starts[i].index;
+    const end=i+1<starts.length?starts[i+1].index:text.length;
+    let block=text.slice(start,end).replace(/^\s*\d{1,2}\s+/," ").trim();
+    const parts=block.split(symbolRx).map(x=>x.replace(/\s+/g," ").trim()).filter(Boolean);
+    if(parts.length>=5){
+      questions.push({
+        number:starts[i].n,
+        q:parts[0],
+        o:parts.slice(1,5)
+      });
+    }
+  }
+  if(questions.length!==50){
+    throw new Error("選項解析未完成（辨識到 "+questions.length+"/50題）");
+  }
+  return questions;
+}
+function parseOfficialAnswers(raw){
+  const text=cleanOfficialText(raw);
+  const after=text.includes("測驗式試題標準答案")?text.split("測驗式試題標準答案").slice(1).join(" "):text;
+  let letters=(after.match(/(?:^|[\s|])([ABCD])(?=$|[\s|])/g)||[])
+    .map(x=>x.match(/[ABCD]/)[0]);
+  if(letters.length>50) letters=letters.slice(-50);
+  if(letters.length!==50){
+    const compact=(after.match(/[ABCD]/g)||[]);
+    if(compact.length>=50) letters=compact.slice(-50);
+  }
+  if(letters.length!==50){
+    throw new Error("官方答案解析未完成（辨識到 "+letters.length+"/50題）");
+  }
+  return letters;
+}
+function pastCacheKey(key){return "v32_past_exam_"+key;}
+function pastAnswerKey(key){return "v32_past_answers_"+key;}
+
+async function fetchOfficialText(url){
+  const response=await fetch(readerUrl(url),{cache:"no-store"});
+  if(!response.ok) throw new Error("讀取官方資料失敗（HTTP "+response.status+"）");
+  return await response.text();
+}
+async function loadPastExam(){
+  const year=document.getElementById("pastYear").value;
+  const type=document.getElementById("pastType").value;
+  const key=year+"-"+type;
+  const meta=PAST_EXAM_FILES[key];
+  const status=document.getElementById("pastStatus");
+  status.className="past-status loading";
+  status.textContent="正在載入 "+meta.title+"，請稍候……";
+  try{
+    let data=null;
+    const cached=localStorage.getItem(pastCacheKey(key));
+    if(cached){
+      data=JSON.parse(cached);
+    }else{
+      const [qText,aText]=await Promise.all([fetchOfficialText(meta.q),fetchOfficialText(meta.a)]);
+      const questions=parseOfficialQuestions(qText);
+      const answers=parseOfficialAnswers(aText);
+      data={title:meta.title,questions:questions.map((q,i)=>({...q,a:answers[i]})),savedAt:new Date().toISOString()};
+      localStorage.setItem(pastCacheKey(key),JSON.stringify(data));
+    }
+    pastState={
+      key,
+      title:data.title,
+      questions:data.questions,
+      current:0,
+      answers:JSON.parse(localStorage.getItem(pastAnswerKey(key))||"{}")
+    };
+    status.className="past-status ok";
+    status.textContent=data.title+"：50題已載入，可直接作答。";
+    renderPastQuestion();
+  }catch(err){
+    console.error(err);
+    status.className="past-status error";
+    status.innerHTML="<b>載入失敗：</b>"+escapeHtml(String(err.message||err))+
+      "<br>請確認目前有網路後再試一次。已成功載入過的試卷會保存在本機，不必重複下載。";
+    document.getElementById("pastPlayer").innerHTML="";
+  }
+}
+function renderPastQuestion(){
+  const player=document.getElementById("pastPlayer");
+  if(!pastState.questions.length){player.innerHTML="";return;}
+  const item=pastState.questions[pastState.current];
+  const chosen=pastState.answers[item.number];
+  const labels=["A","B","C","D"];
+  const buttons=item.o.map((opt,i)=>{
+    const letter=labels[i];
+    let cls="past-option";
+    if(chosen){
+      if(letter===item.a) cls+=" correct";
+      else if(letter===chosen) cls+=" wrong";
+    }
+    return `<button class="${cls}" ${chosen?"disabled":""} onclick="answerPast('${letter}')"><b>(${letter})</b> ${escapeHtml(opt)}</button>`;
+  }).join("");
+  const explanation=chosen?`
+    <div class="past-explain">
+      <b>${chosen===item.a?"答對了":"答錯了"}｜官方答案：${item.a}</b><br>
+      正確選項內容：${escapeHtml(item.o[labels.indexOf(item.a)]||"")}<br>
+      <b>解析提示：</b>先確認題幹問的是「正確」或「錯誤」，再比較各選項的法定要件、法律效果及例外。此處只呈現可由官方答案直接確認的內容，不自行補造法條或實務字號。
+    </div>`:"";
+  const answered=Object.keys(pastState.answers).length;
+  document.getElementById("pastProgress").textContent=
+    `${pastState.title}｜第 ${item.number}/50 題｜已作答 ${answered} 題`;
+  player.innerHTML=`
+    <div class="past-question">
+      <h3>第 ${item.number} 題</h3>
+      <div style="line-height:1.75;font-weight:700">${escapeHtml(item.q)}</div>
+      <div style="margin-top:14px">${buttons}</div>
+      ${explanation}
+      <div class="past-nav">
+        <button class="secondary" onclick="movePast(-1)" ${pastState.current===0?"disabled":""}>上一題</button>
+        <button onclick="movePast(1)" ${pastState.current===pastState.questions.length-1?"disabled":""}>下一題</button>
+        <button class="secondary" onclick="jumpPastUnanswered()">跳到未作答</button>
+      </div>
+    </div>`;
+}
+function answerPast(letter){
+  const item=pastState.questions[pastState.current];
+  if(pastState.answers[item.number]) return;
+  pastState.answers[item.number]=letter;
+  localStorage.setItem(pastAnswerKey(pastState.key),JSON.stringify(pastState.answers));
+  renderPastQuestion();
+}
+function movePast(step){
+  pastState.current=Math.max(0,Math.min(pastState.questions.length-1,pastState.current+step));
+  renderPastQuestion();
+  document.getElementById("past-exams").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function jumpPastUnanswered(){
+  const idx=pastState.questions.findIndex(q=>!pastState.answers[q.number]);
+  if(idx>=0){pastState.current=idx;renderPastQuestion();}
+  else{
+    const correct=pastState.questions.filter(q=>pastState.answers[q.number]===q.a).length;
+    document.getElementById("pastStatus").className="past-status ok";
+    document.getElementById("pastStatus").textContent=`本份已完成：${correct}/50 題，得分 ${correct*2} 分。`;
+  }
+}
+function resetPastExam(){
+  const year=document.getElementById("pastYear").value;
+  const type=document.getElementById("pastType").value;
+  const key=year+"-"+type;
+  localStorage.removeItem(pastAnswerKey(key));
+  if(pastState.key===key){
+    pastState.answers={};
+    pastState.current=0;
+    renderPastQuestion();
+  }
+  const status=document.getElementById("pastStatus");
+  status.className="past-status";
+  status.textContent="本份作答紀錄已清除。";
+}
+</script>
+
 </body></html>
