@@ -1,19 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="zh-Hant-TW">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#075985">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="戶政國考">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="format-detection" content="telephone=no">
-<meta name="application-name" content="戶政國考">
-<meta name="description" content="戶政特考行政法離線教材、題庫與錯題複習工具">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" href="./icon-192.png">
-<title>戶政國考行政法</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#075985" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="default" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="戶政國考" name="apple-mobile-web-app-title"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="戶政國考" name="application-name"/>
+<meta content="戶政特考行政法離線教材、題庫與錯題複習工具" name="description"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<link href="./icon-192.png" rel="apple-touch-icon"/>
+<title>戶政國考行政法｜V34 教材修正版</title>
 <style>
 :root{--bg:#eef2f7;--ink:#18212f;--nav:#111827;--blue:#075985;--line:#d8e0ea}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85}
@@ -241,6 +242,23 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
   .past-quiz-card{padding:14px}
 }
 
+
+/* V34 教材查證修正 */
+.law-update{
+  margin:14px 0 18px;padding:14px 16px;border-radius:12px;
+  background:#eff6ff;border:1px solid #93c5fd;border-left:6px solid #2563eb;
+}
+.law-update h3{margin:0 0 7px;color:#1e3a8a;font-size:1rem}
+.law-update ul{margin:6px 0 0;padding-left:21px}
+.law-update li{margin:4px 0}
+.law-status{
+  margin:10px 0;padding:11px 13px;border-radius:10px;
+  background:#fff7ed;border-left:5px solid #f59e0b;
+}
+.current-law{
+  display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;
+  background:#dcfce7;color:#166534;font-size:.78rem;font-weight:800;
+}
 </style>
 </head>
 <body>
@@ -248,10 +266,15 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <h1>戶政國考行政法</h1>
 </header>
 <div class="layout">
-
 <aside class="compact-nav"><div class="nav-title">戶政國考行政法</div><a class="chapter-link" href="#chapter-map">第一章｜基本原理</a><a class="chapter-link" href="#ch2-overview">第二章｜行政處分</a><a class="chapter-link" href="#ch3-overview">第三章｜行政契約</a><a class="chapter-link" href="#ch4-overview">第四章｜行政命令</a><a class="chapter-link" href="#ch5-overview">第五章｜行政執行</a><a class="chapter-link" href="#ch6">第六章｜行政罰</a><a class="chapter-link" href="#ch7">第七章｜行政調查</a><a class="chapter-link" href="#ch8">第八章｜行政計畫</a><a class="chapter-link" href="#ch9">第九章｜行政指導</a><a class="chapter-link" href="#ch10">第十章｜行政事實行為</a><a class="chapter-link" href="#ch11">第十一章｜政府資訊公開</a><a class="chapter-link" href="#ch12">第十二章｜個人資料保護</a><a class="chapter-link" href="#ch13">第十三章｜訴願</a><a class="chapter-link" href="#ch14">第十四章｜行政訴訟</a><a class="chapter-link" href="#ch15">第十五章｜暫時權利保護</a><a class="chapter-link" href="#ch16">第十六章｜國家賠償</a><a class="chapter-link" href="#ch17">第十七章｜損失補償</a><a class="chapter-link" href="#ch18">第十八章｜行政組織法</a><a class="chapter-link" href="#ch19">第十九章｜公務員法制</a><a class="chapter-link" href="#ch20">第二十章｜地方制度與總複習</a><details><summary>練習與工具</summary><div class="nav-group"><a href="#smart-study">智慧複習與每日訓練</a><a href="#past-exams">歷屆500題完整作答</a><a href="#quiz">章節題庫866題</a><a href="#search-tools">搜尋與篩選</a><a href="#portable">進度備份</a><a href="#sources">官方資料來源</a></div></details><button class="nav-collapse-btn" onclick="toggleSidebar()">收合／展開目錄</button></aside>
-
 <main>
+
+<section id="v34-law-date">
+<div class="law-status">
+<b>教材法規基準：</b>本版已依查證結果修正至 <b>2026 年 7 月 27 日</b>。
+    歷屆試題解析仍依各考試年度法規與官方答案判讀，現行法教材與歷屆年度法不得混用。
+  </div>
+</section>
 <section id="chapter-map"><h2>第一章讀法與命題定位</h2>
 <p>本章處理行政法的「底層規則」：行政機關做任何事以前，先確認權限與法源，再檢查是否遵守一般法律原則，最後檢查裁量是否違法。後續行政處分、行政契約、行政命令、行政救濟，都會反覆使用本章觀念。</p>
 <div class="grid3">
@@ -259,10 +282,10 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="mini"><b>第二問：有無依據</b><span>限制人民權利是否有法律或明確授權？</span></div>
 <div class="mini"><b>第三問：手段合法</b><span>是否符合平等、比例、信賴保護與裁量目的？</span></div>
 </div>
-<div class="note"><b>命題大綱提醒：</b>考選部命題大綱是命題範圍的例示，不代表試題只能出現在列舉項目內。教材因此同時納入法條、一般原則與重要實務判斷方法。</div>
+<div class="note"><b>命題大綱提醒：</b>考選部命題大綱是命題範圍的例示，不代表試題只能出現在列舉項目內。教材因此同時納入法條、一般原則與重要實務判斷方法。</div><div class="law-update"><h3>第1章修正重點</h3><ul><li>行政規則不是直接限制人民權利的外部法源；只有在合法裁量基準、平等原則及行政自我拘束等前提下，才可能間接影響人民。</li><li>法規適用須另檢查位階、公布施行日、修法過渡及不溯及既往；不能只確認『有法條』。</li><li>教材不再使用『最新判決』等容易過時的字眼，改標示為重要實務示例。</li></ul></div>
 </section><section id="concept"><h2>行政法的意義與範圍</h2>
 <h3>一、行政法不是單一法典</h3>
-<p>行政法是規範行政組織、行政作用及行政救濟的公法規範總稱。常見法源包括憲法、法律、法規命令、自治法規、行政規則，以及由憲法與法律體系發展出的一般法律原則。</p>
+<p>行政法是規範行政組織、行政作用及行政救濟的公法規範總稱。可直接規範人民的法源包括憲法、法律、合法法規命令及自治法規；一般法律原則亦具有拘束力。行政規則原則只拘束行政內部，不得直接取代法律或法規命令創設人民義務。</p>
 <table><tr><th>領域</th><th>核心問題</th><th>戶政情境</th></tr>
 <tr><td>行政組織法</td><td>誰有權作成決定</td><td>中央、地方主管機關及戶政事務所權限</td></tr>
 <tr><td>行政作用法</td><td>用何種手段完成任務</td><td>戶籍登記、國籍案件、行政處分、行政指導</td></tr>
@@ -288,7 +311,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </section><section id="authorization"><h2>授權明確性與規範明確性</h2>
 <h3>一、授權明確性</h3><p>立法機關可以授權行政機關制定法規命令，但授權目的、內容與範圍須達到可辨識程度。權利影響越重大，要求通常越嚴格；涉及刑罰或重大基本權限制時，更須能由母法整體規範預見。</p>
 <h3>二、規範明確性</h3><p>行政程序法第5條規定行政行為內容應明確。明確不等於完全不能使用不確定法律概念，而是人民可理解、可預見，並可接受行政及司法審查。</p>
-<div class="case"><b>最新實務基準：</b>憲法法庭112年憲判字第5號指出，授權是否明確應依母法整體解釋判斷，不拘泥於單一授權條款文字；授權明確程度並應與對人民權利影響相稱。</div>
+<div class="case"><b>重要實務示例：</b>憲法法庭112年憲判字第5號指出，授權是否明確應依母法整體解釋判斷，不拘泥於單一授權條款文字；權利影響越重大，授權明確程度的要求越高。</div>
 </section><section id="equality"><h2>平等原則與行政自我拘束</h2>
 <p>行政程序法第6條規定，行政行為非有正當理由不得差別待遇。平等原則要求「相同事物相同處理，不同事物依差異合理處理」，並非要求機械式一律相同。</p>
 <h3>行政自我拘束的成立條件</h3>
@@ -336,8 +359,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="summary"><b>看到「誤認沒有選擇」</b><span>裁量怠惰</span></div>
 </div>
 </section>
-
-
 <div class="chapter-practice legacy-practice">
 <h3>行政法基本原理｜本章練習</h3>
 <p>完成本章教材後，可直接進入本章題庫；作答、解析、收藏與錯題紀錄會自動保存。</p>
@@ -348,23 +369,19 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-第一章-行政法基本原理"></div>
 </div>
-
 <section id="ch2-overview"><h2>第二章：行政處分</h2>
 <p>行政處分是行政機關就公法上具體事件所為、對外直接發生法律效果的單方行政行為。解題依序檢查：行政機關、公法事件、單方、具體事件、對外效力、法律效果。</p>
-<div class="memory"><b>六字口訣：</b>機、公、單、具、外、法。</div></section>
-
+<div class="memory"><b>六字口訣：</b>機、公、單、具、外、法。</div><div class="law-update"><h3>第2章修正重點</h3><ul><li>行政處分生效不能一律概括成『知悉即生效』，須區分書面處分、一般處分及其他方式。</li><li>無效、補正、轉換、撤銷、廢止與程序重開是不同制度，應依各自法定要件判斷。</li><li>違法處分不當然無效；多數違法處分在依法撤銷前仍具有存續力。</li></ul></div></section>
 <section id="ch2-definition"><h2>行政處分的類型</h2>
 <table><tr><th>類型</th><th>重點</th></tr>
 <tr><td>一般處分</td><td>對象依一般性特徵可得確定，或涉及公物設定、變更、廢止。</td></tr>
 <tr><td>確認處分</td><td>確認公法上權利、義務或法律關係。</td></tr>
 <tr><td>形成處分</td><td>設定、變更或消滅法律關係。</td></tr>
 <tr><td>下命處分</td><td>命相對人作為、不作為或忍受。</td></tr></table></section>
-
 <section id="ch2-form"><h2>方式、理由與程序</h2>
 <p>行政處分原則得以書面、言詞或其他方式作成；法律另有規定者從其規定。書面處分通常應記載主旨、事實、理由、法令依據、附款與救濟教示。</p>
 <div class="danger"><b>陷阱：</b>未記載理由通常不當然無效，可能屬得補正的程序或方式瑕疵。</div>
 <p>作成限制或剝奪權益的處分前，原則上應給予陳述意見機會；急迫、大量作成或其他法定例外時，得免除。</p></section>
-
 <section id="ch2-additions"><h2>行政處分附款</h2>
 <table><tr><th>附款</th><th>意義</th></tr>
 <tr><td>期限</td><td>繫於將來確定到來事實。</td></tr>
@@ -373,27 +390,34 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>保留廢止權</td><td>預留將來依法廢止的可能。</td></tr>
 <tr><td>保留負擔變更</td><td>將來得附加或變更負擔。</td></tr></table>
 <p>羈束處分原則須有法規允許才能附附款；裁量處分仍須符合授權目的、比例原則與禁止不當聯結。</p></section>
-
 <section id="ch2-effect"><h2>生效與效力</h2>
-<p>行政處分以送達、通知或使相對人知悉時生效。未因無效、撤銷、廢止或其他事由失效前，原則上持續有效。</p>
+<p>行政處分的生效依類型而異：書面行政處分自送達相對人及已知利害關係人起生效；一般處分依公告或刊登政府公報、新聞紙的法定方式生效；非書面處分則依合法通知或使相對人知悉的方式判斷。未因無效、撤銷、廢止或其他事由失效前，原則上持續有效。</p>
 <table><tr><th>效力</th><th>內容</th></tr>
 <tr><td>存續力</td><td>處分在未被合法排除前持續存在。</td></tr>
 <tr><td>構成要件效力</td><td>其他機關原則承認其作為既存法律事實。</td></tr>
 <tr><td>執行力</td><td>符合行政執行要件時得強制實現。</td></tr></table></section>
-
 <section id="ch2-invalid"><h2>無效、補正與轉換</h2>
 <p>無效須有法定事由或其他重大且明顯瑕疵，例如書面無法辨識作成機關、內容在法律或事實上不能實現、命相對人犯罪等。</p>
 <p>可補正的程序瑕疵，得於法定時點前補行；實體上欠缺法律依據，不能用補正治癒。</p>
-<p>違法處分若具備另一合法處分的要件，且目的相符、法律效果不更不利，可能轉換；羈束處分原則不得轉換為裁量處分。</p></section>
-
+<p>違法處分若具備另一合法處分的要件，且目的相符、法律效果不更不利，可能轉換；羈束處分原則不得轉換為裁量處分。</p>
+<div class="law-update">
+<h3>現行法條架構</h3>
+<ul>
+<li><b>無效：</b>行政程序法第111條法定事由及重大明顯瑕疵。</li>
+<li><b>補正：</b>第114條僅補正特定程序或方式瑕疵，不能補救欠缺實體法源。</li>
+<li><b>轉換：</b>第116條須符合另一處分要件，且不得違反處分目的或造成更不利效果。</li>
+<li><b>程序重開：</b>第128條是形式存續力後的例外救濟，須有法定事由並遵守期間。</li>
+</ul>
+</div>
+</section>
 <section id="ch2-withdraw"><h2>撤銷與廢止</h2>
 <table><tr><th>比較</th><th>撤銷</th><th>廢止</th></tr>
 <tr><td>原始狀態</td><td>違法</td><td>合法</td></tr>
 <tr><td>原則效果</td><td>得溯及既往</td><td>原則向將來</td></tr>
 <tr><td>重要限制</td><td>信賴保護、除斥期間</td><td>法定廢止事由、公益與補償</td></tr></table>
-<p>違法授益處分撤銷時須審查信賴保護；以詐欺、脅迫、賄賂、重大過失或明知違法取得利益者，通常不得主張信賴。</p></section>
-
-
+<p>違法授益處分撤銷時須審查信賴保護；以詐欺、脅迫、賄賂、重大過失或明知違法取得利益者，通常不得主張信賴。</p>
+<p><b>撤銷權期間：</b>原處分機關或上級機關知有第117條撤銷原因時起，原則上應於二年內行使撤銷權。合法授益處分的廢止則須符合第123條等法定事由，並分別處理信賴補償與返還利益。</p>
+</section>
 <div class="chapter-practice legacy-practice">
 <h3>行政處分｜本章練習</h3>
 <p>完成本章教材後，可直接進入本章題庫；作答、解析、收藏與錯題紀錄會自動保存。</p>
@@ -404,7 +428,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-第二章-行政處分"></div>
 </div>
-
 <section id="ch3-overview"><h2>第三章：行政契約</h2>
 <p>行政契約是行政機關為設定、變更或消滅公法上法律關係，與人民或其他行政主體以雙方意思表示合致所成立的契約。與行政處分最大的差異，在於行政處分是單方規制，行政契約則以合意為成立基礎。</p>
 <div class="grid3">
@@ -412,36 +435,29 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="mini"><b>第二步：合法成立</b><span>是否符合書面、權限、程序與實體限制？</span></div>
 <div class="mini"><b>第三步：履行與救濟</b><span>違約、調整、終止或強制執行如何處理？</span></div>
 </div>
-<div class="memory"><b>核心口訣：</b>公法關係＋雙方合意＋契約拘束。</div></section>
-
+<div class="memory"><b>核心口訣：</b>公法關係＋雙方合意＋契約拘束。</div><div class="law-update"><h3>第3章修正重點</h3><ul><li>和解契約不是只要雙方有爭議即可締結，須經職權調查後仍不能確定，並以互相讓步排除不確定。</li><li>雙務行政契約須有特定行政目的、正當關聯與給付相當性，不得以契約規避法律。</li><li>行政機關因重大公益調整或終止契約時，須符合法定要件並處理損失補償。</li></ul></div></section>
 <section id="ch3-types"><h2>行政契約的類型</h2>
 <table><tr><th>類型</th><th>意義</th><th>例子</th></tr>
-<tr><td>和解契約</td><td>事實或法律關係不明，雙方互相讓步以終止爭議</td><td>補償範圍爭議的協議</td></tr>
-<tr><td>雙務契約</td><td>人民負擔義務，行政機關提供給付或利益</td><td>補助換取特定公共服務</td></tr>
+<tr><td>和解契約</td><td>經職權調查後，事實或法律關係仍不能確定，雙方互相讓步以排除不確定</td><td>補償範圍爭議的協議</td></tr>
+<tr><td>雙務契約</td><td>人民給付須服務特定行政目的，與機關給付具合理關聯且價值相當</td><td>補助換取特定公共服務</td></tr>
 <tr><td>隸屬契約</td><td>一方具有較強公權力地位</td><td>代替行政處分的協議</td></tr>
 <tr><td>對等契約</td><td>雙方行政主體地位大致對等</td><td>機關間合作分工協議</td></tr></table></section>
-
 <section id="ch3-form"><h2>成立、書面與合法性</h2>
-<p>行政程序法原則要求行政契約以書面締結；未符合書面要件，可能影響契約效力。契約內容不得違反法律、法規命令、公共秩序及一般法律原則。</p>
+<p>行政程序法第139條原則要求行政契約以書面締結。契約仍須由有權機關作成，內容不得牴觸法律、法規命令、公共秩序或一般法律原則；當事人同意不能治癒欠缺權限或違反法律保留的瑕疵。</p>
 <p>若行政機關原可作成行政處分，改以行政契約處理，仍不得藉契約規避法律保留、比例原則、平等原則、授權目的與程序保障。</p>
 <div class="danger"><b>高頻陷阱：</b>人民同意不代表機關就能要求任何事項。行政契約仍受依法行政與禁止不當聯結拘束。</div></section>
-
 <section id="ch3-substitute"><h2>代替行政處分的行政契約</h2>
 <p>行政機關在法律容許的範圍內，得以行政契約代替行政處分。這類契約常見於需要合作、協商或個案彈性的情境。</p>
 <p>但若法律要求必須以行政處分作成，或涉及不得放棄的法定職權，則不得任意改用契約。契約也不得使人民承擔與法定目的無合理關聯的義務。</p></section>
-
 <section id="ch3-invalid"><h2>行政契約的無效</h2>
 <p>行政契約若內容違反法律強制或禁止規定、欠缺法定要件，或依其情形具有重大違法，可能無效。代替行政處分的契約，若相同內容作成行政處分將屬無效，或雙方明知其違法，亦可能影響契約效力。</p>
 <p>判斷時應分別檢查：締約權限、書面形式、程序、內容合法性、目的正當性及是否違反一般法律原則。</p></section>
-
 <section id="ch3-adjust"><h2>情事重大變更與契約調整</h2>
 <p>契約成立後，如發生締約時無法預見的重大情事變更，繼續維持原內容顯失公平，當事人得請求調整契約；無法合理調整時，可能終止契約。</p>
-<p>行政機關為防止或除去對公益的重大危害，可能依法調整或終止契約，但須說明理由，並依法律處理相對人的損失補償。</p></section>
-
+<p>行政機關為防止或除去對公益的重大危害，得在法定要件下調整或終止契約；應說明理由，並依法律補償相對人因此受到的財產損失。</p></section>
 <section id="ch3-enforcement"><h2>履行、強制執行與救濟</h2>
 <p>行政契約的當事人原則上受契約拘束。契約中如依法律約定自願接受強制執行，於法定範圍內得作為執行名義；沒有法定基礎時，不能只因契約寫有「可強制執行」就逕行執行。</p>
 <p>行政契約爭議通常屬公法爭議，原則上循行政訴訟途徑處理；應依請求內容判斷適用一般給付、確認或其他訴訟類型。</p></section>
-
 <section id="ch3-compare"><h2>行政處分與行政契約比較</h2>
 <table><tr><th>比較</th><th>行政處分</th><th>行政契約</th></tr>
 <tr><td>成立方式</td><td>行政機關單方作成</td><td>雙方意思表示合致</td></tr>
@@ -449,8 +465,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>彈性</td><td>較制式</td><td>較能協商個案內容</td></tr>
 <tr><td>限制</td><td>權限、程序、實體合法性</td><td>同樣受依法行政，且不得規避法定限制</td></tr>
 <tr><td>爭議救濟</td><td>撤銷、課予義務等訴訟</td><td>確認、一般給付等行政訴訟</td></tr></table></section>
-
-
 <div class="chapter-practice legacy-practice">
 <h3>行政契約｜本章練習</h3>
 <p>完成本章教材後，可直接進入本章題庫；作答、解析、收藏與錯題紀錄會自動保存。</p>
@@ -461,7 +475,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-第三章-行政契約"></div>
 </div>
-
 <section id="ch4-overview"><h2>第四章：行政命令</h2>
 <p>行政命令是行政機關制定的一般、抽象規範。考試最重要的區分是：對人民發生外部法規效力的「法規命令」，以及主要規範機關內部秩序或解釋裁量的「行政規則」。</p>
 <div class="grid3">
@@ -469,8 +482,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="mini"><b>第二問：是否有授權</b><span>法規命令是否有法律授權，且未逾越目的、內容與範圍？</span></div>
 <div class="mini"><b>第三問：程序是否合法</b><span>是否踐行預告、發布、名稱、會銜等法定程序？</span></div>
 </div>
-<div class="memory"><b>核心口訣：</b>外部抽象＝法規命令；內部規範＝行政規則。</div></section>
-
+<div class="memory"><b>核心口訣：</b>外部抽象＝法規命令；內部規範＝行政規則。</div><div class="law-update"><h3>第4章修正重點</h3><ul><li>法規命令須有法律授權、不得逾越授權，並完成草案預告與法定發布；急迫或法定例外才得免預告。</li><li>法規命令發布後送立法院，是事後立法監督，不是發布生效的替代程序。</li><li>解釋性行政規則與裁量基準須依法發布，但仍原則上只具內部效力。</li></ul></div></section>
 <section id="ch4-regulation"><h2>法規命令：定義與授權</h2>
 <p>行政程序法第150條所稱法規命令，是行政機關基於法律授權，對多數不特定人民，就一般事項所作抽象、對外發生法律效果的規定。</p>
 <table><tr><th>要件</th><th>判斷重點</th></tr>
@@ -479,27 +491,25 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>一般抽象</td><td>不是處理單一具體事件</td></tr>
 <tr><td>對外效力</td><td>可直接規範人民權利義務</td></tr></table>
 <div class="danger"><b>高頻陷阱：</b>命令名稱不是判斷標準。「辦法」「標準」「準則」通常可能是法規命令，但仍須看授權、內容與外部效力。</div></section>
-
 <section id="ch4-limits"><h2>法規命令的合法界限</h2>
 <p>法規命令不得逾越法律授權範圍與立法精神，也不得牴觸憲法、法律或上級命令。授權越涉及重要基本權限制，授權明確性要求越高。</p>
 <p>行政機關不得以法規命令自行創設法律未授權的處罰、租稅、費用或重大權利限制。母法如已明確排除某事項，命令也不得反向加入。</p>
 </section>
-
 <section id="ch4-procedure"><h2>訂定程序、預告與發布</h2>
 <p>法規命令原則上應依行政程序法踐行草案預告，使人民有陳述意見機會；情況急迫、顯然無必要或法律另有規定時，得依法例外。</p>
 <p>法規命令須依法發布，未完成法定發布程序，通常不能對外發生法規效力。涉及數機關權限者，可能須會銜發布。</p>
+<p><b>立法監督：</b>中央各機關依職權或法律授權訂定的命令，發布後應依中央法規標準法第7條送立法院；送立法院與法規命令的發布生效是不同程序。</p>
+
 <table><tr><th>程序</th><th>目的</th></tr>
 <tr><td>草案預告</td><td>公開內容、依據與意旨，蒐集意見</td></tr>
 <tr><td>意見處理</td><td>行政機關應斟酌人民陳述</td></tr>
 <tr><td>法定發布</td><td>使規範對外生效並可得知悉</td></tr>
 <tr><td>刊登公報</td><td>確保公開與可查詢性</td></tr></table>
 </section>
-
 <section id="ch4-orders"><h2>命令名稱與效力</h2>
 <p>依中央法規標準法，法規命令常使用規程、規則、細則、辦法、綱要、標準或準則等名稱。但名稱只能作為線索，不能取代實質判斷。</p>
 <p>法規命令如違反上位規範、逾越授權或欠缺法定發布，法院於個案審判中得拒絕適用。行政法院並非一律要先等命令被正式廢止後才能審查。</p>
 </section>
-
 <section id="ch4-rules"><h2>行政規則：定義與類型</h2>
 <p>行政程序法第159條所稱行政規則，是上級機關對下級機關，或長官對屬官，依權限或職權訂定、規範機關內部秩序及運作，且不直接對外發生法規效力的規定。</p>
 <table><tr><th>類型</th><th>功能</th></tr>
@@ -507,13 +517,13 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>作業性規定</td><td>程序、文書、流程與內控</td></tr>
 <tr><td>解釋性規定</td><td>統一法令解釋</td></tr>
 <tr><td>裁量基準</td><td>統一裁量行使標準</td></tr></table>
-</section>
+<p><b>發布方式：</b>行政規則原則應下達下級機關或屬官；屬於解釋性規定及裁量基準者，應由機關首長簽署並登載政府公報發布。其發布不會因此轉變為法規命令。</p>
 
+</section>
 <section id="ch4-indirect"><h2>行政規則的間接外部效果</h2>
 <p>行政規則原則上不能直接創設人民義務，但解釋性規定與裁量基準可能經由行政自我拘束和平等原則，間接影響人民。</p>
 <p>前提是行政規則本身合法，且行政機關形成持續一致的處理實務。人民不能要求機關延續違法的行政規則或違法慣例。</p>
 <div class="memory"><b>考點：</b>「不直接對外」不等於「完全與人民無關」。</div></section>
-
 <section id="ch4-compare"><h2>法規命令與行政規則比較</h2>
 <table><tr><th>比較</th><th>法規命令</th><th>行政規則</th></tr>
 <tr><td>規範對象</td><td>多數不特定人民</td><td>機關內部人員或下級機關</td></tr>
@@ -522,7 +532,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>發布方式</td><td>依法發布</td><td>下達；涉及解釋性規定或裁量基準者應適當公開</td></tr>
 <tr><td>人民義務</td><td>得在授權範圍內規範</td><td>不得單獨作為創設義務依據</td></tr></table>
 </section>
-
 <section id="ch4-review"><h2>第四章考前速記</h2>
 <div class="grid2">
 <div class="summary"><b>一般、抽象、直接對外</b><span>法規命令</span></div>
@@ -532,8 +541,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="summary"><b>合法裁量基準＋一致實務</b><span>行政自我拘束</span></div>
 <div class="summary"><b>規則、辦法、準則</b><span>名稱僅是線索</span></div>
 </div></section>
-
-
 <div class="chapter-practice legacy-practice">
 <h3>行政命令｜本章練習</h3>
 <p>完成本章教材後，可直接進入本章題庫；作答、解析、收藏與錯題紀錄會自動保存。</p>
@@ -544,7 +551,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-第四章-行政命令"></div>
 </div>
-
 <section id="ch5-overview"><h2>第五章：行政執行</h2>
 <p>行政執行是行政機關依法實現公法義務的制度。依行政執行法第2條，可分為公法上金錢給付義務、行為或不行為義務的強制執行，以及即時強制。</p>
 <div class="grid3">
@@ -552,8 +558,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="mini"><b>行為或不行為義務</b><span>以代履行、怠金或直接強制實現。</span></div>
 <div class="mini"><b>即時強制</b><span>無須先有義務不履行，為阻止急迫危害而實施。</span></div>
 </div>
-<div class="memory"><b>三大類口訣：</b>錢、行為、即時。</div></section>
-
+<div class="memory"><b>三大類口訣：</b>錢、行為、即時。</div><div class="law-update"><h3>第5章現行法補充</h3><ul><li>行政執行法第7條：自處分、裁定確定或限期履行期間屆滿起，五年內未開始執行者不再執行；五年內已開始者得繼續執行。</li><li>限制住居、拘提、管收均須分別符合明文要件；管收由行政執行分署向法院聲請，不能由執行機關自行決定。</li><li>聲明異議原則不停止執行；執行措施若具有獨立規制效果，是否可另提行政訴訟須依措施性質與實務判斷。</li></ul></div></section>
 <section id="ch5-principles"><h2>基本原則與執行機關</h2>
 <p>行政執行應依公平合理原則，兼顧公共利益與人民權益，採取適當方法，且不得逾越達成目的的必要限度。</p>
 <table><tr><th>事項</th><th>重點</th></tr>
@@ -562,12 +567,10 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>時間限制</td><td>原則不得於夜間、星期日或休息日執行；急迫或經同意者例外</td></tr>
 <tr><td>協助執行</td><td>跨區、欠缺人員、可能抗拒或涉及其他機關時得請求協助</td></tr></table>
 </section>
-
 <section id="ch5-objection"><h2>聲明異議</h2>
 <p>義務人或利害關係人對執行命令、方法、程序或其他侵害利益的情事，可依法聲明異議。聲明異議原則上不停止執行，但執行機關得因必要情形停止。</p>
 <div class="danger"><b>考試陷阱：</b>聲明異議不是對原行政處分實體合法性的重新審查。原處分是否合法，通常應循訴願或行政訴訟救濟。</div>
 </section>
-
 <section id="ch5-money"><h2>公法上金錢給付義務</h2>
 <p>義務人依法令、行政處分或法院裁定負有公法上金錢給付義務，逾期不履行，經主管機關移送後，由行政執行分署對其財產執行。</p>
 <p>常見執行標的包括存款、薪資、動產、不動產及其他財產權。執行仍須遵守法定程序與比例原則，並保留法律所保障的生活必要部分。</p>
@@ -577,13 +580,11 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>移送</td><td>主管機關檢具文件移送行政執行分署</td></tr>
 <tr><td>財產執行</td><td>查封、扣押、收取、拍賣等法定方法</td></tr></table>
 </section>
-
 <section id="ch5-restrictions"><h2>限制住居、拘提與管收</h2>
 <p>限制住居、拘提與管收均屬對人身自由影響重大的措施，必須嚴格符合法定要件與比例原則。</p>
 <p>管收不是刑罰，也不是單純因為沒有錢就可實施；通常須有故意隱匿財產、顯有履行能力而拒不履行、逃匿之虞等法定事由，並經法院裁定。</p>
 <div class="memory"><b>高頻觀念：</b>不能以貧窮代替管收要件；管收須法院裁定。</div>
 </section>
-
 <section id="ch5-action"><h2>行為或不行為義務的執行</h2>
 <table><tr><th>方法</th><th>適用情形</th><th>例子</th></tr>
 <tr><td>代履行</td><td>義務可由第三人代為完成</td><td>拆除違法設置物、清除廢棄物</td></tr>
@@ -591,18 +592,15 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>直接強制</td><td>代履行或怠金不足以達成目的，或情況急迫</td><td>強制進入、封閉場所、扣留物品</td></tr></table>
 <p>執行前原則上應以書面限定相當期間履行，並告誡逾期將採取的執行方法；法律另有規定或情況急迫者例外。</p>
 </section>
-
 <section id="ch5-immediate"><h2>即時強制</h2>
 <p>即時強制是在人民尚未違反既存義務，或無法等待一般行政處分與執行程序時，為阻止犯罪、危害或避免急迫危險而直接採取的必要措施。</p>
 <p>常見方法包括對人的管束、物的扣留使用處置、進入住宅建築物或其他處所，以及其他依法定方法處理。</p>
 <div class="danger"><b>區別：</b>直接強制是行為義務已存在且未履行後的執行方法；即時強制則不以既存義務不履行為必要前提。</div>
 </section>
-
 <section id="ch5-compensation"><h2>損失補償與救濟</h2>
 <p>即時強制措施若造成特別損失，人民得依法律請求損失補償。違法執行則可能涉及撤銷、確認、一般給付、國家賠償或其他救濟。</p>
 <p>解題時應先判斷爭議對象是原處分、執行程序、執行方法，還是即時強制造成的損失，才能選擇正確救濟途徑。</p>
 </section>
-
 <section id="ch5-compare"><h2>行政執行三類比較</h2>
 <table><tr><th>比較</th><th>金錢給付</th><th>行為／不行為</th><th>即時強制</th></tr>
 <tr><td>前提</td><td>金錢義務逾期不履行</td><td>行為義務逾期不履行</td><td>急迫危害，不必先有義務違反</td></tr>
@@ -610,7 +608,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <tr><td>主要方法</td><td>扣押、查封、拍賣</td><td>代履行、怠金、直接強制</td><td>管束、扣留、進入場所等</td></tr>
 <tr><td>核心限制</td><td>財產權與生活保障</td><td>比例、告誡與方法順序</td><td>急迫性與必要性</td></tr></table>
 </section>
-
 <div class="chapter-practice legacy-practice">
 <h3>行政執行｜本章練習</h3>
 <p>完成本章教材後，可直接進入本章題庫；作答、解析、收藏與錯題紀錄會自動保存。</p>
@@ -621,186 +618,221 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-第五章-行政執行"></div>
 </div>
-
-<section id="ch6" class="deep-chapter" data-tag="行政罰法">
-<h2>第六章｜行政罰法</h2>
+<section class="deep-chapter" data-tag="行政罰法" id="ch6">
+<h2>第六章｜行政罰法</h2><div class="law-update"><h3>第6章修正重點</h3><ul><li>一般裁處權時效明確補正為三年。</li><li>補入刑事不起訴、緩起訴、無罪與行政裁罰不得一概而論。</li><li>沒入、扣留、追繳不法利益及地域效力仍須依個別法條逐項判斷。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>6-1 行政罰的概念與功能</summary><div class="lesson-body"><p>行政罰是行政機關對違反行政法上義務者所科處的制裁，目的在維持行政秩序。判斷重點不在名稱，而在措施是否具有非難性與制裁性。</p></div></details>
-<details class="lesson-card" open><summary>6-2 行政罰的種類</summary><div class="lesson-body"><p>行政罰法所稱行政罰，主要包括罰鍰、沒入，以及限制或禁止行為、剝奪或消滅資格權利、警告性處分等裁罰性不利處分。單純命回復原狀或追繳不法利益，未必都是行政罰。</p></div></details>
-<details class="lesson-card" ><summary>6-3 處罰法定原則</summary><div class="lesson-body"><p>違反行政法上義務的處罰，必須有法律或法律明確授權的命令依據。處罰構成要件與法律效果應具可預見性，不得僅以行政規則創設對外處罰。</p></div></details>
-<details class="lesson-card" ><summary>6-4 從新從輕原則</summary><div class="lesson-body"><p>行為後法律或自治條例有變更者，原則適用裁處時規定；裁處前規定較有利於受處罰者時，適用最有利規定。此原則在考題中常與不溯及既往混合命題。</p></div></details>
-<details class="lesson-card" ><summary>6-5 責任原則：故意與過失</summary><div class="lesson-body"><p>違反行政法上義務的行為，原則須出於故意或過失才得處罰。故意是明知並有意使其發生，或預見其發生而不違背本意；過失則是應注意、能注意而未注意。</p></div></details>
-<details class="lesson-card" ><summary>6-6 責任能力</summary><div class="lesson-body"><p>未滿十四歲者原則不予處罰；十四歲以上未滿十八歲者得減輕處罰。因精神障礙或心智缺陷而不能辨識違法或欠缺依辨識而行為能力者，不予處罰；能力顯著減低者得減輕。</p></div></details>
-<details class="lesson-card" ><summary>6-7 不知法規與禁止錯誤</summary><div class="lesson-body"><p>不得因不知法規而免除行政處罰責任；但按情節得減輕或免除。若行為人具有正當理由而無法避免錯誤，責任評價可能降低。</p></div></details>
-<details class="lesson-card" ><summary>6-8 法人、團體與代表人責任</summary><div class="lesson-body"><p>法人、設有代表人或管理人的非法人團體，其代表人、管理人、職員或受僱人因執行職務違反義務時，法律可能同時處罰行為人與法人或團體，仍須依個別法規判斷。</p></div></details>
-<details class="lesson-card" ><summary>6-9 共同違法與幫助行為</summary><div class="lesson-body"><p>數人共同實施違反行政法上義務的行為，應依各自參與程度與責任裁處。行政罰不當然完全套用刑法共同正犯規則，應先查行政罰法及個別法律。</p></div></details>
-<details class="lesson-card" ><summary>6-10 一行為不二罰</summary><div class="lesson-body"><p>同一行為違反數個行政法上義務規定而應處罰鍰者，原則依法定罰鍰額最高的規定裁處；若另有其他種類行政罰，得依規定併為裁處，但仍受比例原則限制。</p></div></details>
-<details class="lesson-card" ><summary>6-11 行政罰與刑罰競合</summary><div class="lesson-body"><p>一行為同時觸犯刑事法律及違反行政法義務時，原則依刑事法律處罰；但其他種類行政罰或法律另有規定者，仍可能裁處。刑事不起訴或無罪不必然代表行政責任不存在。</p></div></details>
-<details class="lesson-card" ><summary>6-12 多數行為與連續行為</summary><div class="lesson-body"><p>數個獨立行為原則可分別處罰。判斷是一行為或數行為，應考量自然行為、法規保護目的、時間地點與義務內容，不能只看行為人的主觀計畫。</p></div></details>
-<details class="lesson-card" ><summary>6-13 沒入與不法利益</summary><div class="lesson-body"><p>違禁物、供違反義務所用或因違反義務所得之物，法律得規定沒入。所得利益如超過法定罰鍰最高額，可能另行追繳；目的在避免違法者保有不法利益。</p></div></details>
-<details class="lesson-card" ><summary>6-14 裁罰裁量與比例原則</summary><div class="lesson-body"><p>裁處罰鍰時應審酌行為應受責難程度、所生影響、因違反義務所得利益及受處罰者資力。不得機械式一律處最高額，也不得考量無關因素。</p></div></details>
-<details class="lesson-card" ><summary>6-15 裁處權時效</summary><div class="lesson-body"><p>裁處權時效原則自違反行政法上義務行為終了時起算；結果發生在後者，自結果發生時起算。持續違反義務時，須辨認義務終了點。</p></div></details>
-<details class="lesson-card" ><summary>6-16 管轄與程序</summary><div class="lesson-body"><p>行政罰原則由有管轄權的行政機關裁處。裁處前應給予陳述意見機會；重大或法定情形可能進行聽證。機關也須調查有利與不利事項。</p></div></details>
-<details class="lesson-card" ><summary>6-17 行政罰的救濟</summary><div class="lesson-body"><p>行政罰通常以行政處分作成，人民可依法提起訴願及撤銷訴訟。提起救濟原則不停止執行，必要時得申請停止執行。</p></div></details>
-<details class="lesson-card" ><summary>6-18 高頻比較</summary><div class="lesson-body"><p>行政罰具有制裁性；行政執行是促使義務實現；追繳是不讓違法者保有利益；管制處分則著重排除危險。考試會以措施名稱混淆，應看實質目的與效果。</p></div></details>
+<details class="lesson-card" open=""><summary>6-1 行政罰的概念與功能</summary><div class="lesson-body"><p>行政罰是行政機關對違反行政法上義務者所科處的制裁，目的在維持行政秩序。判斷重點不在名稱，而在措施是否具有非難性與制裁性。</p></div></details>
+<details class="lesson-card" open=""><summary>6-2 行政罰的種類</summary><div class="lesson-body"><p>行政罰法所稱行政罰，主要包括罰鍰、沒入，以及限制或禁止行為、剝奪或消滅資格權利、警告性處分等裁罰性不利處分。單純命回復原狀或追繳不法利益，未必都是行政罰。</p></div></details>
+<details class="lesson-card"><summary>6-3 處罰法定原則</summary><div class="lesson-body"><p>違反行政法上義務的處罰，必須有法律或法律明確授權的命令依據。處罰構成要件與法律效果應具可預見性，不得僅以行政規則創設對外處罰。</p></div></details>
+<details class="lesson-card"><summary>6-4 從新從輕原則</summary><div class="lesson-body"><p>行為後法律或自治條例有變更者，原則適用裁處時規定；裁處前規定較有利於受處罰者時，適用最有利規定。此原則在考題中常與不溯及既往混合命題。</p></div></details>
+<details class="lesson-card"><summary>6-5 責任原則：故意與過失</summary><div class="lesson-body"><p>違反行政法上義務的行為，原則須出於故意或過失才得處罰。故意是明知並有意使其發生，或預見其發生而不違背本意；過失則是應注意、能注意而未注意。</p></div></details>
+<details class="lesson-card"><summary>6-6 責任能力</summary><div class="lesson-body"><p>未滿十四歲者原則不予處罰；十四歲以上未滿十八歲者得減輕處罰。因精神障礙或心智缺陷而不能辨識違法或欠缺依辨識而行為能力者，不予處罰；能力顯著減低者得減輕。</p></div></details>
+<details class="lesson-card"><summary>6-7 不知法規與禁止錯誤</summary><div class="lesson-body"><p>不得因不知法規而免除行政處罰責任；但按情節得減輕或免除。若行為人具有正當理由而無法避免錯誤，責任評價可能降低。</p></div></details>
+<details class="lesson-card"><summary>6-8 法人、團體與代表人責任</summary><div class="lesson-body"><p>法人、設有代表人或管理人的非法人團體，其代表人、管理人、職員或受僱人因執行職務違反義務時，法律可能同時處罰行為人與法人或團體，仍須依個別法規判斷。</p></div></details>
+<details class="lesson-card"><summary>6-9 共同違法與幫助行為</summary><div class="lesson-body"><p>數人共同實施違反行政法上義務的行為，應依各自參與程度與責任裁處。行政罰不當然完全套用刑法共同正犯規則，應先查行政罰法及個別法律。</p></div></details>
+<details class="lesson-card"><summary>6-10 一行為不二罰</summary><div class="lesson-body"><p>同一行為違反數個行政法上義務規定而應處罰鍰者，原則依法定罰鍰額最高的規定裁處；若另有其他種類行政罰，得依規定併為裁處，但仍受比例原則限制。</p></div></details>
+<details class="lesson-card"><summary>6-11 行政罰與刑罰競合</summary><div class="lesson-body">
+<p>一行為同時觸犯刑事法律及違反行政法上義務時，原則依刑事法律處罰；其他種類行政罰或法律另有規定者，仍可能裁處。</p>
+<p>刑事不起訴、緩起訴或無罪的理由各不相同，不能一律推論行政責任不存在；行政機關仍須自行審查行政罰構成要件與時效。</p>
+</div></details>
+<details class="lesson-card"><summary>6-12 多數行為與連續行為</summary><div class="lesson-body"><p>數個獨立行為原則可分別處罰。判斷是一行為或數行為，應考量自然行為、法規保護目的、時間地點與義務內容，不能只看行為人的主觀計畫。</p></div></details>
+<details class="lesson-card"><summary>6-13 沒入與不法利益</summary><div class="lesson-body"><p>違禁物、供違反義務所用或因違反義務所得之物，法律得規定沒入。所得利益如超過法定罰鍰最高額，可能另行追繳；目的在避免違法者保有不法利益。</p></div></details>
+<details class="lesson-card"><summary>6-14 裁罰裁量與比例原則</summary><div class="lesson-body"><p>裁處罰鍰時應審酌行為應受責難程度、所生影響、因違反義務所得利益及受處罰者資力。不得機械式一律處最高額，也不得考量無關因素。</p></div></details>
+<details class="lesson-card"><summary>6-15 裁處權時效</summary><div class="lesson-body">
+<p>行政罰法第27條規定，一般裁處權因三年期間經過而消滅。原則自行為終了時起算；結果後發生者，自結果發生時起算。</p>
+<p>法律另定較長期間、時效停止或原裁處經撤銷後重為裁處者，依特別規定處理。</p>
+</div></details>
+<details class="lesson-card"><summary>6-16 管轄與程序</summary><div class="lesson-body"><p>行政罰原則由有管轄權的行政機關裁處。裁處前應給予陳述意見機會；重大或法定情形可能進行聽證。機關也須調查有利與不利事項。</p></div></details>
+<details class="lesson-card"><summary>6-17 行政罰的救濟</summary><div class="lesson-body"><p>行政罰通常以行政處分作成，人民可依法提起訴願及撤銷訴訟。提起救濟原則不停止執行，必要時得申請停止執行。</p></div></details>
+<details class="lesson-card"><summary>6-18 高頻比較</summary><div class="lesson-body"><p>行政罰具有制裁性；行政執行是促使義務實現；追繳是不讓違法者保有利益；管制處分則著重排除危險。考試會以措施名稱混淆，應看實質目的與效果。</p></div></details>
 <div class="chapter-practice">
 <h3>行政罰法｜本章練習</h3>
 <p>題目會從本章40題中顯示，作答紀錄、解析、收藏與錯題會保留。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政罰法')">開始本章60題</button>
+<button onclick="startChapterQuiz('行政罰法')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政罰法')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政罰法')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政罰法"></div>
 </div></section>
-<section id="ch7" class="deep-chapter" data-tag="行政調查">
-<h2>第七章｜行政調查</h2>
+<section class="deep-chapter" data-tag="行政調查" id="ch7">
+<h2>第七章｜行政調查</h2><div class="law-update"><h3>第7章修正重點</h3><ul><li>補入行政程序法第36至43條的職權調查、鑑定及證據評價架構。</li><li>進入住居、採樣、扣留或強制提出資料等侵入性措施，必須有特別法明確授權。</li><li>不自證己罪與違法證據排除均屬個案判斷，不得寫成行政程序一律適用或一律不適用。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>7-1 行政調查的意義</summary><div class="lesson-body"><p>行政調查是行政機關為確認事實、蒐集證據並作成合法決定所進行的資料蒐集活動。調查可能發生在作成處分前，也可能用於監督與稽查。</p></div></details>
-<details class="lesson-card" open><summary>7-2 職權調查原則</summary><div class="lesson-body"><p>行政機關應依職權調查證據，不受當事人主張拘束；對當事人有利及不利事項均應注意。這不代表機關可以無限制調查，仍須有權限與必要性。</p></div></details>
-<details class="lesson-card" ><summary>7-3 法律保留</summary><div class="lesson-body"><p>調查措施越侵入基本權，越需要明確法律依據。一般詢問與公開資料蒐集的要求較低；進入住居、強制檢查身體、調取高度隱私資料則須更明確授權。</p></div></details>
-<details class="lesson-card" ><summary>7-4 比例原則</summary><div class="lesson-body"><p>調查手段須有助於目的、無較溫和同等有效手段，且造成的不利益不得與公共利益顯失均衡。大規模、全面性資料調取尤其要檢驗必要性。</p></div></details>
-<details class="lesson-card" ><summary>7-5 管轄與身分表明</summary><div class="lesson-body"><p>調查應由有管轄權機關或依法受委任、委託者執行。現場稽查人員通常應表明身分、說明法源與調查目的，避免人民無從確認權限。</p></div></details>
-<details class="lesson-card" ><summary>7-6 通知陳述與詢問</summary><div class="lesson-body"><p>機關得依法通知當事人或關係人到場陳述，但強制到場、拒不到場的效果與處罰必須有法律依據。不得把一般通知偽裝成無限度強制命令。</p></div></details>
-<details class="lesson-card" ><summary>7-7 文書與資料提出</summary><div class="lesson-body"><p>要求帳簿、文件、電子紀錄或其他資料時，應限定與調查目的相關的範圍。涉及營業秘密或個資者，機關應採保密與安全措施。</p></div></details>
-<details class="lesson-card" ><summary>7-8 現場檢查</summary><div class="lesson-body"><p>營業場所、工廠、車輛或設備檢查須依法律授權。檢查時間、範圍與方式應合理；若涉及住宅核心領域，通常需要更嚴格程序保障。</p></div></details>
-<details class="lesson-card" ><summary>7-9 鑑定、勘驗與採樣</summary><div class="lesson-body"><p>專業事項可選任鑑定人；物理狀態可勘驗或採樣。樣本保存、檢測方法與程序紀錄會影響證據可信度。</p></div></details>
-<details class="lesson-card" ><summary>7-10 個資與目的拘束</summary><div class="lesson-body"><p>調查所得個人資料應在特定目的必要範圍內處理與利用。改作其他目的使用，必須符合個資法或其他法律規定。</p></div></details>
-<details class="lesson-card" ><summary>7-11 營業秘密與保密義務</summary><div class="lesson-body"><p>行政調查可能接觸製程、客戶、價格等營業秘密。機關不得任意公開，並應限制接觸人員與使用範圍。</p></div></details>
-<details class="lesson-card" ><summary>7-12 拒絕調查的法律效果</summary><div class="lesson-body"><p>人民拒絕配合是否得處罰、推定不利或強制執行，必須看法律是否明文規定。不得由行政機關自行創設拒絕效果。</p></div></details>
-<details class="lesson-card" ><summary>7-13 不自證己罪與行政調查</summary><div class="lesson-body"><p>行政調查與刑事偵查不同，但當調查已具有追究犯罪性質時，緘默權、律師協助及證據使用界線會成為重要問題。</p></div></details>
-<details class="lesson-card" ><summary>7-14 證據評價</summary><div class="lesson-body"><p>行政機關應綜合全部資料依論理與經驗法則判斷，不得只採對人民不利的片段，也不得以未經查證的傳聞作為唯一基礎。</p></div></details>
-<details class="lesson-card" ><summary>7-15 違法調查與證據使用</summary><div class="lesson-body"><p>違法取得資料是否排除，須衡量違法程度、保護法益、證據重要性與公共利益。行政程序並非一律採刑事訴訟式絕對排除。</p></div></details>
-<details class="lesson-card" ><summary>7-16 調查程序的救濟</summary><div class="lesson-body"><p>單純中間調查行為通常須待終局處分一併爭執；若調查措施本身已直接侵害權利並具獨立法律效果，可能有即時救濟空間。</p></div></details>
-<details class="lesson-card" ><summary>7-17 常見實例</summary><div class="lesson-body"><p>稅務查核、食安稽查、勞動檢查、環保採樣、社福資格查核及戶籍資料核對，均須依各自作用法與行政程序法判斷。</p></div></details>
-<details class="lesson-card" ><summary>7-18 解題流程</summary><div class="lesson-body"><p>先找法源，再確認管轄與對象；接著檢查調查手段、程序保障、比例原則、資料使用與救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>7-1 行政調查的意義</summary><div class="lesson-body"><p>行政調查是行政機關為確認事實、蒐集證據並作成合法決定所進行的資料蒐集活動。調查可能發生在作成處分前，也可能用於監督與稽查。</p></div></details>
+<details class="lesson-card" open=""><summary>7-2 職權調查原則</summary><div class="lesson-body"><p>行政機關應依職權調查證據，不受當事人主張拘束；對當事人有利及不利事項均應注意。這不代表機關可以無限制調查，仍須有權限與必要性。</p></div></details>
+<details class="lesson-card"><summary>7-3 法律保留</summary><div class="lesson-body"><p>調查措施越侵入基本權，越需要明確法律依據。一般詢問與公開資料蒐集的要求較低；進入住居、強制檢查身體、調取高度隱私資料則須更明確授權。</p></div></details>
+<details class="lesson-card"><summary>7-4 比例原則</summary><div class="lesson-body"><p>調查手段須有助於目的、無較溫和同等有效手段，且造成的不利益不得與公共利益顯失均衡。大規模、全面性資料調取尤其要檢驗必要性。</p></div></details>
+<details class="lesson-card"><summary>7-5 管轄與身分表明</summary><div class="lesson-body"><p>調查應由有管轄權機關或依法受委任、委託者執行。現場稽查人員通常應表明身分、說明法源與調查目的，避免人民無從確認權限。</p></div></details>
+<details class="lesson-card"><summary>7-6 通知陳述與詢問</summary><div class="lesson-body"><p>機關得依法通知當事人或關係人到場陳述，但強制到場、拒不到場的效果與處罰必須有法律依據。不得把一般通知偽裝成無限度強制命令。</p></div></details>
+<details class="lesson-card"><summary>7-7 文書與資料提出</summary><div class="lesson-body"><p>要求帳簿、文件、電子紀錄或其他資料時，應限定與調查目的相關的範圍。涉及營業秘密或個資者，機關應採保密與安全措施。</p></div></details>
+<details class="lesson-card"><summary>7-8 現場檢查</summary><div class="lesson-body"><p>營業場所、工廠、車輛或設備檢查須依法律授權。檢查時間、範圍與方式應合理；若涉及住宅核心領域，通常需要更嚴格程序保障。</p></div></details>
+<details class="lesson-card"><summary>7-9 鑑定、勘驗與採樣</summary><div class="lesson-body">
+<p>行政程序法第36至43條規範職權調查、證據方法、鑑定及證據評價；專業事項得選任鑑定人，必要時通知到場說明。</p>
+<p>勘驗、採樣、進入場所或強制提出資料，仍須回到特別法授權，並保留程序紀錄以確保證據可信度。</p>
+</div></details>
+<details class="lesson-card"><summary>7-10 個資與目的拘束</summary><div class="lesson-body"><p>調查所得個人資料應在特定目的必要範圍內處理與利用。改作其他目的使用，必須符合個資法或其他法律規定。</p></div></details>
+<details class="lesson-card"><summary>7-11 營業秘密與保密義務</summary><div class="lesson-body"><p>行政調查可能接觸製程、客戶、價格等營業秘密。機關不得任意公開，並應限制接觸人員與使用範圍。</p></div></details>
+<details class="lesson-card"><summary>7-12 拒絕調查的法律效果</summary><div class="lesson-body"><p>人民拒絕配合是否得處罰、推定不利或強制執行，必須看法律是否明文規定。不得由行政機關自行創設拒絕效果。</p></div></details>
+<details class="lesson-card"><summary>7-13 不自證己罪與行政調查</summary><div class="lesson-body">
+<p>行政調查不同於刑事偵查；但當調查實質上可能導致刑事追訴時，是否享有緘默、律師協助及資料使用限制，須依調查目的、強制程度與相關法律個案判斷，不能一律套用或一律排除刑事程序保障。</p>
+</div></details>
+<details class="lesson-card"><summary>7-14 證據評價</summary><div class="lesson-body"><p>行政機關應綜合全部資料依論理與經驗法則判斷，不得只採對人民不利的片段，也不得以未經查證的傳聞作為唯一基礎。</p></div></details>
+<details class="lesson-card"><summary>7-15 違法調查與證據使用</summary><div class="lesson-body">
+<p>行政程序沒有一律排除違法證據的明文通則。是否採用應衡量違法程度、被侵害法益、證據取得的替代可能、證據重要性及公共利益；不得直接套用刑事訴訟的絕對結論。</p>
+</div></details>
+<details class="lesson-card"><summary>7-16 調查程序的救濟</summary><div class="lesson-body"><p>單純中間調查行為通常須待終局處分一併爭執；若調查措施本身已直接侵害權利並具獨立法律效果，可能有即時救濟空間。</p></div></details>
+<details class="lesson-card"><summary>7-17 常見實例</summary><div class="lesson-body"><p>稅務查核、食安稽查、勞動檢查、環保採樣、社福資格查核及戶籍資料核對，均須依各自作用法與行政程序法判斷。</p></div></details>
+<details class="lesson-card"><summary>7-18 解題流程</summary><div class="lesson-body"><p>先找法源，再確認管轄與對象；接著檢查調查手段、程序保障、比例原則、資料使用與救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>行政調查｜本章練習</h3>
 <p>題目會從本章40題中顯示，作答紀錄、解析、收藏與錯題會保留。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政調查')">開始本章60題</button>
+<button onclick="startChapterQuiz('行政調查')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政調查')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政調查')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政調查"></div>
 </div></section>
-<section id="ch8" class="deep-chapter" data-tag="行政計畫">
-<h2>第八章｜行政計畫</h2>
+<section class="deep-chapter" data-tag="行政計畫" id="ch8">
+<h2>第八章｜行政計畫</h2><div class="law-update"><h3>都市計畫審查新制</h3><ul><li>109年7月1日後發布的都市計畫，原則統一依行政訴訟法都市計畫審查專章救濟。</li><li>無訴願前置；第一審為高等行政法院高等行政訴訟庭，採二審級。</li><li>起訴期間原則一年；被告有二個月重新自我省查期間。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>8-1 行政計畫的概念</summary><div class="lesson-body"><p>行政計畫是行政機關為達成特定公共目的，對未來一定期間內的方法、步驟、資源與區位所作的整體設計。</p></div></details>
-<details class="lesson-card" open><summary>8-2 計畫的特徵</summary><div class="lesson-body"><p>行政計畫具有未來性、整體性、協調性與裁量性，常需在多元利益間權衡。與個別行政處分相比，計畫涉及更廣泛的政策形成。</p></div></details>
-<details class="lesson-card" ><summary>8-3 計畫的類型</summary><div class="lesson-body"><p>依拘束力可分為指導性、影響性與命令性計畫；依領域可見都市、交通、環境、能源、教育與災害防救計畫。分類目的在判斷法源與救濟。</p></div></details>
-<details class="lesson-card" ><summary>8-4 計畫與法律保留</summary><div class="lesson-body"><p>涉及人民權利重大限制或資源分配者，應有法律依據。計畫不能取代法律，也不能單靠政策文件直接創設處罰或剝奪權利。</p></div></details>
-<details class="lesson-card" ><summary>8-5 計畫裁量</summary><div class="lesson-body"><p>機關通常享有較廣計畫形成空間，但仍不得基於錯誤事實、漏未考量重要利益、納入無關因素或作成顯失均衡的決定。</p></div></details>
-<details class="lesson-card" ><summary>8-6 利益衡量</summary><div class="lesson-body"><p>計畫應辨認受影響公共利益與私人利益，完整蒐集資料並進行合理權衡。漏未衡量重要利益，可能構成衡量瑕疵。</p></div></details>
-<details class="lesson-card" ><summary>8-7 民眾參與</summary><div class="lesson-body"><p>重大計畫常透過公告、說明會、公聽會或聽證蒐集意見。參與不代表機關必須接受所有意見，但應實質回應重要爭點。</p></div></details>
-<details class="lesson-card" ><summary>8-8 環境影響評估</summary><div class="lesson-body"><p>大型開發計畫可能須先完成環評。環評與計畫核定是不同程序，但兩者可能具有先後依存關係。</p></div></details>
-<details class="lesson-card" ><summary>8-9 都市計畫</summary><div class="lesson-body"><p>都市計畫涉及土地使用分區與公共設施配置。其法律性質及救濟方式應依具體計畫內容、法規與司法實務判斷，不宜一概認定。</p></div></details>
-<details class="lesson-card" ><summary>8-10 計畫確定程序</summary><div class="lesson-body"><p>法律明定的計畫確定程序，常集中處理多機關許可與利害關係人意見，以提升大型建設決策的一致性。</p></div></details>
-<details class="lesson-card" ><summary>8-11 計畫變更與廢止</summary><div class="lesson-body"><p>計畫並非永遠不變，但變更時須考量法定程序、信賴保護、過渡措施及既有投資。重大變更通常不能以簡化程序取代。</p></div></details>
-<details class="lesson-card" ><summary>8-12 計畫與行政處分</summary><div class="lesson-body"><p>計畫本身可能是法規性、處分性或內部性質，也可能透過後續許可、徵收或命令具體化。解題時應先判斷直接法律效果。</p></div></details>
-<details class="lesson-card" ><summary>8-13 計畫與契約</summary><div class="lesson-body"><p>公共建設可同時包含行政計畫與行政契約。計畫決定公共方向，契約處理政府與特定合作方的權利義務，兩者不可混為一談。</p></div></details>
-<details class="lesson-card" ><summary>8-14 計畫的司法審查</summary><div class="lesson-body"><p>法院通常尊重專業與政策形成空間，但仍可審查權限、程序、事實基礎、利益衡量及是否逾越裁量。</p></div></details>
-<details class="lesson-card" ><summary>8-15 救濟時點</summary><div class="lesson-body"><p>若計畫已直接、具體、終局影響人民權利，可能立即救濟；若僅為準備行為，通常待後續處分時一併爭執。</p></div></details>
-<details class="lesson-card" ><summary>8-16 信賴保護</summary><div class="lesson-body"><p>人民因已公布計畫進行投資，並不當然取得計畫永不變更的權利；但若存在值得保護的具體信賴，機關應評估補償或過渡措施。</p></div></details>
-<details class="lesson-card" ><summary>8-17 常見瑕疵</summary><div class="lesson-body"><p>欠缺法定程序、資料陳舊、替代方案不足、漏列重要利害關係人、衡量失衡及理由不備，都是常見爭點。</p></div></details>
-<details class="lesson-card" ><summary>8-18 解題架構</summary><div class="lesson-body"><p>確認計畫法源與類型 → 檢查形成程序 → 審查利益衡量 → 判斷法律效果 → 選擇救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>8-1 行政計畫的概念</summary><div class="lesson-body"><p>行政計畫是行政機關為達成特定公共目的，對未來一定期間內的方法、步驟、資源與區位所作的整體設計。</p></div></details>
+<details class="lesson-card" open=""><summary>8-2 計畫的特徵</summary><div class="lesson-body"><p>行政計畫具有未來性、整體性、協調性與裁量性，常需在多元利益間權衡。與個別行政處分相比，計畫涉及更廣泛的政策形成。</p></div></details>
+<details class="lesson-card"><summary>8-3 計畫的類型</summary><div class="lesson-body"><p>依拘束力可分為指導性、影響性與命令性計畫；依領域可見都市、交通、環境、能源、教育與災害防救計畫。分類目的在判斷法源與救濟。</p></div></details>
+<details class="lesson-card"><summary>8-4 計畫與法律保留</summary><div class="lesson-body"><p>涉及人民權利重大限制或資源分配者，應有法律依據。計畫不能取代法律，也不能單靠政策文件直接創設處罰或剝奪權利。</p></div></details>
+<details class="lesson-card"><summary>8-5 計畫裁量</summary><div class="lesson-body"><p>機關通常享有較廣計畫形成空間，但仍不得基於錯誤事實、漏未考量重要利益、納入無關因素或作成顯失均衡的決定。</p></div></details>
+<details class="lesson-card"><summary>8-6 利益衡量</summary><div class="lesson-body"><p>計畫應辨認受影響公共利益與私人利益，完整蒐集資料並進行合理權衡。漏未衡量重要利益，可能構成衡量瑕疵。</p></div></details>
+<details class="lesson-card"><summary>8-7 民眾參與</summary><div class="lesson-body"><p>重大計畫常透過公告、說明會、公聽會或聽證蒐集意見。參與不代表機關必須接受所有意見，但應實質回應重要爭點。</p></div></details>
+<details class="lesson-card"><summary>8-8 環境影響評估</summary><div class="lesson-body"><p>大型開發計畫可能須先完成環評。環評與計畫核定是不同程序，但兩者可能具有先後依存關係。</p></div></details>
+<details class="lesson-card"><summary>8-9 都市計畫</summary><div class="lesson-body">
+<p>行政訴訟法已設都市計畫審查程序。對於109年7月1日以後發布的都市計畫，人民具體主張權利或法律上利益受違法都市計畫侵害時，原則依專章提起訴訟，不再依計畫名稱或個別法律性質分流。</p>
+<p>第一審由都市計畫區所在地高等行政法院高等行政訴訟庭專屬管轄，無須先提訴願。</p>
+</div></details>
+<details class="lesson-card"><summary>8-10 計畫確定程序</summary><div class="lesson-body"><p>法律明定的計畫確定程序，常集中處理多機關許可與利害關係人意見，以提升大型建設決策的一致性。</p></div></details>
+<details class="lesson-card"><summary>8-11 計畫變更與廢止</summary><div class="lesson-body"><p>計畫並非永遠不變，但變更時須考量法定程序、信賴保護、過渡措施及既有投資。重大變更通常不能以簡化程序取代。</p></div></details>
+<details class="lesson-card"><summary>8-12 計畫與行政處分</summary><div class="lesson-body"><p>計畫本身可能是法規性、處分性或內部性質，也可能透過後續許可、徵收或命令具體化。解題時應先判斷直接法律效果。</p></div></details>
+<details class="lesson-card"><summary>8-13 計畫與契約</summary><div class="lesson-body"><p>公共建設可同時包含行政計畫與行政契約。計畫決定公共方向，契約處理政府與特定合作方的權利義務，兩者不可混為一談。</p></div></details>
+<details class="lesson-card"><summary>8-14 計畫的司法審查</summary><div class="lesson-body">
+<p>都市計畫審查中，法院得審查權限、程序、事實基礎與利益衡量；認違法時，依專章得宣告都市計畫無效、失效或違法，而不是一律作成一般撤銷判決。</p>
+</div></details>
+<details class="lesson-card"><summary>8-15 救濟時點</summary><div class="lesson-body">
+<p>都市計畫審查訴訟原則應於都市計畫發布後一年內提起；被告機關收到起訴狀繕本後，應於二個月內重新檢討計畫是否合法。新制以此自我省查程序取代訴願前置。</p>
+<p>109年7月1日前已發布的都市計畫，須依行政訴訟法施行法的過渡規定判斷，不直接套用新專章。</p>
+</div></details>
+<details class="lesson-card"><summary>8-16 信賴保護</summary><div class="lesson-body"><p>人民因已公布計畫進行投資，並不當然取得計畫永不變更的權利；但若存在值得保護的具體信賴，機關應評估補償或過渡措施。</p></div></details>
+<details class="lesson-card"><summary>8-17 常見瑕疵</summary><div class="lesson-body"><p>欠缺法定程序、資料陳舊、替代方案不足、漏列重要利害關係人、衡量失衡及理由不備，都是常見爭點。</p></div></details>
+<details class="lesson-card"><summary>8-18 解題架構</summary><div class="lesson-body">
+<p>確認發布日期與適用新舊制 → 判斷是否具體侵害權利或法律上利益 → 檢查一年起訴期間 → 向都市計畫區所在地高等行政法院高等行政訴訟庭起訴 → 審查程序、事實與利益衡量 → 判斷無效、失效、違法或駁回。</p>
+</div></details>
 <div class="chapter-practice">
 <h3>行政計畫｜本章練習</h3>
 <p>題目會從本章40題中顯示，作答紀錄、解析、收藏與錯題會保留。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政計畫')">開始本章60題</button>
+<button onclick="startChapterQuiz('行政計畫')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政計畫')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政計畫')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政計畫"></div>
 </div></section>
-<section id="ch9" class="deep-chapter" data-tag="行政指導">
-<h2>第九章｜行政指導</h2>
+<section class="deep-chapter" data-tag="行政指導" id="ch9">
+<h2>第九章｜行政指導</h2><div class="law-update"><h3>第9章文字校正</h3><ul><li>法定明示事項是目的、內容及負責指導者。</li><li>期間不是行政程序法第167條一律要求的固定事項，但個案具有期間時宜說明。</li><li>相對人請求書面時，除行政上有特別困難外，機關應交付文書。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>9-1 行政指導的定義</summary><div class="lesson-body"><p>行政指導是行政機關在職權或所掌事務範圍內，為實現行政目的，以輔導、協助、勸告、建議或其他不具法律強制力的方法，促請特定人自願合作。</p></div></details>
-<details class="lesson-card" open><summary>9-2 核心特徵：非強制性</summary><div class="lesson-body"><p>行政指導不直接設定人民法律義務。人民原則上可以拒絕，也可以中途停止配合。若實際上無法拒絕，可能已不是單純行政指導。</p></div></details>
-<details class="lesson-card" ><summary>9-3 職權範圍</summary><div class="lesson-body"><p>機關只能在法定職掌內為行政指導。非強制不等於不受權限拘束，亦不得藉行政指導規避法律保留。</p></div></details>
-<details class="lesson-card" ><summary>9-4 明確性要求</summary><div class="lesson-body"><p>行政指導應清楚說明目的、內容、期間與負責人，使相對人知道這是建議而非具有強制力的命令。</p></div></details>
-<details class="lesson-card" ><summary>9-5 書面化</summary><div class="lesson-body"><p>相對人請求時，原則上應交付記載行政指導內容的文書；但行政上有特別困難者除外。書面化有助日後確認是否存在變相強制。</p></div></details>
-<details class="lesson-card" ><summary>9-6 禁止不利處置</summary><div class="lesson-body"><p>相對人拒絕行政指導時，機關不得因此給予不利處置。若以拒絕為由拒發依法應核發的許可，可能構成違法。</p></div></details>
-<details class="lesson-card" ><summary>9-7 行政指導與行政處分</summary><div class="lesson-body"><p>行政處分具有直接法律效果；行政指導則以自願合作為基礎。判斷時應看實質效果，不能只看機關使用「建議」或「函請」等名稱。</p></div></details>
-<details class="lesson-card" ><summary>9-8 行政指導與行政契約</summary><div class="lesson-body"><p>行政契約須雙方意思表示合致並形成法律拘束；行政指導即使相對人配合，也不當然形成契約。</p></div></details>
-<details class="lesson-card" ><summary>9-9 行政指導與事實行為</summary><div class="lesson-body"><p>行政指導通常也是非處分行政活動，但具有促請特定人採取特定行動的目的；一般資訊提供未必屬行政指導。</p></div></details>
-<details class="lesson-card" ><summary>9-10 補助與指導</summary><div class="lesson-body"><p>機關可透過輔導協助申請補助，但不得把無法律依據的額外條件，以行政指導名義變成實質強制。</p></div></details>
-<details class="lesson-card" ><summary>9-11 產業與市場指導</summary><div class="lesson-body"><p>物價、金融、產業或環境領域常使用行政指導。因相對人可能高度依賴政府許可或資源，應特別檢查是否存在壓力。</p></div></details>
-<details class="lesson-card" ><summary>9-12 多數人行政指導</summary><div class="lesson-body"><p>對產業公會或多數業者發布勸告時，仍應注意競爭秩序、平等原則與內容明確性。</p></div></details>
-<details class="lesson-card" ><summary>9-13 違法行政指導</summary><div class="lesson-body"><p>超越職權、違反平等、以不利益威脅配合、要求違法行為或侵害基本權者，均可能違法。</p></div></details>
-<details class="lesson-card" ><summary>9-14 救濟問題</summary><div class="lesson-body"><p>純粹行政指導通常不能直接提起撤銷訴訟；若伴隨具法律效果的處分，可針對處分救濟。持續侵害也可能請求停止或國家賠償。</p></div></details>
-<details class="lesson-card" ><summary>9-15 信賴與責任</summary><div class="lesson-body"><p>人民依政府具體指導投入成本，若指導違法或內容重大錯誤，可能產生信賴保護或國賠問題，但仍須檢查信賴是否正當。</p></div></details>
-<details class="lesson-card" ><summary>9-16 程序紀錄</summary><div class="lesson-body"><p>重要行政指導宜留下內容、時間、對象與承辦人紀錄，避免事後無法辨識是否有施壓或承諾。</p></div></details>
-<details class="lesson-card" ><summary>9-17 常見考題陷阱</summary><div class="lesson-body"><p>行政指導不是完全無法律效果，也不是可任意為之；重點是它本身不以強制設定義務，但機關仍受公法原則拘束。</p></div></details>
-<details class="lesson-card" ><summary>9-18 解題流程</summary><div class="lesson-body"><p>先判斷是否有直接法律效果；再查職權、任意性、是否明示、拒絕後有無不利處置，最後判斷救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>9-1 行政指導的定義</summary><div class="lesson-body"><p>行政指導是行政機關在職權或所掌事務範圍內，為實現行政目的，以輔導、協助、勸告、建議或其他不具法律強制力的方法，促請特定人自願合作。</p></div></details>
+<details class="lesson-card" open=""><summary>9-2 核心特徵：非強制性</summary><div class="lesson-body"><p>行政指導不直接設定人民法律義務。人民原則上可以拒絕，也可以中途停止配合。若實際上無法拒絕，可能已不是單純行政指導。</p></div></details>
+<details class="lesson-card"><summary>9-3 職權範圍</summary><div class="lesson-body"><p>機關只能在法定職掌內為行政指導。非強制不等於不受權限拘束，亦不得藉行政指導規避法律保留。</p></div></details>
+<details class="lesson-card"><summary>9-4 明示事項</summary><div class="lesson-body">
+<p>行政程序法第167條要求行政機關明示行政指導的目的、內容及負責指導者，使相對人能辨認其只是非強制性指導。</p>
+<p>法律沒有把「期間」列為每一件行政指導的固定法定記載事項；如指導具有期間性，為避免誤解仍宜具體說明。</p>
+</div></details>
+<details class="lesson-card"><summary>9-5 書面化</summary><div class="lesson-body"><p>相對人請求時，原則上應交付記載行政指導內容的文書；但行政上有特別困難者除外。書面化有助日後確認是否存在變相強制。</p></div></details>
+<details class="lesson-card"><summary>9-6 禁止不利處置</summary><div class="lesson-body"><p>相對人拒絕行政指導時，機關不得因此給予不利處置。若以拒絕為由拒發依法應核發的許可，可能構成違法。</p></div></details>
+<details class="lesson-card"><summary>9-7 行政指導與行政處分</summary><div class="lesson-body"><p>行政處分具有直接法律效果；行政指導則以自願合作為基礎。判斷時應看實質效果，不能只看機關使用「建議」或「函請」等名稱。</p></div></details>
+<details class="lesson-card"><summary>9-8 行政指導與行政契約</summary><div class="lesson-body"><p>行政契約須雙方意思表示合致並形成法律拘束；行政指導即使相對人配合，也不當然形成契約。</p></div></details>
+<details class="lesson-card"><summary>9-9 行政指導與事實行為</summary><div class="lesson-body"><p>行政指導通常也是非處分行政活動，但具有促請特定人採取特定行動的目的；一般資訊提供未必屬行政指導。</p></div></details>
+<details class="lesson-card"><summary>9-10 補助與指導</summary><div class="lesson-body"><p>機關可透過輔導協助申請補助，但不得把無法律依據的額外條件，以行政指導名義變成實質強制。</p></div></details>
+<details class="lesson-card"><summary>9-11 產業與市場指導</summary><div class="lesson-body"><p>物價、金融、產業或環境領域常使用行政指導。因相對人可能高度依賴政府許可或資源，應特別檢查是否存在壓力。</p></div></details>
+<details class="lesson-card"><summary>9-12 多數人行政指導</summary><div class="lesson-body"><p>對產業公會或多數業者發布勸告時，仍應注意競爭秩序、平等原則與內容明確性。</p></div></details>
+<details class="lesson-card"><summary>9-13 違法行政指導</summary><div class="lesson-body"><p>超越職權、違反平等、以不利益威脅配合、要求違法行為或侵害基本權者，均可能違法。</p></div></details>
+<details class="lesson-card"><summary>9-14 救濟問題</summary><div class="lesson-body"><p>純粹行政指導通常不能直接提起撤銷訴訟；若伴隨具法律效果的處分，可針對處分救濟。持續侵害也可能請求停止或國家賠償。</p></div></details>
+<details class="lesson-card"><summary>9-15 信賴與責任</summary><div class="lesson-body"><p>人民依政府具體指導投入成本，若指導違法或內容重大錯誤，可能產生信賴保護或國賠問題，但仍須檢查信賴是否正當。</p></div></details>
+<details class="lesson-card"><summary>9-16 程序紀錄</summary><div class="lesson-body"><p>重要行政指導宜留下內容、時間、對象與承辦人紀錄，避免事後無法辨識是否有施壓或承諾。</p></div></details>
+<details class="lesson-card"><summary>9-17 常見考題陷阱</summary><div class="lesson-body"><p>行政指導不是完全無法律效果，也不是可任意為之；重點是它本身不以強制設定義務，但機關仍受公法原則拘束。</p></div></details>
+<details class="lesson-card"><summary>9-18 解題流程</summary><div class="lesson-body"><p>先判斷是否有直接法律效果；再查職權、任意性、是否明示、拒絕後有無不利處置，最後判斷救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>行政指導｜本章練習</h3>
 <p>題目會從本章40題中顯示，作答紀錄、解析、收藏與錯題會保留。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政指導')">開始本章60題</button>
+<button onclick="startChapterQuiz('行政指導')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政指導')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政指導')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政指導"></div>
 </div></section>
-<section id="ch10" class="deep-chapter" data-tag="行政事實行為">
-<h2>第十章｜行政事實行為</h2>
+<section class="deep-chapter" data-tag="行政事實行為" id="ch10">
+<h2>第十章｜行政事實行為</h2><div class="law-update"><h3>第10章救濟修正</h3><ul><li>刪除容易誤導的獨立『事實行為確認違法』表述。</li><li>事實行為救濟原則依請求內容採一般給付訴訟。</li><li>確認訴訟限於行政處分無效、已消滅行政處分違法，或公法法律關係存在與否等法定類型。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>10-1 行政事實行為的概念</summary><div class="lesson-body"><p>行政事實行為是行政機關不以直接發生法律效果為目的，而以產生事實上結果為目的的活動。</p></div></details>
-<details class="lesson-card" open><summary>10-2 典型種類</summary><div class="lesson-body"><p>資訊提供、警告、宣導、道路施工、公共設施維護、醫療救護、資料登錄、物理性移除與現場協助，均可能屬事實行為。</p></div></details>
-<details class="lesson-card" ><summary>10-3 與行政處分區別</summary><div class="lesson-body"><p>行政處分直接設定、變更、消滅或確認公法上權利義務；事實行為主要產生物理、資訊或社會效果。應依實質內容判斷。</p></div></details>
-<details class="lesson-card" ><summary>10-4 與行政指導區別</summary><div class="lesson-body"><p>行政指導是促請特定人自願採取行動；事實行為範圍更廣，可能沒有說服或合作目的，例如道路修繕。</p></div></details>
-<details class="lesson-card" ><summary>10-5 法律拘束</summary><div class="lesson-body"><p>事實行為仍須有職權基礎並遵守法律優位、比例、平等、誠信與個資保護。非處分不代表法律真空。</p></div></details>
-<details class="lesson-card" ><summary>10-6 資訊性事實行為</summary><div class="lesson-body"><p>政府公告風險、發布新聞稿或建置公開名單，可能對名譽與營業造成重大影響。內容應有合理事實基礎，並給予必要更正機會。</p></div></details>
-<details class="lesson-card" ><summary>10-7 警告與標示</summary><div class="lesson-body"><p>危險警告、產品警示或場所標示若僅傳達資訊，通常屬事實行為；若同時命令停止販售，命令部分可能是行政處分。</p></div></details>
-<details class="lesson-card" ><summary>10-8 公共設施活動</summary><div class="lesson-body"><p>道路、橋梁、公園與排水設施的設置、維護及施工屬典型事實活動。若設置管理欠缺安全性造成損害，可能涉及國賠。</p></div></details>
-<details class="lesson-card" ><summary>10-9 強制性事實行為</summary><div class="lesson-body"><p>即時強制、拆除、拖吊或物理排除等可能同時包含行政處分與執行行為。須分段辨識法律性質與救濟。</p></div></details>
-<details class="lesson-card" ><summary>10-10 資料處理行為</summary><div class="lesson-body"><p>登錄、傳輸、比對或公開資料屬事實操作，但可能侵害個資或名譽，仍須檢查法源、目的與正確性。</p></div></details>
-<details class="lesson-card" ><summary>10-11 持續性與一次性</summary><div class="lesson-body"><p>持續噪音、公開名單或系統封鎖可形成持續侵害；一次拆除或錯誤匯款則屬已完成行為。救濟方式會不同。</p></div></details>
-<details class="lesson-card" ><summary>10-12 一般給付訴訟</summary><div class="lesson-body"><p>人民可請求機關作成或不作成非行政處分的公法行為，例如停止公開、移除設施、返還物品或更正資料。</p></div></details>
-<details class="lesson-card" ><summary>10-13 確認訴訟</summary><div class="lesson-body"><p>事實行為已完成且仍有確認利益時，可能請求確認違法。必須說明確認對回復名譽、避免重複或後續賠償的實益。</p></div></details>
-<details class="lesson-card" ><summary>10-14 暫時權利保護</summary><div class="lesson-body"><p>面對即將或持續進行的事實行為，可能聲請定暫時狀態處分，而非停止行政處分執行。</p></div></details>
-<details class="lesson-card" ><summary>10-15 國家賠償</summary><div class="lesson-body"><p>公務員違法執行職務的事實行為造成損害，可能成立國賠；公共設施欠缺安全性亦可能成立賠償責任。</p></div></details>
-<details class="lesson-card" ><summary>10-16 結果除去請求</summary><div class="lesson-body"><p>違法公權力行為造成持續結果時，人民可能請求排除違法結果，例如撤除錯誤標示或更正資料。</p></div></details>
-<details class="lesson-card" ><summary>10-17 常見實例分析</summary><div class="lesson-body"><p>政府錯誤公布欠稅名單、施工損壞房屋、違法剪斷水電、警察錯誤警告、行政機關拒絕返還物品，均須辨識事實行為與處分。</p></div></details>
-<details class="lesson-card" ><summary>10-18 解題流程</summary><div class="lesson-body"><p>辨認是否直接法律效果 → 找職權與法源 → 判斷行為是否持續 → 選擇給付、確認、暫時保護或國賠。</p></div></details>
+<details class="lesson-card" open=""><summary>10-1 行政事實行為的概念</summary><div class="lesson-body"><p>行政事實行為是行政機關不以直接發生法律效果為目的，而以產生事實上結果為目的的活動。</p></div></details>
+<details class="lesson-card" open=""><summary>10-2 典型種類</summary><div class="lesson-body"><p>資訊提供、警告、宣導、道路施工、公共設施維護、醫療救護、資料登錄、物理性移除與現場協助，均可能屬事實行為。</p></div></details>
+<details class="lesson-card"><summary>10-3 與行政處分區別</summary><div class="lesson-body"><p>行政處分直接設定、變更、消滅或確認公法上權利義務；事實行為主要產生物理、資訊或社會效果。應依實質內容判斷。</p></div></details>
+<details class="lesson-card"><summary>10-4 與行政指導區別</summary><div class="lesson-body"><p>行政指導是促請特定人自願採取行動；事實行為範圍更廣，可能沒有說服或合作目的，例如道路修繕。</p></div></details>
+<details class="lesson-card"><summary>10-5 法律拘束</summary><div class="lesson-body"><p>事實行為仍須有職權基礎並遵守法律優位、比例、平等、誠信與個資保護。非處分不代表法律真空。</p></div></details>
+<details class="lesson-card"><summary>10-6 資訊性事實行為</summary><div class="lesson-body"><p>政府公告風險、發布新聞稿或建置公開名單，可能對名譽與營業造成重大影響。內容應有合理事實基礎，並給予必要更正機會。</p></div></details>
+<details class="lesson-card"><summary>10-7 警告與標示</summary><div class="lesson-body"><p>危險警告、產品警示或場所標示若僅傳達資訊，通常屬事實行為；若同時命令停止販售，命令部分可能是行政處分。</p></div></details>
+<details class="lesson-card"><summary>10-8 公共設施活動</summary><div class="lesson-body"><p>道路、橋梁、公園與排水設施的設置、維護及施工屬典型事實活動。若設置管理欠缺安全性造成損害，可能涉及國賠。</p></div></details>
+<details class="lesson-card"><summary>10-9 強制性事實行為</summary><div class="lesson-body"><p>即時強制、拆除、拖吊或物理排除等可能同時包含行政處分與執行行為。須分段辨識法律性質與救濟。</p></div></details>
+<details class="lesson-card"><summary>10-10 資料處理行為</summary><div class="lesson-body"><p>登錄、傳輸、比對或公開資料屬事實操作，但可能侵害個資或名譽，仍須檢查法源、目的與正確性。</p></div></details>
+<details class="lesson-card"><summary>10-11 持續性與一次性</summary><div class="lesson-body"><p>持續噪音、公開名單或系統封鎖可形成持續侵害；一次拆除或錯誤匯款則屬已完成行為。救濟方式會不同。</p></div></details>
+<details class="lesson-card"><summary>10-12 一般給付訴訟</summary><div class="lesson-body"><p>人民可請求機關作成或不作成非行政處分的公法行為，例如停止公開、移除設施、返還物品或更正資料。</p></div></details>
+<details class="lesson-card"><summary>10-13 訴訟類型校正</summary><div class="lesson-body">
+<p>行政訴訟法並未設立獨立的「確認行政事實行為違法訴訟」類型。對已完成或持續中的事實行為，原則依希望獲得的救濟選擇一般給付訴訟，例如請求停止、排除、返還或更正。</p>
+<p>只有在確有公法法律關係存在或不存在的爭議，且具確認利益時，才可能提起確認公法法律關係之訴。</p>
+</div></details>
+<details class="lesson-card"><summary>10-14 暫時權利保護</summary><div class="lesson-body"><p>面對即將或持續進行的事實行為，可能聲請定暫時狀態處分，而非停止行政處分執行。</p></div></details>
+<details class="lesson-card"><summary>10-15 國家賠償</summary><div class="lesson-body"><p>公務員違法執行職務的事實行為造成損害，可能成立國賠；公共設施欠缺安全性亦可能成立賠償責任。</p></div></details>
+<details class="lesson-card"><summary>10-16 結果除去請求</summary><div class="lesson-body"><p>違法公權力行為造成持續結果時，人民可能請求排除違法結果，例如撤除錯誤標示或更正資料。</p></div></details>
+<details class="lesson-card"><summary>10-17 常見實例分析</summary><div class="lesson-body"><p>政府錯誤公布欠稅名單、施工損壞房屋、違法剪斷水電、警察錯誤警告、行政機關拒絕返還物品，均須辨識事實行為與處分。</p></div></details>
+<details class="lesson-card"><summary>10-18 解題流程</summary><div class="lesson-body">
+<p>辨認有無直接法律效果 → 若為行政處分選撤銷或其他處分訴訟 → 若為事實行為，依請求內容選一般給付訴訟 → 有急迫危險時考慮定暫時狀態處分 → 已生損害時另檢查國家賠償。</p>
+</div></details>
 <div class="chapter-practice">
 <h3>行政事實行為｜本章練習</h3>
 <p>題目會從本章40題中顯示，作答紀錄、解析、收藏與錯題會保留。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政事實行為')">開始本章60題</button>
+<button onclick="startChapterQuiz('行政事實行為')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政事實行為')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政事實行為')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政事實行為"></div>
 </div></section>
-<section id="ch11" class="deep-chapter" data-tag="政府資訊公開">
-<h2>第十一章｜政府資訊公開</h2>
+<section class="deep-chapter" data-tag="政府資訊公開" id="ch11">
+<h2>第十一章｜政府資訊公開</h2><div class="law-update"><h3>第11章期間與第三人程序</h3><ul><li>准駁期間：受理後十五日；必要時延長不得逾十五日。</li><li>第三人通知期間：原則通知其於十日內表示意見。</li><li>部分內容依法限制公開時，應分離、遮蔽後提供其餘可公開部分。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>11-1 制度目的</summary><div class="lesson-body"><p>政府資訊公開制度以人民知的權利、民主監督與行政透明為核心，除法律限制外，政府資訊原則上應公開。</p></div></details>
-<details class="lesson-card" open><summary>11-2 政府資訊的範圍</summary><div class="lesson-body"><p>政府資訊包含政府機關於職權範圍內製作或取得，並存在於文書、圖畫、照片、磁碟、錄音、錄影或其他媒介的紀錄。</p></div></details>
-<details class="lesson-card" ><summary>11-3 主動公開與申請提供</summary><div class="lesson-body"><p>公開制度分為機關依法主動公開，以及人民提出申請後由機關提供。是否應主動公開，須依法律所列資訊類型判斷。</p></div></details>
-<details class="lesson-card" ><summary>11-4 申請權人與申請方式</summary><div class="lesson-body"><p>人民得依法申請政府資訊；申請通常應記載申請人、資訊內容、用途或提供方式等事項。資料描述越具體，越有利機關搜尋。</p></div></details>
-<details class="lesson-card" ><summary>11-5 機關處理義務</summary><div class="lesson-body"><p>機關收到申請後，應確認是否持有資訊、是否有管轄、是否須補正，並在法定期間內決定全部提供、部分提供或拒絕。</p></div></details>
-<details class="lesson-card" ><summary>11-6 不存在或未持有資訊</summary><div class="lesson-body"><p>政府資訊公開法主要要求提供既存資訊，通常不要求機關為申請人重新製作分析、統計或回答法律諮詢。</p></div></details>
-<details class="lesson-card" ><summary>11-7 國家安全與公共利益限制</summary><div class="lesson-body"><p>涉及國家安全、國防、外交、犯罪偵查或其他重大公共利益的資訊，若公開可能造成具體危害，得依法限制。</p></div></details>
-<details class="lesson-card" ><summary>11-8 個人隱私保護</summary><div class="lesson-body"><p>資訊涉及個人隱私時，應衡量公開目的、公益必要性、資料敏感程度與可否去識別化，不能僅因含姓名就一律拒絕。</p></div></details>
-<details class="lesson-card" ><summary>11-9 營業秘密與競爭利益</summary><div class="lesson-body"><p>涉及營業秘密、經營資訊或第三人競爭地位者，機關應審查公開是否造成實質損害，必要時通知第三人表示意見。</p></div></details>
-<details class="lesson-card" ><summary>11-10 決策過程資訊</summary><div class="lesson-body"><p>內部擬稿、意見交換或決策形成資料可能受限制，但決策基礎事實與最終決定不當然全部保密。</p></div></details>
-<details class="lesson-card" ><summary>11-11 執法與考試資訊</summary><div class="lesson-body"><p>公開可能妨害犯罪偵查、行政檢查、考試公平或執法效果者，得依法限制；限制範圍仍須符合必要性。</p></div></details>
-<details class="lesson-card" ><summary>11-12 部分公開原則</summary><div class="lesson-body"><p>資訊中只有部分內容符合限制公開要件時，機關應遮蔽或分離該部分後提供其餘內容，不得便宜行事全部拒絕。</p></div></details>
-<details class="lesson-card" ><summary>11-13 公益衡量</summary><div class="lesson-body"><p>即使涉及隱私或第三人利益，若公開具有重大公益，仍可能應提供。是否具公益須具體說明，不能只以好奇或私人爭議替代。</p></div></details>
-<details class="lesson-card" ><summary>11-14 提供方式與費用</summary><div class="lesson-body"><p>資訊可用閱覽、抄錄、複製、電子檔等方式提供。機關得依規定收取必要成本費用，但不得以不合理費用阻礙申請。</p></div></details>
-<details class="lesson-card" ><summary>11-15 第三人程序保障</summary><div class="lesson-body"><p>申請資訊涉及第三人權益時，機關宜給予第三人陳述意見機會；但第三人反對不等於機關當然必須拒絕。</p></div></details>
-<details class="lesson-card" ><summary>11-16 與檔案法及個資法關係</summary><div class="lesson-body"><p>政府資訊公開法、檔案法與個資法可能同時適用。應先確認資訊性質，再依特別規定、公開原則及個資保護進行整合判斷。</p></div></details>
-<details class="lesson-card" ><summary>11-17 救濟</summary><div class="lesson-body"><p>全部或部分拒絕提供通常屬行政處分，申請人得依法提起訴願與行政訴訟。機關逾期不處理，也可能構成怠為處分。</p></div></details>
-<details class="lesson-card" ><summary>11-18 解題流程</summary><div class="lesson-body"><p>先問資訊是否存在且由機關持有，再判斷是否屬政府資訊、是否有法定限制、可否部分公開，最後確認程序與救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>11-1 制度目的</summary><div class="lesson-body"><p>政府資訊公開制度以人民知的權利、民主監督與行政透明為核心，除法律限制外，政府資訊原則上應公開。</p></div></details>
+<details class="lesson-card" open=""><summary>11-2 政府資訊的範圍</summary><div class="lesson-body"><p>政府資訊包含政府機關於職權範圍內製作或取得，並存在於文書、圖畫、照片、磁碟、錄音、錄影或其他媒介的紀錄。</p></div></details>
+<details class="lesson-card"><summary>11-3 主動公開與申請提供</summary><div class="lesson-body"><p>公開制度分為機關依法主動公開，以及人民提出申請後由機關提供。是否應主動公開，須依法律所列資訊類型判斷。</p></div></details>
+<details class="lesson-card"><summary>11-4 申請權人與申請方式</summary><div class="lesson-body"><p>人民得依法申請政府資訊；申請通常應記載申請人、資訊內容、用途或提供方式等事項。資料描述越具體，越有利機關搜尋。</p></div></details>
+<details class="lesson-card"><summary>11-5 機關處理義務</summary><div class="lesson-body">
+<p>機關應於受理申請提供政府資訊之日起十五日內作成准駁決定；必要時得延長一次，延長不得逾十五日。</p>
+<p>資訊涉及特定個人、法人或團體權益時，應先書面通知其於十日內表示意見；機關仍須依法獨立作成准駁決定。</p>
+</div></details>
+<details class="lesson-card"><summary>11-6 不存在或未持有資訊</summary><div class="lesson-body"><p>政府資訊公開法主要要求提供既存資訊，通常不要求機關為申請人重新製作分析、統計或回答法律諮詢。</p></div></details>
+<details class="lesson-card"><summary>11-7 國家安全與公共利益限制</summary><div class="lesson-body"><p>涉及國家安全、國防、外交、犯罪偵查或其他重大公共利益的資訊，若公開可能造成具體危害，得依法限制。</p></div></details>
+<details class="lesson-card"><summary>11-8 個人隱私保護</summary><div class="lesson-body"><p>資訊涉及個人隱私時，應衡量公開目的、公益必要性、資料敏感程度與可否去識別化，不能僅因含姓名就一律拒絕。</p></div></details>
+<details class="lesson-card"><summary>11-9 營業秘密與競爭利益</summary><div class="lesson-body"><p>涉及營業秘密、經營資訊或第三人競爭地位者，機關應審查公開是否造成實質損害，必要時通知第三人表示意見。</p></div></details>
+<details class="lesson-card"><summary>11-10 決策過程資訊</summary><div class="lesson-body"><p>內部擬稿、意見交換或決策形成資料可能受限制，但決策基礎事實與最終決定不當然全部保密。</p></div></details>
+<details class="lesson-card"><summary>11-11 執法與考試資訊</summary><div class="lesson-body"><p>公開可能妨害犯罪偵查、行政檢查、考試公平或執法效果者，得依法限制；限制範圍仍須符合必要性。</p></div></details>
+<details class="lesson-card"><summary>11-12 部分公開原則</summary><div class="lesson-body"><p>資訊中只有部分內容符合限制公開要件時，機關應遮蔽或分離該部分後提供其餘內容，不得便宜行事全部拒絕。</p></div></details>
+<details class="lesson-card"><summary>11-13 公益衡量</summary><div class="lesson-body"><p>即使涉及隱私或第三人利益，若公開具有重大公益，仍可能應提供。是否具公益須具體說明，不能只以好奇或私人爭議替代。</p></div></details>
+<details class="lesson-card"><summary>11-14 提供方式與費用</summary><div class="lesson-body"><p>資訊可用閱覽、抄錄、複製、電子檔等方式提供。機關得依規定收取必要成本費用，但不得以不合理費用阻礙申請。</p></div></details>
+<details class="lesson-card"><summary>11-15 第三人程序保障</summary><div class="lesson-body">
+<p>申請資訊涉及特定個人、法人或團體權益時，政府資訊公開法第12條原則要求機關先以書面通知其於十日內表示意見；第三人未表示或反對，均不代替機關依法進行公開與不公開的判斷。</p>
+</div></details>
+<details class="lesson-card"><summary>11-16 與檔案法及個資法關係</summary><div class="lesson-body"><p>政府資訊公開法、檔案法與個資法可能同時適用。應先確認資訊性質，再依特別規定、公開原則及個資保護進行整合判斷。</p></div></details>
+<details class="lesson-card"><summary>11-17 救濟</summary><div class="lesson-body"><p>全部或部分拒絕提供通常屬行政處分，申請人得依法提起訴願與行政訴訟。機關逾期不處理，也可能構成怠為處分。</p></div></details>
+<details class="lesson-card"><summary>11-18 解題流程</summary><div class="lesson-body"><p>先問資訊是否存在且由機關持有，再判斷是否屬政府資訊、是否有法定限制、可否部分公開，最後確認程序與救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>政府資訊公開｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
 <button onclick="startChapterQuiz('政府資訊公開')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('政府資訊公開')">只練本章錯題</button>
@@ -808,30 +840,33 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-政府資訊公開"></div>
 </div></section>
-<section id="ch12" class="deep-chapter" data-tag="個資保護">
-<h2>第十二章｜個人資料保護</h2>
+<section class="deep-chapter" data-tag="個資保護" id="ch12">
+<h2>第十二章｜個人資料保護</h2><div class="law-update"><h3>個資法雙軌狀態</h3><ul><li>教材主體先依目前已生效的個資法作答。</li><li>114年11月11日公布的部分修正條文截至本版查核日尚未施行。</li><li>看到個資保護委員會、個資保護長、新監督檢查及事故通報制度時，須先確認題目問的是現行法或未生效新制。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>12-1 個人資料的概念</summary><div class="lesson-body"><p>個人資料是可直接或間接識別自然人的資料，例如姓名、身分證字號、聯絡方式、財務、健康、社會活動及其他足以識別資訊。</p></div></details>
-<details class="lesson-card" open><summary>12-2 蒐集、處理與利用</summary><div class="lesson-body"><p>蒐集是取得個資；處理包括建立、輸入、儲存、編輯、檢索、刪除等；利用則是處理以外的使用。三者須分別檢查法定依據。</p></div></details>
-<details class="lesson-card" ><summary>12-3 公務機關法定依據</summary><div class="lesson-body"><p>公務機關蒐集或處理個資，須在執行法定職務必要範圍內，並符合特定目的與法律所定條件。</p></div></details>
-<details class="lesson-card" ><summary>12-4 特定目的原則</summary><div class="lesson-body"><p>個資蒐集前應明確界定目的，所蒐集資料須與目的具有正當關聯，不能先大量蒐集再決定用途。</p></div></details>
-<details class="lesson-card" ><summary>12-5 最小必要原則</summary><div class="lesson-body"><p>資料項目、期間、對象與使用範圍應限於完成目的所必要。能以去識別或較少資料達成者，不應要求完整敏感資料。</p></div></details>
-<details class="lesson-card" ><summary>12-6 告知義務</summary><div class="lesson-body"><p>直接向當事人蒐集個資時，原則應告知機關名稱、目的、資料類別、利用期間地區對象方式、當事人權利及不提供的影響。</p></div></details>
-<details class="lesson-card" ><summary>12-7 間接蒐集</summary><div class="lesson-body"><p>非由當事人取得資料時，仍可能負有告知義務，但法律另有規定、已公開或告知顯有困難等情形可能有例外。</p></div></details>
-<details class="lesson-card" ><summary>12-8 特種個人資料</summary><div class="lesson-body"><p>病歷、醫療、基因、性生活、健康檢查與犯罪前科等資料原則不得蒐集、處理或利用，除非符合明文例外並採適當安全措施。</p></div></details>
-<details class="lesson-card" ><summary>12-9 目的內利用</summary><div class="lesson-body"><p>在原蒐集特定目的必要範圍內利用個資，須符合比例、資料品質及安全要求，不因具有原始法源就能無限擴張使用。</p></div></details>
-<details class="lesson-card" ><summary>12-10 目的外利用</summary><div class="lesson-body"><p>超出原目的利用，須有法律明文、增進公共利益、免除生命身體財產危險、學術統計去識別等法定事由。</p></div></details>
-<details class="lesson-card" ><summary>12-11 當事人權利</summary><div class="lesson-body"><p>當事人原則得查詢、閱覽、請求製給複製本、補充、更正、停止蒐集處理利用及刪除個資。法定例外須從嚴解釋。</p></div></details>
-<details class="lesson-card" ><summary>12-12 資料正確性</summary><div class="lesson-body"><p>機關應維持個資正確，發現錯誤應主動或依申請更正。爭議未釐清前，必要時應註記或停止處理。</p></div></details>
-<details class="lesson-card" ><summary>12-13 安全維護</summary><div class="lesson-body"><p>持有個資者應採技術與組織措施，防止竊取、竄改、毀損、滅失、洩漏或未授權存取。</p></div></details>
-<details class="lesson-card" ><summary>12-14 個資事故通知</summary><div class="lesson-body"><p>發生個資被竊取、洩漏、竄改或其他侵害時，應依法律查明原因、採補救措施，並在適當情形通知當事人。</p></div></details>
-<details class="lesson-card" ><summary>12-15 公開資料與再利用</summary><div class="lesson-body"><p>資料曾公開不代表可不受限制重製、彙整或建立人物画像。仍須檢查原公開目的、合理期待與再利用風險。</p></div></details>
-<details class="lesson-card" ><summary>12-16 去識別化</summary><div class="lesson-body"><p>真正無法識別特定人的資料，可能不再屬個資；但僅刪除姓名而仍能透過其他欄位重建身分，仍可能是個資。</p></div></details>
-<details class="lesson-card" ><summary>12-17 損害賠償與行政責任</summary><div class="lesson-body"><p>違法蒐集、處理或利用造成損害，可能產生停止侵害、刪除、更正、損害賠償及行政處罰等責任。</p></div></details>
-<details class="lesson-card" ><summary>12-18 解題流程</summary><div class="lesson-body"><p>確認是否為可識別自然人資料，再分辨蒐集、處理或利用，檢查目的、法源、告知、特種資料、當事人權利與救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>12-1 個人資料的概念</summary><div class="lesson-body"><p>個人資料是可直接或間接識別自然人的資料，例如姓名、身分證字號、聯絡方式、財務、健康、社會活動及其他足以識別資訊。</p></div></details>
+<details class="lesson-card" open=""><summary>12-2 蒐集、處理與利用</summary><div class="lesson-body"><p>蒐集是取得個資；處理包括建立、輸入、儲存、編輯、檢索、刪除等；利用則是處理以外的使用。三者須分別檢查法定依據。</p></div></details>
+<details class="lesson-card"><summary>12-3 公務機關法定依據</summary><div class="lesson-body"><p>公務機關蒐集或處理個資，須在執行法定職務必要範圍內，並符合特定目的與法律所定條件。</p></div></details>
+<details class="lesson-card"><summary>12-4 特定目的原則</summary><div class="lesson-body"><p>個資蒐集前應明確界定目的，所蒐集資料須與目的具有正當關聯，不能先大量蒐集再決定用途。</p></div></details>
+<details class="lesson-card"><summary>12-5 最小必要原則</summary><div class="lesson-body"><p>資料項目、期間、對象與使用範圍應限於完成目的所必要。能以去識別或較少資料達成者，不應要求完整敏感資料。</p></div></details>
+<details class="lesson-card"><summary>12-6 告知義務</summary><div class="lesson-body"><p>直接向當事人蒐集個資時，原則應告知機關名稱、目的、資料類別、利用期間地區對象方式、當事人權利及不提供的影響。</p></div></details>
+<details class="lesson-card"><summary>12-7 間接蒐集</summary><div class="lesson-body"><p>非由當事人取得資料時，仍可能負有告知義務，但法律另有規定、已公開或告知顯有困難等情形可能有例外。</p></div></details>
+<details class="lesson-card"><summary>12-8 特種個人資料</summary><div class="lesson-body"><p>病歷、醫療、基因、性生活、健康檢查與犯罪前科等資料原則不得蒐集、處理或利用，除非符合明文例外並採適當安全措施。</p></div></details>
+<details class="lesson-card"><summary>12-9 目的內利用</summary><div class="lesson-body"><p>在原蒐集特定目的必要範圍內利用個資，須符合比例、資料品質及安全要求，不因具有原始法源就能無限擴張使用。</p></div></details>
+<details class="lesson-card"><summary>12-10 目的外利用</summary><div class="lesson-body"><p>超出原目的利用，須有法律明文、增進公共利益、免除生命身體財產危險、學術統計去識別等法定事由。</p></div></details>
+<details class="lesson-card"><summary>12-11 當事人權利</summary><div class="lesson-body"><p>當事人原則得查詢、閱覽、請求製給複製本、補充、更正、停止蒐集處理利用及刪除個資。法定例外須從嚴解釋。</p></div></details>
+<details class="lesson-card"><summary>12-12 資料正確性</summary><div class="lesson-body"><p>機關應維持個資正確，發現錯誤應主動或依申請更正。爭議未釐清前，必要時應註記或停止處理。</p></div></details>
+<details class="lesson-card"><summary>12-13 安全維護</summary><div class="lesson-body"><p>持有個資者應採技術與組織措施，防止竊取、竄改、毀損、滅失、洩漏或未授權存取。</p></div></details>
+<details class="lesson-card"><summary>12-14 個資事故通知</summary><div class="lesson-body">
+<p><b>現行已生效規定：</b>公務機關或非公務機關違反個資法致個人資料被竊取、洩漏、竄改或其他侵害時，應查明並通知當事人相關事實及已採取的因應措施。</p>
+<p><b>尚未生效新制：</b>114年11月11日公布的修正條文增設個資保護委員會、個資保護長、監督檢查、事故通報及安全維護等制度；施行日期由行政院另定，作答時不得當成已全面施行。</p>
+</div></details>
+<details class="lesson-card"><summary>12-15 公開資料與再利用</summary><div class="lesson-body"><p>資料曾公開不代表可不受限制重製、彙整或建立人物画像。仍須檢查原公開目的、合理期待與再利用風險。</p></div></details>
+<details class="lesson-card"><summary>12-16 去識別化</summary><div class="lesson-body"><p>真正無法識別特定人的資料，可能不再屬個資；但僅刪除姓名而仍能透過其他欄位重建身分，仍可能是個資。</p></div></details>
+<details class="lesson-card"><summary>12-17 損害賠償與行政責任</summary><div class="lesson-body"><p>違法蒐集、處理或利用造成損害，可能產生停止侵害、刪除、更正、損害賠償及行政處罰等責任。</p></div></details>
+<details class="lesson-card"><summary>12-18 解題流程</summary><div class="lesson-body"><p>確認是否為可識別自然人資料，再分辨蒐集、處理或利用，檢查目的、法源、告知、特種資料、當事人權利與救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>個人資料保護｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
 <button onclick="startChapterQuiz('個資保護')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('個資保護')">只練本章錯題</button>
@@ -839,30 +874,33 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-個資保護"></div>
 </div></section>
-<section id="ch13" class="deep-chapter" data-tag="訴願">
-<h2>第十三章｜訴願</h2>
+<section class="deep-chapter" data-tag="訴願" id="ch13">
+<h2>第十三章｜訴願</h2><div class="law-update"><h3>第13章程序補充</h3><ul><li>訴願決定期間：三個月；必要時延長一次，最長二個月。</li><li>誤向其他機關提出時應依法移送並保留期間利益，不應要求人民自行取回重提。</li><li>地方自治事項的訴願監督原則著重合法性，不能任意取代地方政策選擇。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>13-1 訴願功能</summary><div class="lesson-body"><p>訴願是行政機關內部的正式行政救濟，兼具合法性與適當性審查，使上級或法定機關在進入法院前重新檢視原處分。</p></div></details>
-<details class="lesson-card" open><summary>13-2 訴願標的</summary><div class="lesson-body"><p>人民對行政機關的違法或不當行政處分，認為損害權利或利益時，得提起訴願。純粹事實行為原則不屬撤銷訴願標的。</p></div></details>
-<details class="lesson-card" ><summary>13-3 撤銷訴願</summary><div class="lesson-body"><p>對已作成的負擔處分或其他不利行政處分，請求撤銷或變更，是最典型的訴願類型。</p></div></details>
-<details class="lesson-card" ><summary>13-4 課予義務訴願</summary><div class="lesson-body"><p>人民依法申請行政處分遭駁回，或機關於法定期間內應作為而不作為時，可提起課予義務訴願。</p></div></details>
-<details class="lesson-card" ><summary>13-5 訴願人資格</summary><div class="lesson-body"><p>訴願人須主張自己的權利或法律上利益受侵害。單純一般公益關心，除法律特別規定外，通常不足。</p></div></details>
-<details class="lesson-card" ><summary>13-6 訴願管轄</summary><div class="lesson-body"><p>應依原處分機關的隸屬或法律特別規定決定訴願機關。向錯誤機關提出時，原則應移送有管轄權機關。</p></div></details>
-<details class="lesson-card" ><summary>13-7 訴願期間</summary><div class="lesson-body"><p>訴願通常應自行政處分送達或公告期滿次日起三十日內提起。期間計算須注意在途期間與不可歸責事由。</p></div></details>
-<details class="lesson-card" ><summary>13-8 訴願書與補正</summary><div class="lesson-body"><p>訴願書應記載訴願人、原處分機關、請求事項、事實理由等。形式欠缺通常應先命補正，不宜立即駁回。</p></div></details>
-<details class="lesson-card" ><summary>13-9 原處分機關重新審查</summary><div class="lesson-body"><p>訴願通常經由原處分機關提出，原機關應先重新審查；認為有理由者，可自行撤銷或變更原處分。</p></div></details>
-<details class="lesson-card" ><summary>13-10 不停止執行原則</summary><div class="lesson-body"><p>提起訴願原則不停止原處分執行，但原處分機關、訴願機關或行政法院在法定要件下得停止執行。</p></div></details>
-<details class="lesson-card" ><summary>13-11 程序審查</summary><div class="lesson-body"><p>逾期、欠缺訴願標的、無訴願能力、未補正或其他不合法情形，通常以不受理決定處理。</p></div></details>
-<details class="lesson-card" ><summary>13-12 實體審查</summary><div class="lesson-body"><p>訴願機關可審查原處分是否合法與適當，並調查有利不利證據。行政法院通常只審查合法性。</p></div></details>
-<details class="lesson-card" ><summary>13-13 訴願決定類型</summary><div class="lesson-body"><p>可能作成不受理、駁回、撤銷、變更、命原機關另為處分，或對怠為處分命其在一定期間內作成處分。</p></div></details>
-<details class="lesson-card" ><summary>13-14 不利益變更禁止</summary><div class="lesson-body"><p>訴願人單獨提起訴願時，訴願決定原則不得使其處境比原處分更不利，但仍須注意法律例外及原處分機關另行依法處理。</p></div></details>
-<details class="lesson-card" ><summary>13-15 訴願決定期間</summary><div class="lesson-body"><p>訴願機關應在法定期間內作成決定，必要時得依法延長。逾期未決定時，人民得依規定提起行政訴訟。</p></div></details>
-<details class="lesson-card" ><summary>13-16 訴願參加</summary><div class="lesson-body"><p>利害關係人的權利可能受訴願決定影響時，得依法參加程序，以保障陳述與防禦機會。</p></div></details>
-<details class="lesson-card" ><summary>13-17 訴願與行政訴訟</summary><div class="lesson-body"><p>撤銷及課予義務訴訟原則採訴願前置。訴願決定送達後，應在法定期間內向行政法院起訴。</p></div></details>
-<details class="lesson-card" ><summary>13-18 解題流程</summary><div class="lesson-body"><p>確認處分或怠為、訴願人資格、管轄與期間，再判斷停止執行、程序是否合法及決定類型。</p></div></details>
+<details class="lesson-card" open=""><summary>13-1 訴願功能</summary><div class="lesson-body"><p>訴願是行政機關內部的正式行政救濟，兼具合法性與適當性審查，使上級或法定機關在進入法院前重新檢視原處分。</p></div></details>
+<details class="lesson-card" open=""><summary>13-2 訴願標的</summary><div class="lesson-body"><p>人民對行政機關的違法或不當行政處分，認為損害權利或利益時，得提起訴願。純粹事實行為原則不屬撤銷訴願標的。</p></div></details>
+<details class="lesson-card"><summary>13-3 撤銷訴願</summary><div class="lesson-body"><p>對已作成的負擔處分或其他不利行政處分，請求撤銷或變更，是最典型的訴願類型。</p></div></details>
+<details class="lesson-card"><summary>13-4 課予義務訴願</summary><div class="lesson-body"><p>人民依法申請行政處分遭駁回，或機關於法定期間內應作為而不作為時，可提起課予義務訴願。</p></div></details>
+<details class="lesson-card"><summary>13-5 訴願人資格</summary><div class="lesson-body"><p>訴願人須主張自己的權利或法律上利益受侵害。單純一般公益關心，除法律特別規定外，通常不足。</p></div></details>
+<details class="lesson-card"><summary>13-6 訴願管轄</summary><div class="lesson-body"><p>應依原處分機關的隸屬或法律特別規定決定訴願機關。向錯誤機關提出時，原則應移送有管轄權機關。</p></div></details>
+<details class="lesson-card"><summary>13-7 訴願期間</summary><div class="lesson-body"><p>訴願通常應自行政處分送達或公告期滿次日起三十日內提起。期間計算須注意在途期間與不可歸責事由。</p></div></details>
+<details class="lesson-card"><summary>13-8 訴願書與補正</summary><div class="lesson-body"><p>訴願書應記載訴願人、原處分機關、請求事項、事實理由等。形式欠缺通常應先命補正，不宜立即駁回。</p></div></details>
+<details class="lesson-card"><summary>13-9 原處分機關重新審查</summary><div class="lesson-body"><p>訴願通常經由原處分機關提出，原機關應先重新審查；認為有理由者，可自行撤銷或變更原處分。</p></div></details>
+<details class="lesson-card"><summary>13-10 不停止執行原則</summary><div class="lesson-body"><p>提起訴願原則不停止原處分執行，但原處分機關、訴願機關或行政法院在法定要件下得停止執行。</p></div></details>
+<details class="lesson-card"><summary>13-11 程序審查</summary><div class="lesson-body"><p>逾期、欠缺訴願標的、無訴願能力、未補正或其他不合法情形，通常以不受理決定處理。</p></div></details>
+<details class="lesson-card"><summary>13-12 實體審查</summary><div class="lesson-body"><p>訴願機關可審查原處分是否合法與適當，並調查有利不利證據。行政法院通常只審查合法性。</p></div></details>
+<details class="lesson-card"><summary>13-13 訴願決定類型</summary><div class="lesson-body"><p>可能作成不受理、駁回、撤銷、變更、命原機關另為處分，或對怠為處分命其在一定期間內作成處分。</p></div></details>
+<details class="lesson-card"><summary>13-14 不利益變更禁止</summary><div class="lesson-body"><p>訴願人單獨提起訴願時，訴願決定原則不得使其處境比原處分更不利，但仍須注意法律例外及原處分機關另行依法處理。</p></div></details>
+<details class="lesson-card"><summary>13-15 訴願決定期間</summary><div class="lesson-body">
+<p>訴願法第85條規定，訴願決定原則應自收受訴願書之次日起三個月內為之；必要時得延長一次，延長期間不得逾二個月，並應通知訴願人及參加人。</p>
+<p>逾法定期間未決定時，訴願人得依行政訴訟法規定提起相應訴訟。</p>
+</div></details>
+<details class="lesson-card"><summary>13-16 訴願參加</summary><div class="lesson-body"><p>利害關係人的權利可能受訴願決定影響時，得依法參加程序，以保障陳述與防禦機會。</p></div></details>
+<details class="lesson-card"><summary>13-17 訴願與行政訴訟</summary><div class="lesson-body"><p>撤銷及課予義務訴訟原則採訴願前置。訴願決定送達後，應在法定期間內向行政法院起訴。</p></div></details>
+<details class="lesson-card"><summary>13-18 解題流程</summary><div class="lesson-body"><p>確認處分或怠為、訴願人資格、管轄與期間，再判斷停止執行、程序是否合法及決定類型。</p></div></details>
 <div class="chapter-practice">
 <h3>訴願｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
 <button onclick="startChapterQuiz('訴願')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('訴願')">只練本章錯題</button>
@@ -870,30 +908,35 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-訴願"></div>
 </div></section>
-<section id="ch14" class="deep-chapter" data-tag="行政訴訟">
-<h2>第十四章｜行政訴訟</h2>
+<section class="deep-chapter" data-tag="行政訴訟" id="ch14">
+<h2>第十四章｜行政訴訟</h2><div class="law-update"><h3>112年8月15日後法院架構</h3><ul><li>已取消各地方法院行政訴訟庭。</li><li>高等行政法院內部分設地方行政訴訟庭與高等行政訴訟庭。</li><li>新臺幣150萬元是部分稅捐、罰鍰與公法財產通常程序案件的重要分流門檻。</li><li>都市計畫審查由高等行政訴訟庭第一審；交通裁決與收容事件依特別程序由地方行政訴訟庭處理。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>14-1 行政訴訟目的</summary><div class="lesson-body"><p>行政訴訟由法院審查公權力行為合法性並保障人民權利，同時維持行政法秩序與權力分立。</p></div></details>
-<details class="lesson-card" open><summary>14-2 審判權</summary><div class="lesson-body"><p>公法上爭議原則由行政法院審判；私法爭議由普通法院審判。應依爭議法律關係實質判斷，而非僅看當事人是否為政府。</p></div></details>
-<details class="lesson-card" ><summary>14-3 撤銷訴訟</summary><div class="lesson-body"><p>人民請求法院撤銷違法行政處分，須有原告適格、權利受侵害可能、訴願前置及在法定期間起訴等要件。</p></div></details>
-<details class="lesson-card" ><summary>14-4 課予義務訴訟</summary><div class="lesson-body"><p>人民依法申請處分遭駁回或機關怠為時，可請求法院命機關作成特定處分，或命其依判決法律見解另為決定。</p></div></details>
-<details class="lesson-card" ><summary>14-5 確認訴訟</summary><div class="lesson-body"><p>可請求確認行政處分無效、公法法律關係存在不存在，或已執行完畢行政處分違法，但須有確認利益且無其他更直接救濟。</p></div></details>
-<details class="lesson-card" ><summary>14-6 一般給付訴訟</summary><div class="lesson-body"><p>請求機關作成行政處分以外的公法給付，例如付款、返還物品、停止事實行為、更正資料或履行行政契約。</p></div></details>
-<details class="lesson-card" ><summary>14-7 訴訟類型選擇</summary><div class="lesson-body"><p>應從原告希望法院提供的實質救濟判斷。若爭議核心是撤銷處分，不能為規避期間而改提確認或給付訴訟。</p></div></details>
-<details class="lesson-card" ><summary>14-8 原告適格</summary><div class="lesson-body"><p>原告須主張自身權利或法律上利益受侵害。是否有權利，常透過保護規範理論判斷法規是否兼具保護個人目的。</p></div></details>
-<details class="lesson-card" ><summary>14-9 被告適格</summary><div class="lesson-body"><p>撤銷訴訟原則以作成行政處分的機關為被告；組織變更、委託行使公權力等情形須依法律規定判斷。</p></div></details>
-<details class="lesson-card" ><summary>14-10 訴訟期間</summary><div class="lesson-body"><p>撤銷與課予義務訴訟須在法定不變期間內起訴。錯誤救濟教示、不可歸責事由等可能影響期間。</p></div></details>
-<details class="lesson-card" ><summary>14-11 訴訟利益</summary><div class="lesson-body"><p>原告須有現實且可透過判決改善的法律利益。處分消滅後，若仍有回復名譽、避免重複或賠償需要，可能仍有利益。</p></div></details>
-<details class="lesson-card" ><summary>14-12 職權調查與舉證</summary><div class="lesson-body"><p>行政法院依職權調查事實，但當事人仍負協力與提出資料責任。法院依全部辯論意旨及證據判斷事實。</p></div></details>
-<details class="lesson-card" ><summary>14-13 裁量審查</summary><div class="lesson-body"><p>法院不代替機關作政策選擇，但可審查是否逾越權限、怠於裁量、考量無關因素、漏未考量重要因素或違反比例平等。</p></div></details>
-<details class="lesson-card" ><summary>14-14 判決類型</summary><div class="lesson-body"><p>法院可作成程序駁回、實體駁回、撤銷、命作成處分、確認、給付等判決。課予義務是否可直接命特定內容，視案件成熟度而定。</p></div></details>
-<details class="lesson-card" ><summary>14-15 判決效力</summary><div class="lesson-body"><p>確定判決對當事人具有拘束力；撤銷判決使違法處分失其效力，機關重作處分時應遵守判決法律見解。</p></div></details>
-<details class="lesson-card" ><summary>14-16 參加與共同訴訟</summary><div class="lesson-body"><p>第三人權利可能受判決影響時，可依規定參加；數人具有共同權利義務或同一事實法律原因時，可能共同訴訟。</p></div></details>
-<details class="lesson-card" ><summary>14-17 上訴與再審</summary><div class="lesson-body"><p>對判決不服，可依審級與法律規定提起上訴；確定判決有法定重大瑕疵時，始得提起再審。</p></div></details>
-<details class="lesson-card" ><summary>14-18 解題流程</summary><div class="lesson-body"><p>先定公私法與審判權，再選訴訟類型，檢查前置、期間、適格、權利保護必要，最後判斷法院可作成的判決。</p></div></details>
+<details class="lesson-card" open=""><summary>14-1 行政訴訟目的</summary><div class="lesson-body"><p>行政訴訟由法院審查公權力行為合法性並保障人民權利，同時維持行政法秩序與權力分立。</p></div></details>
+<details class="lesson-card" open=""><summary>14-2 審判權</summary><div class="lesson-body">
+<p>公法上爭議原則由行政法院審判，私法爭議由普通法院審判。112年8月15日起取消地方法院行政訴訟庭，改由高等行政法院分設地方行政訴訟庭與高等行政訴訟庭。</p>
+<p>地方行政訴訟庭受理交通裁決、收容及法律規定的事件，並受理新臺幣150萬元以下的特定稅捐、罰鍰及公法財產關係通常程序事件；其餘依法由高等行政訴訟庭第一審。</p>
+</div></details>
+<details class="lesson-card"><summary>14-3 撤銷訴訟</summary><div class="lesson-body"><p>人民請求法院撤銷違法行政處分，須有原告適格、權利受侵害可能、訴願前置及在法定期間起訴等要件。</p></div></details>
+<details class="lesson-card"><summary>14-4 課予義務訴訟</summary><div class="lesson-body"><p>人民依法申請處分遭駁回或機關怠為時，可請求法院命機關作成特定處分，或命其依判決法律見解另為決定。</p></div></details>
+<details class="lesson-card"><summary>14-5 確認訴訟</summary><div class="lesson-body"><p>可請求確認行政處分無效、公法法律關係存在不存在，或已執行完畢行政處分違法，但須有確認利益且無其他更直接救濟。</p></div></details>
+<details class="lesson-card"><summary>14-6 一般給付訴訟</summary><div class="lesson-body"><p>請求機關作成行政處分以外的公法給付，例如付款、返還物品、停止事實行為、更正資料或履行行政契約。</p></div></details>
+<details class="lesson-card"><summary>14-7 訴訟類型選擇</summary><div class="lesson-body"><p>應從原告希望法院提供的實質救濟判斷。若爭議核心是撤銷處分，不能為規避期間而改提確認或給付訴訟。</p></div></details>
+<details class="lesson-card"><summary>14-8 原告適格</summary><div class="lesson-body"><p>原告須主張自身權利或法律上利益受侵害。是否有權利，常透過保護規範理論判斷法規是否兼具保護個人目的。</p></div></details>
+<details class="lesson-card"><summary>14-9 被告適格</summary><div class="lesson-body"><p>撤銷訴訟原則以作成行政處分的機關為被告；組織變更、委託行使公權力等情形須依法律規定判斷。</p></div></details>
+<details class="lesson-card"><summary>14-10 訴訟期間</summary><div class="lesson-body"><p>撤銷與課予義務訴訟須在法定不變期間內起訴。錯誤救濟教示、不可歸責事由等可能影響期間。</p></div></details>
+<details class="lesson-card"><summary>14-11 訴訟利益</summary><div class="lesson-body"><p>原告須有現實且可透過判決改善的法律利益。處分消滅後，若仍有回復名譽、避免重複或賠償需要，可能仍有利益。</p></div></details>
+<details class="lesson-card"><summary>14-12 職權調查與舉證</summary><div class="lesson-body"><p>行政法院依職權調查事實，但當事人仍負協力與提出資料責任。法院依全部辯論意旨及證據判斷事實。</p></div></details>
+<details class="lesson-card"><summary>14-13 裁量審查</summary><div class="lesson-body"><p>法院不代替機關作政策選擇，但可審查是否逾越權限、怠於裁量、考量無關因素、漏未考量重要因素或違反比例平等。</p></div></details>
+<details class="lesson-card"><summary>14-14 判決類型</summary><div class="lesson-body"><p>法院可作成程序駁回、實體駁回、撤銷、命作成處分、確認、給付等判決。課予義務是否可直接命特定內容，視案件成熟度而定。</p></div></details>
+<details class="lesson-card"><summary>14-15 判決效力</summary><div class="lesson-body"><p>確定判決對當事人具有拘束力；撤銷判決使違法處分失其效力，機關重作處分時應遵守判決法律見解。</p></div></details>
+<details class="lesson-card"><summary>14-16 參加與共同訴訟</summary><div class="lesson-body"><p>第三人權利可能受判決影響時，可依規定參加；數人具有共同權利義務或同一事實法律原因時，可能共同訴訟。</p></div></details>
+<details class="lesson-card"><summary>14-17 上訴與再審</summary><div class="lesson-body">
+<p>行政訴訟維持多種審級架構：地方行政訴訟庭通常程序事件由高等行政訴訟庭上訴審理；高等行政訴訟庭第一審事件原則向最高行政法院上訴。是否須律師代理及能否上訴，依事件類型與法律規定判斷。</p>
+</div></details>
+<details class="lesson-card"><summary>14-18 解題流程</summary><div class="lesson-body"><p>先定公私法與審判權，再選訴訟類型，檢查前置、期間、適格、權利保護必要，最後判斷法院可作成的判決。</p></div></details>
 <div class="chapter-practice">
 <h3>行政訴訟｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
 <button onclick="startChapterQuiz('行政訴訟')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('行政訴訟')">只練本章錯題</button>
@@ -901,30 +944,33 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-行政訴訟"></div>
 </div></section>
-<section id="ch15" class="deep-chapter" data-tag="暫時權利保護">
-<h2>第十五章｜暫時權利保護</h2>
+<section class="deep-chapter" data-tag="暫時權利保護" id="ch15">
+<h2>第十五章｜暫時權利保護</h2><div class="law-update"><h3>第15章程序補充</h3><ul><li>處分型爭議用停止執行；公法金錢請求用假扣押；其他爭執法律關係用定暫時狀態處分。</li><li>聲請法院層級須配合本案的現行管轄，不再使用舊制地方法院行政訴訟庭。</li><li>法院須同時審查急迫性、難以回復損害、本案勝訴可能與重大公共利益。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>15-1 制度目的</summary><div class="lesson-body"><p>行政爭訟常需時間，若等待終局判決才救濟可能已無實益，因此法律設計停止執行、假扣押及定暫時狀態處分。</p></div></details>
-<details class="lesson-card" open><summary>15-2 不停止執行原則</summary><div class="lesson-body"><p>提起訴願或行政訴訟原則不停止行政處分執行，以維持行政效率；但符合要件時得例外停止。</p></div></details>
-<details class="lesson-card" ><summary>15-3 停止執行標的</summary><div class="lesson-body"><p>停止執行主要針對尚可執行或效力持續中的行政處分。單純事實行為通常應考慮定暫時狀態處分。</p></div></details>
-<details class="lesson-card" ><summary>15-4 聲請機關與法院</summary><div class="lesson-body"><p>當事人可向原處分機關、訴願機關或行政法院請求停止執行，具體程序與先後依法律規定判斷。</p></div></details>
-<details class="lesson-card" ><summary>15-5 難以回復損害</summary><div class="lesson-body"><p>損害不以絕對不能金錢賠償為限，若金額巨大、權利性質特殊、生命健康或營業存續受威脅，可能屬難以回復。</p></div></details>
-<details class="lesson-card" ><summary>15-6 急迫性</summary><div class="lesson-body"><p>暫時保護須有等待本案判決即可能發生損害的急迫情況。若執行尚遙遠或可透過通常程序避免，必要性較低。</p></div></details>
-<details class="lesson-card" ><summary>15-7 公共利益衡量</summary><div class="lesson-body"><p>法院應衡量停止執行對公共安全、第三人權利與行政任務的影響。對公益有重大危害時，可能駁回。</p></div></details>
-<details class="lesson-card" ><summary>15-8 本案顯無理由</summary><div class="lesson-body"><p>若本案明顯無勝訴可能，通常欠缺暫時保護必要；但暫時程序只作概括審查，不等同終局判決。</p></div></details>
-<details class="lesson-card" ><summary>15-9 停止效力、執行或程序</summary><div class="lesson-body"><p>停止執行可能包括停止處分效力、停止執行程序或停止部分執行，法院應選擇足以保護權利且侵害最小的方式。</p></div></details>
-<details class="lesson-card" ><summary>15-10 假扣押</summary><div class="lesson-body"><p>為保全公法上金錢請求，若日後有不能強制執行或甚難執行之虞，可聲請假扣押。</p></div></details>
-<details class="lesson-card" ><summary>15-11 定暫時狀態處分</summary><div class="lesson-body"><p>為防止重大損害或避免急迫危險，就有爭執的公法法律關係，法院得暫時命作成、容忍或禁止一定行為。</p></div></details>
-<details class="lesson-card" ><summary>15-12 非處分爭議</summary><div class="lesson-body"><p>對持續公開資料、拒絕提供必要服務、施工或其他事實行為，通常以定暫時狀態處分保全，而非停止執行。</p></div></details>
-<details class="lesson-card" ><summary>15-13 禁止預先實現本案</summary><div class="lesson-body"><p>暫時處分原則避免完全提前實現終局請求；但若不先暫時給付即無法避免重大損害，仍可能例外准許。</p></div></details>
-<details class="lesson-card" ><summary>15-14 擔保</summary><div class="lesson-body"><p>法院得視情況命聲請人提供擔保，以平衡對方或第三人因暫時措施可能受到的損害。</p></div></details>
-<details class="lesson-card" ><summary>15-15 裁定與抗告</summary><div class="lesson-body"><p>暫時權利保護通常以裁定為之；對裁定不服，可依法律規定提起抗告。</p></div></details>
-<details class="lesson-card" ><summary>15-16 情事變更</summary><div class="lesson-body"><p>准許或駁回暫時措施後，如事實或法律情況重大變更，當事人得依法聲請撤銷、變更或重新處理。</p></div></details>
-<details class="lesson-card" ><summary>15-17 與本案關係</summary><div class="lesson-body"><p>暫時裁定不拘束本案法院最終判斷，但本案起訴逾期、撤回或無權利保護必要，可能影響暫時措施存續。</p></div></details>
-<details class="lesson-card" ><summary>15-18 解題流程</summary><div class="lesson-body"><p>先辨認標的是行政處分、金錢請求或其他公法關係，再選停止執行、假扣押或定暫時狀態，檢查急迫、損害、勝訴可能與公益。</p></div></details>
+<details class="lesson-card" open=""><summary>15-1 制度目的</summary><div class="lesson-body"><p>行政爭訟常需時間，若等待終局判決才救濟可能已無實益，因此法律設計停止執行、假扣押及定暫時狀態處分。</p></div></details>
+<details class="lesson-card" open=""><summary>15-2 不停止執行原則</summary><div class="lesson-body"><p>提起訴願或行政訴訟原則不停止行政處分執行，以維持行政效率；但符合要件時得例外停止。</p></div></details>
+<details class="lesson-card"><summary>15-3 停止執行標的</summary><div class="lesson-body"><p>停止執行主要針對尚可執行或效力持續中的行政處分。單純事實行為通常應考慮定暫時狀態處分。</p></div></details>
+<details class="lesson-card"><summary>15-4 聲請機關與法院</summary><div class="lesson-body">
+<p>停止執行可依法向原處分機關、訴願機關或管轄行政法院申請；應依案件所處階段、是否已提訴願或行政訴訟及急迫程度選擇程序，法律並非一律要求先向同一機關申請。</p>
+<p>112年新制後，法院管轄須配合地方行政訴訟庭與高等行政訴訟庭的案件分流。</p>
+</div></details>
+<details class="lesson-card"><summary>15-5 難以回復損害</summary><div class="lesson-body"><p>損害不以絕對不能金錢賠償為限，若金額巨大、權利性質特殊、生命健康或營業存續受威脅，可能屬難以回復。</p></div></details>
+<details class="lesson-card"><summary>15-6 急迫性</summary><div class="lesson-body"><p>暫時保護須有等待本案判決即可能發生損害的急迫情況。若執行尚遙遠或可透過通常程序避免，必要性較低。</p></div></details>
+<details class="lesson-card"><summary>15-7 公共利益衡量</summary><div class="lesson-body"><p>法院應衡量停止執行對公共安全、第三人權利與行政任務的影響。對公益有重大危害時，可能駁回。</p></div></details>
+<details class="lesson-card"><summary>15-8 本案顯無理由</summary><div class="lesson-body"><p>若本案明顯無勝訴可能，通常欠缺暫時保護必要；但暫時程序只作概括審查，不等同終局判決。</p></div></details>
+<details class="lesson-card"><summary>15-9 停止效力、執行或程序</summary><div class="lesson-body"><p>停止執行可能包括停止處分效力、停止執行程序或停止部分執行，法院應選擇足以保護權利且侵害最小的方式。</p></div></details>
+<details class="lesson-card"><summary>15-10 假扣押</summary><div class="lesson-body"><p>為保全公法上金錢請求，若日後有不能強制執行或甚難執行之虞，可聲請假扣押。</p></div></details>
+<details class="lesson-card"><summary>15-11 定暫時狀態處分</summary><div class="lesson-body"><p>為防止重大損害或避免急迫危險，就有爭執的公法法律關係，法院得暫時命作成、容忍或禁止一定行為。</p></div></details>
+<details class="lesson-card"><summary>15-12 非處分爭議</summary><div class="lesson-body"><p>對持續公開資料、拒絕提供必要服務、施工或其他事實行為，通常以定暫時狀態處分保全，而非停止執行。</p></div></details>
+<details class="lesson-card"><summary>15-13 禁止預先實現本案</summary><div class="lesson-body"><p>暫時處分原則避免完全提前實現終局請求；但若不先暫時給付即無法避免重大損害，仍可能例外准許。</p></div></details>
+<details class="lesson-card"><summary>15-14 擔保</summary><div class="lesson-body"><p>法院得視情況命聲請人提供擔保，以平衡對方或第三人因暫時措施可能受到的損害。</p></div></details>
+<details class="lesson-card"><summary>15-15 裁定與抗告</summary><div class="lesson-body"><p>暫時權利保護通常以裁定為之；對裁定不服，可依法律規定提起抗告。</p></div></details>
+<details class="lesson-card"><summary>15-16 情事變更</summary><div class="lesson-body"><p>准許或駁回暫時措施後，如事實或法律情況重大變更，當事人得依法聲請撤銷、變更或重新處理。</p></div></details>
+<details class="lesson-card"><summary>15-17 與本案關係</summary><div class="lesson-body"><p>暫時裁定不拘束本案法院最終判斷，但本案起訴逾期、撤回或無權利保護必要，可能影響暫時措施存續。</p></div></details>
+<details class="lesson-card"><summary>15-18 解題流程</summary><div class="lesson-body"><p>先辨認標的是行政處分、金錢請求或其他公法關係，再選停止執行、假扣押或定暫時狀態，檢查急迫、損害、勝訴可能與公益。</p></div></details>
 <div class="chapter-practice">
 <h3>暫時權利保護｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
 <button onclick="startChapterQuiz('暫時權利保護')">開始本章40題</button>
 <button class="secondary" onclick="startChapterWrong('暫時權利保護')">只練本章錯題</button>
@@ -932,167 +978,189 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div class="chapter-score" id="score-暫時權利保護"></div>
 </div></section>
-<section id="ch16" class="deep-chapter" data-tag="國家賠償">
-<h2>第十六章｜國家賠償</h2>
+<section class="deep-chapter" data-tag="國家賠償" id="ch16">
+<h2>第十六章｜國家賠償</h2><div class="law-update"><h3>第16章明確修正</h3><ul><li>公共設施責任的保護法益補入『人身自由』。</li><li>公共設施不再以國家或地方自治團體所有為限；委託民間管理仍可能成立國賠。</li><li>補入開放山域、水域自然公物及其設施的警告後免責、減責規則。</li><li>國賠一般期間明確化為知悉後二年、損害發生後五年。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>16-1 制度定位</summary><div class="lesson-body"><p>國家賠償是國家對違法公權力侵害所負的損害填補責任，兼具權利救濟與促使行政合法的功能。</p></div></details>
-<details class="lesson-card" open><summary>16-2 公務員違法侵權</summary><div class="lesson-body"><p>公務員執行職務行使公權力，因故意或過失不法侵害人民自由或權利，國家可能負賠償責任。</p></div></details>
-<details class="lesson-card" ><summary>16-3 怠於執行職務</summary><div class="lesson-body"><p>公務員對人民負有法定作為義務，卻因故意或過失怠於執行，致人民權利受損，也可能成立國賠。</p></div></details>
-<details class="lesson-card" ><summary>16-4 行使公權力</summary><div class="lesson-body"><p>是否屬行使公權力，應依行為性質判斷，包括行政處分、行政執行、事實行為、警察措施及其他公法活動。</p></div></details>
-<details class="lesson-card" ><summary>16-5 違法性</summary><div class="lesson-body"><p>國賠通常以公務員行為違法為前提。即使行政處分未先撤銷，仍須在賠償程序中判斷違法性與因果關係。</p></div></details>
-<details class="lesson-card" ><summary>16-6 故意與過失</summary><div class="lesson-body"><p>公務員須至少有故意或過失。判斷過失時，應考量法定職責、專業標準、資訊條件與可預見性。</p></div></details>
-<details class="lesson-card" ><summary>16-7 權利或自由受侵害</summary><div class="lesson-body"><p>受保護法益包括生命、身體、自由、財產、名譽、隱私及其他法律上權利，不以財產權為限。</p></div></details>
-<details class="lesson-card" ><summary>16-8 因果關係</summary><div class="lesson-body"><p>違法行為與損害間須有相當因果關係。若損害主要來自第三人、被害人自身或不可抗力，責任可能減輕或中斷。</p></div></details>
-<details class="lesson-card" ><summary>16-9 公共設施責任</summary><div class="lesson-body"><p>公共設施設置或管理欠缺通常應有的安全性，致人民生命、身體或財產受損，國家可能負賠償責任。</p></div></details>
-<details class="lesson-card" ><summary>16-10 設置或管理欠缺</summary><div class="lesson-body"><p>應依設施用途、通常使用方式、危險可預見性、維護能力與警示措施，判斷是否欠缺安全性。</p></div></details>
-<details class="lesson-card" ><summary>16-11 開放空間與自然設施</summary><div class="lesson-body"><p>山林、河川、步道等開放性公共設施，責任判斷須兼顧自然風險、管理可能性及使用者合理注意。</p></div></details>
-<details class="lesson-card" ><summary>16-12 賠償義務機關</summary><div class="lesson-body"><p>原則由該公務員所屬機關或設施設置管理機關負責。機關間有爭議時，不應使人民因內部分工失去救濟。</p></div></details>
-<details class="lesson-card" ><summary>16-13 先行協議程序</summary><div class="lesson-body"><p>請求國賠通常應先以書面向賠償義務機關提出，協議不成立或逾法定期間未處理，始向普通法院提起訴訟。</p></div></details>
-<details class="lesson-card" ><summary>16-14 請求權期間</summary><div class="lesson-body"><p>國賠請求受法定消滅時效限制，應注意知有損害及賠償義務人之日起算的短期期間，以及行為發生後的最長期間。</p></div></details>
-<details class="lesson-card" ><summary>16-15 賠償範圍</summary><div class="lesson-body"><p>得請求財產上損害、所失利益及符合要件的非財產上損害。賠償仍受因果關係、損益相抵與過失相抵限制。</p></div></details>
-<details class="lesson-card" ><summary>16-16 國家求償權</summary><div class="lesson-body"><p>國家賠償後，若公務員有故意或重大過失，國家得依法向該公務員求償，以兼顧人民救濟與個人責任。</p></div></details>
-<details class="lesson-card" ><summary>16-17 與行政救濟關係</summary><div class="lesson-body"><p>撤銷處分著重排除違法法律效果，國賠著重填補損害；兩者目的不同，可能並行，但不得重複填補。</p></div></details>
-<details class="lesson-card" ><summary>16-18 解題流程</summary><div class="lesson-body"><p>先分公務員侵權或公共設施，再檢查違法、故意過失、安全欠缺、權利侵害、因果、期間、先行程序與賠償範圍。</p></div></details>
+<details class="lesson-card" open=""><summary>16-1 制度定位</summary><div class="lesson-body"><p>國家賠償是國家對違法公權力侵害所負的損害填補責任，兼具權利救濟與促使行政合法的功能。</p></div></details>
+<details class="lesson-card" open=""><summary>16-2 公務員違法侵權</summary><div class="lesson-body"><p>公務員執行職務行使公權力，因故意或過失不法侵害人民自由或權利，國家可能負賠償責任。</p></div></details>
+<details class="lesson-card"><summary>16-3 怠於執行職務</summary><div class="lesson-body"><p>公務員對人民負有法定作為義務，卻因故意或過失怠於執行，致人民權利受損，也可能成立國賠。</p></div></details>
+<details class="lesson-card"><summary>16-4 行使公權力</summary><div class="lesson-body"><p>是否屬行使公權力，應依行為性質判斷，包括行政處分、行政執行、事實行為、警察措施及其他公法活動。</p></div></details>
+<details class="lesson-card"><summary>16-5 違法性</summary><div class="lesson-body"><p>國賠通常以公務員行為違法為前提。即使行政處分未先撤銷，仍須在賠償程序中判斷違法性與因果關係。</p></div></details>
+<details class="lesson-card"><summary>16-6 故意與過失</summary><div class="lesson-body"><p>公務員須至少有故意或過失。判斷過失時，應考量法定職責、專業標準、資訊條件與可預見性。</p></div></details>
+<details class="lesson-card"><summary>16-7 權利或自由受侵害</summary><div class="lesson-body"><p>受保護法益包括生命、身體、自由、財產、名譽、隱私及其他法律上權利，不以財產權為限。</p></div></details>
+<details class="lesson-card"><summary>16-8 因果關係</summary><div class="lesson-body"><p>違法行為與損害間須有相當因果關係。若損害主要來自第三人、被害人自身或不可抗力，責任可能減輕或中斷。</p></div></details>
+<details class="lesson-card"><summary>16-9 公共設施責任</summary><div class="lesson-body">
+<p>公共設施因設置或管理欠缺，致人民生命、身體、<b>人身自由</b>或財產受損害時，國家負損害賠償責任。設施委託民間團體或個人管理者，國家仍可能負責。</p>
+</div></details>
+<details class="lesson-card"><summary>16-10 設置或管理欠缺</summary><div class="lesson-body"><p>應依設施用途、通常使用方式、危險可預見性、維護能力與警示措施，判斷是否欠缺安全性。</p></div></details>
+<details class="lesson-card"><summary>16-11 開放空間與自然設施</summary><div class="lesson-body">
+<p>開放山域、水域等自然公物已作適當警告或標示，人民仍從事冒險或具危險性活動者，國家不負賠償責任。</p>
+<p>若損害來自自然公物內的設施，已作適當警告或標示而人民仍從事危險活動者，得減輕或免除國家責任。</p>
+</div></details>
+<details class="lesson-card"><summary>16-12 賠償義務機關</summary><div class="lesson-body"><p>原則由該公務員所屬機關或設施設置管理機關負責。機關間有爭議時，不應使人民因內部分工失去救濟。</p></div></details>
+<details class="lesson-card"><summary>16-13 先行協議程序</summary><div class="lesson-body"><p>請求國賠通常應先以書面向賠償義務機關提出，協議不成立或逾法定期間未處理，始向普通法院提起訴訟。</p></div></details>
+<details class="lesson-card"><summary>16-14 請求權期間</summary><div class="lesson-body">
+<p>國家賠償請求權，自請求權人知有損害及賠償義務機關時起，二年間不行使而消滅；自損害發生時起逾五年者亦同。應另注意特別法是否有不同規定。</p>
+</div></details>
+<details class="lesson-card"><summary>16-15 賠償範圍</summary><div class="lesson-body"><p>得請求財產上損害、所失利益及符合要件的非財產上損害。賠償仍受因果關係、損益相抵與過失相抵限制。</p></div></details>
+<details class="lesson-card"><summary>16-16 國家求償權</summary><div class="lesson-body"><p>國家賠償後，若公務員有故意或重大過失，國家得依法向該公務員求償，以兼顧人民救濟與個人責任。</p></div></details>
+<details class="lesson-card"><summary>16-17 與行政救濟關係</summary><div class="lesson-body"><p>撤銷處分著重排除違法法律效果，國賠著重填補損害；兩者目的不同，可能並行，但不得重複填補。</p></div></details>
+<details class="lesson-card"><summary>16-18 解題流程</summary><div class="lesson-body"><p>先分公務員侵權或公共設施，再檢查違法、故意過失、安全欠缺、權利侵害、因果、期間、先行程序與賠償範圍。</p></div></details>
 <div class="chapter-practice">
 <h3>國家賠償｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('國家賠償')">開始本章40題</button>
+<button onclick="startChapterQuiz('國家賠償')">開始本章60題</button>
 <button class="secondary" onclick="startChapterWrong('國家賠償')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('國家賠償')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-國家賠償"></div>
 </div></section>
-<section id="ch17" class="deep-chapter" data-tag="損失補償">
-<h2>第十七章｜損失補償</h2>
+<section class="deep-chapter" data-tag="損失補償" id="ch17">
+<h2>第十七章｜損失補償</h2><div class="law-update"><h3>第17章救濟校正</h3><ul><li>損失補償不是單一程序制度，必須先找各特別法。</li><li>徵收、即時強制、信賴保護與行政契約補償的請求程序及訴訟類型可能不同。</li><li>法律未明文的準徵收補償，能否直接請求仍須依憲法、法律與實務個案判斷。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>17-1 制度概念</summary><div class="lesson-body"><p>損失補償是國家合法行使公權力，使特定人民承受超越一般社會義務的特別犧牲時，依法給予公平填補。</p></div></details>
-<details class="lesson-card" open><summary>17-2 與國賠區別</summary><div class="lesson-body"><p>國賠通常以違法行為為前提；損失補償則以合法公權力行為為前提。解題首要在判斷行政行為是否合法。</p></div></details>
-<details class="lesson-card" ><summary>17-3 特別犧牲</summary><div class="lesson-body"><p>不是所有合法限制都須補償。只有個人負擔顯著超過一般人應共同承受的社會義務時，才可能形成特別犧牲。</p></div></details>
-<details class="lesson-card" ><summary>17-4 法律保留</summary><div class="lesson-body"><p>補償原則、要件與基準通常應有法律依據；若法律未明定，是否可直接依憲法財產權請求，須依實務與個案判斷。</p></div></details>
-<details class="lesson-card" ><summary>17-5 徵收補償</summary><div class="lesson-body"><p>土地或其他財產因公共事業被徵收，應給予合理補償。補償項目、估價基準及發放時點均為重要考點。</p></div></details>
-<details class="lesson-card" ><summary>17-6 使用限制與準徵收</summary><div class="lesson-body"><p>管制若使財產使用可能性幾乎完全消失，且負擔集中於少數人，可能接近準徵收而產生補償問題。</p></div></details>
-<details class="lesson-card" ><summary>17-7 即時強制補償</summary><div class="lesson-body"><p>合法即時強制造成無義務人民特別損失時，法律可能給予補償，例如為排除公共危險而毀損特定財物。</p></div></details>
-<details class="lesson-card" ><summary>17-8 信賴保護補償</summary><div class="lesson-body"><p>合法廢止授益處分或政策變更，使人民基於值得保護信賴承受損失時，可能以過渡措施或金錢補償調和公益。</p></div></details>
-<details class="lesson-card" ><summary>17-9 行政契約補償</summary><div class="lesson-body"><p>行政機關因重大公益調整或終止行政契約時，應依法衡量相對人因此受到的財產損失。</p></div></details>
-<details class="lesson-card" ><summary>17-10 補償範圍</summary><div class="lesson-body"><p>補償通常以填補特別犧牲為限，不當然包括所有期待利益。法律可能採完全補償、相當補償或特別計算標準。</p></div></details>
-<details class="lesson-card" ><summary>17-11 補償時點</summary><div class="lesson-body"><p>補償是否應事前、同時或事後給付，取決於財產剝奪程度、法律規定與有效權利保障要求。</p></div></details>
-<details class="lesson-card" ><summary>17-12 估價原則</summary><div class="lesson-body"><p>估價應以客觀、透明及可檢驗方法進行，避免以過時資料或與市場現況脫節的公式造成顯失公平。</p></div></details>
-<details class="lesson-card" ><summary>17-13 損益相抵</summary><div class="lesson-body"><p>同一公權力措施同時帶來利益與損失時，合理範圍內可進行損益相抵，但不得以不確定或一般公共利益任意扣減。</p></div></details>
-<details class="lesson-card" ><summary>17-14 請求程序</summary><div class="lesson-body"><p>人民應向法定機關依期限與程序提出補償請求；對補償額或拒絕補償不服，依法律選擇訴願、行政訴訟或其他程序。</p></div></details>
-<details class="lesson-card" ><summary>17-15 公用地役關係</summary><div class="lesson-body"><p>私人土地長期供不特定公眾通行，可能形成公用地役關係；是否補償仍須依成立要件、使用強度與法規判斷。</p></div></details>
-<details class="lesson-card" ><summary>17-16 災害與防疫補償</summary><div class="lesson-body"><p>為災害防救、防疫或公共安全依法徵用、使用或處分人民財產時，法律常設特別補償規定。</p></div></details>
-<details class="lesson-card" ><summary>17-17 平等負擔思想</summary><div class="lesson-body"><p>補償制度的核心在避免公共利益成本集中由少數人承擔，透過公共財政分散負擔。</p></div></details>
-<details class="lesson-card" ><summary>17-18 解題流程</summary><div class="lesson-body"><p>先確認行為合法，再判斷是否有財產或權利負擔、是否超越一般社會義務、法源、補償範圍、程序與救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>17-1 制度概念</summary><div class="lesson-body"><p>損失補償是國家合法行使公權力，使特定人民承受超越一般社會義務的特別犧牲時，依法給予公平填補。</p></div></details>
+<details class="lesson-card" open=""><summary>17-2 與國賠區別</summary><div class="lesson-body"><p>國賠通常以違法行為為前提；損失補償則以合法公權力行為為前提。解題首要在判斷行政行為是否合法。</p></div></details>
+<details class="lesson-card"><summary>17-3 特別犧牲</summary><div class="lesson-body"><p>不是所有合法限制都須補償。只有個人負擔顯著超過一般人應共同承受的社會義務時，才可能形成特別犧牲。</p></div></details>
+<details class="lesson-card"><summary>17-4 法律保留</summary><div class="lesson-body"><p>補償原則、要件與基準通常應有法律依據；若法律未明定，是否可直接依憲法財產權請求，須依實務與個案判斷。</p></div></details>
+<details class="lesson-card"><summary>17-5 徵收補償</summary><div class="lesson-body"><p>土地或其他財產因公共事業被徵收，應給予合理補償。補償項目、估價基準及發放時點均為重要考點。</p></div></details>
+<details class="lesson-card"><summary>17-6 使用限制與準徵收</summary><div class="lesson-body"><p>管制若使財產使用可能性幾乎完全消失，且負擔集中於少數人，可能接近準徵收而產生補償問題。</p></div></details>
+<details class="lesson-card"><summary>17-7 即時強制補償</summary><div class="lesson-body"><p>合法即時強制造成無義務人民特別損失時，法律可能給予補償，例如為排除公共危險而毀損特定財物。</p></div></details>
+<details class="lesson-card"><summary>17-8 信賴保護補償</summary><div class="lesson-body"><p>合法廢止授益處分或政策變更，使人民基於值得保護信賴承受損失時，可能以過渡措施或金錢補償調和公益。</p></div></details>
+<details class="lesson-card"><summary>17-9 行政契約補償</summary><div class="lesson-body"><p>行政機關因重大公益調整或終止行政契約時，應依法衡量相對人因此受到的財產損失。</p></div></details>
+<details class="lesson-card"><summary>17-10 補償範圍</summary><div class="lesson-body"><p>補償通常以填補特別犧牲為限，不當然包括所有期待利益。法律可能採完全補償、相當補償或特別計算標準。</p></div></details>
+<details class="lesson-card"><summary>17-11 補償時點</summary><div class="lesson-body"><p>補償是否應事前、同時或事後給付，取決於財產剝奪程度、法律規定與有效權利保障要求。</p></div></details>
+<details class="lesson-card"><summary>17-12 估價原則</summary><div class="lesson-body"><p>估價應以客觀、透明及可檢驗方法進行，避免以過時資料或與市場現況脫節的公式造成顯失公平。</p></div></details>
+<details class="lesson-card"><summary>17-13 損益相抵</summary><div class="lesson-body"><p>同一公權力措施同時帶來利益與損失時，合理範圍內可進行損益相抵，但不得以不確定或一般公共利益任意扣減。</p></div></details>
+<details class="lesson-card"><summary>17-14 請求程序</summary><div class="lesson-body">
+<p>補償程序不能一概而論。土地徵收、合法即時強制、授益處分撤銷或廢止的信賴補償、行政契約調整或終止補償，各有不同的法定機關、期間與救濟。</p>
+<p>解題須先確認特別法；對機關拒絕補償或金額不足不服時，再依法律判斷採訴願、課予義務訴訟或一般給付訴訟。</p>
+</div></details>
+<details class="lesson-card"><summary>17-15 公用地役關係</summary><div class="lesson-body"><p>私人土地長期供不特定公眾通行，可能形成公用地役關係；是否補償仍須依成立要件、使用強度與法規判斷。</p></div></details>
+<details class="lesson-card"><summary>17-16 災害與防疫補償</summary><div class="lesson-body"><p>為災害防救、防疫或公共安全依法徵用、使用或處分人民財產時，法律常設特別補償規定。</p></div></details>
+<details class="lesson-card"><summary>17-17 平等負擔思想</summary><div class="lesson-body"><p>補償制度的核心在避免公共利益成本集中由少數人承擔，透過公共財政分散負擔。</p></div></details>
+<details class="lesson-card"><summary>17-18 解題流程</summary><div class="lesson-body"><p>先確認行為合法，再判斷是否有財產或權利負擔、是否超越一般社會義務、法源、補償範圍、程序與救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>損失補償｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('損失補償')">開始本章40題</button>
+<button onclick="startChapterQuiz('損失補償')">開始本章60題</button>
 <button class="secondary" onclick="startChapterWrong('損失補償')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('損失補償')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-損失補償"></div>
 </div></section>
-<section id="ch18" class="deep-chapter" data-tag="行政組織">
-<h2>第十八章｜行政組織法</h2>
+<section class="deep-chapter" data-tag="行政組織" id="ch18">
+<h2>第十八章｜行政組織法</h2><div class="law-update"><h3>第18章概念修正</h3><ul><li>行政主體具有權利義務能力；行政機關具有單獨法定地位，但原則上沒有獨立法人格。</li><li>內部科、組、室通常既無法人格，也無獨立法定管轄。</li><li>行政法人本身是公法人行政主體，不應與一般行政機關混為一談。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>18-1 行政主體</summary><div class="lesson-body"><p>行政主體是能獨立享有公法權利、負擔公法義務並承擔責任的組織，例如國家、地方自治團體及依法成立的公法人。</p></div></details>
-<details class="lesson-card" open><summary>18-2 行政機關</summary><div class="lesson-body"><p>行政機關是代表行政主體形成並表示意思、執行行政任務的組織單位，本身不一定具有獨立法人格。</p></div></details>
-<details class="lesson-card" ><summary>18-3 內部單位</summary><div class="lesson-body"><p>科、組、室等通常只是機關內部單位，原則無獨立權限與訴訟地位，除法律特別規定外不能以自己名義作成處分。</p></div></details>
-<details class="lesson-card" ><summary>18-4 管轄</summary><div class="lesson-body"><p>管轄是法律對行政任務在機關間的分配，包括事務、土地、層級與功能管轄。管轄原則不得任意變更。</p></div></details>
-<details class="lesson-card" ><summary>18-5 委任</summary><div class="lesson-body"><p>上級機關將權限交由所屬下級機關執行，通常稱委任。委任後應依法律及公告要求處理權限名義與責任。</p></div></details>
-<details class="lesson-card" ><summary>18-6 委託</summary><div class="lesson-body"><p>行政機關將部分權限交由不相隸屬的其他行政機關執行，通常稱委託，須有法規依據並依法公告。</p></div></details>
-<details class="lesson-card" ><summary>18-7 委辦</summary><div class="lesson-body"><p>中央或上級政府將事項交地方自治團體辦理，地方在法定範圍受指揮監督，與自治事項不同。</p></div></details>
-<details class="lesson-card" ><summary>18-8 公權力委託</summary><div class="lesson-body"><p>行政機關得依法將部分公權力委託民間團體或個人行使；受託者在委託範圍內視為行政機關。</p></div></details>
-<details class="lesson-card" ><summary>18-9 行政助手</summary><div class="lesson-body"><p>行政助手僅提供技術、事實或執行協助，不以自己名義行使公權力，法律責任通常仍歸屬行政機關。</p></div></details>
-<details class="lesson-card" ><summary>18-10 行政法人</summary><div class="lesson-body"><p>行政法人是為執行特定公共任務而設的公法人，兼具公共性與較彈性的人事、財務及經營制度。</p></div></details>
-<details class="lesson-card" ><summary>18-11 公營事業</summary><div class="lesson-body"><p>公營事業可能採公司或其他私法人形式。是否適用公法，應依具體行為性質，而非單看政府持股。</p></div></details>
-<details class="lesson-card" ><summary>18-12 機關設立與組織法定</summary><div class="lesson-body"><p>重要行政機關的設立、權限與組織應有法律或法律授權依據，不能以內部命令任意創設重大公權力。</p></div></details>
-<details class="lesson-card" ><summary>18-13 權限爭議</summary><div class="lesson-body"><p>機關間對管轄有爭議時，應依組織法與行政程序規定協調或由共同上級機關決定，避免人民被來回推諉。</p></div></details>
-<details class="lesson-card" ><summary>18-14 代理與代行</summary><div class="lesson-body"><p>首長不能行使職權時，可依法由代理人暫代；機關怠於履行法定任務時，上級機關在法定條件下可能代行。</p></div></details>
-<details class="lesson-card" ><summary>18-15 中央與地方</summary><div class="lesson-body"><p>中央負責全國性與跨區域事項；地方自治團體在憲法法律保障下辦理地方自治事項，兩者權限須依法律分配。</p></div></details>
-<details class="lesson-card" ><summary>18-16 法律責任歸屬</summary><div class="lesson-body"><p>受委任、委託或公權力委託後，處分名義、被告適格與賠償義務機關可能不同，應依具體法規判斷。</p></div></details>
-<details class="lesson-card" ><summary>18-17 組織私法化</summary><div class="lesson-body"><p>國家可利用私法人或契約執行公共任務，但不得因此規避基本權、政府採購、資訊公開或其他公法義務。</p></div></details>
-<details class="lesson-card" ><summary>18-18 解題流程</summary><div class="lesson-body"><p>先辨認行政主體、機關或內部單位，再查權限法源、管轄、權限移轉方式、行為名義、責任歸屬與救濟。</p></div></details>
+<details class="lesson-card" open=""><summary>18-1 行政主體</summary><div class="lesson-body"><p>行政主體是能獨立享有公法權利、負擔公法義務並承擔責任的組織，例如國家、地方自治團體及依法成立的公法人。</p></div></details>
+<details class="lesson-card" open=""><summary>18-2 行政機關</summary><div class="lesson-body">
+<p>行政機關是代表行政主體形成並表示意思、執行行政任務，且具有單獨法定地位的組織。行政機關原則上不具獨立法人格；其權利義務通常歸屬國家、地方自治團體或其他公法人。</p>
+</div></details>
+<details class="lesson-card"><summary>18-3 內部單位</summary><div class="lesson-body"><p>科、組、室等通常只是機關內部單位，原則無獨立權限與訴訟地位，除法律特別規定外不能以自己名義作成處分。</p></div></details>
+<details class="lesson-card"><summary>18-4 管轄</summary><div class="lesson-body"><p>管轄是法律對行政任務在機關間的分配，包括事務、土地、層級與功能管轄。管轄原則不得任意變更。</p></div></details>
+<details class="lesson-card"><summary>18-5 委任</summary><div class="lesson-body"><p>上級機關將權限交由所屬下級機關執行，通常稱委任。委任後應依法律及公告要求處理權限名義與責任。</p></div></details>
+<details class="lesson-card"><summary>18-6 委託</summary><div class="lesson-body"><p>行政機關將部分權限交由不相隸屬的其他行政機關執行，通常稱委託，須有法規依據並依法公告。</p></div></details>
+<details class="lesson-card"><summary>18-7 委辦</summary><div class="lesson-body"><p>中央或上級政府將事項交地方自治團體辦理，地方在法定範圍受指揮監督，與自治事項不同。</p></div></details>
+<details class="lesson-card"><summary>18-8 公權力委託</summary><div class="lesson-body"><p>行政機關得依法將部分公權力委託民間團體或個人行使；受託者在委託範圍內視為行政機關。</p></div></details>
+<details class="lesson-card"><summary>18-9 行政助手</summary><div class="lesson-body"><p>行政助手僅提供技術、事實或執行協助，不以自己名義行使公權力，法律責任通常仍歸屬行政機關。</p></div></details>
+<details class="lesson-card"><summary>18-10 行政法人</summary><div class="lesson-body">
+<p>行政法人是依法律設立、具有獨立公法人地位、執行特定公共任務的行政主體。它不同於一般行政機關，原則上可自行成為權利義務及責任歸屬主體，並採較具彈性的人事與財務制度。</p>
+</div></details>
+<details class="lesson-card"><summary>18-11 公營事業</summary><div class="lesson-body"><p>公營事業可能採公司或其他私法人形式。是否適用公法，應依具體行為性質，而非單看政府持股。</p></div></details>
+<details class="lesson-card"><summary>18-12 機關設立與組織法定</summary><div class="lesson-body"><p>重要行政機關的設立、權限與組織應有法律或法律授權依據，不能以內部命令任意創設重大公權力。</p></div></details>
+<details class="lesson-card"><summary>18-13 權限爭議</summary><div class="lesson-body"><p>機關間對管轄有爭議時，應依組織法與行政程序規定協調或由共同上級機關決定，避免人民被來回推諉。</p></div></details>
+<details class="lesson-card"><summary>18-14 代理與代行</summary><div class="lesson-body"><p>首長不能行使職權時，可依法由代理人暫代；機關怠於履行法定任務時，上級機關在法定條件下可能代行。</p></div></details>
+<details class="lesson-card"><summary>18-15 中央與地方</summary><div class="lesson-body"><p>中央負責全國性與跨區域事項；地方自治團體在憲法法律保障下辦理地方自治事項，兩者權限須依法律分配。</p></div></details>
+<details class="lesson-card"><summary>18-16 法律責任歸屬</summary><div class="lesson-body">
+<p>委任或機關間委託後，受委任、受委託機關通常以自己名義作成處分；公權力委託私人時，受託者於委託範圍視為行政機關。被告適格、訴願管轄及國賠義務機關仍須依各制度與特別法分別判斷。</p>
+</div></details>
+<details class="lesson-card"><summary>18-17 組織私法化</summary><div class="lesson-body"><p>國家可利用私法人或契約執行公共任務，但不得因此規避基本權、政府採購、資訊公開或其他公法義務。</p></div></details>
+<details class="lesson-card"><summary>18-18 解題流程</summary><div class="lesson-body"><p>先辨認行政主體、機關或內部單位，再查權限法源、管轄、權限移轉方式、行為名義、責任歸屬與救濟。</p></div></details>
 <div class="chapter-practice">
 <h3>行政組織法｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('行政組織')">開始本章40題</button>
+<button onclick="startChapterQuiz('行政組織')">開始本章60題</button>
 <button class="secondary" onclick="startChapterWrong('行政組織')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('行政組織')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-行政組織"></div>
 </div></section>
-<section id="ch19" class="deep-chapter" data-tag="公務員法制">
-<h2>第十九章｜公務員法制</h2>
+<section class="deep-chapter" data-tag="公務員法制" id="ch19">
+<h2>第十九章｜公務員法制</h2><div class="law-update"><h3>115年新制與服從義務</h3><ul><li>『明顯違法即可拒絕』已修正：一般違法疑義須先報告並請求書面命令；只有違反刑事法律時無服從義務。</li><li>公務人員保障法職場霸凌、安全衛生防護及相關處理制度已自115年1月9日施行。</li><li>復審、申訴及再申訴仍須依爭議是行政處分、管理措施或工作條件處置分類。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>19-1 公務員概念</summary><div class="lesson-body"><p>公務員在不同法律中定義可能不同。考題應先確認適用的是服務法、懲戒法、刑法或國賠法上的公務員概念。</p></div></details>
-<details class="lesson-card" open><summary>19-2 任用原則</summary><div class="lesson-body"><p>公務人員任用受法律保留、公開公平、考試用人、資格條件與任用程序拘束，避免恣意或政治酬庸。</p></div></details>
-<details class="lesson-card" ><summary>19-3 身分保障</summary><div class="lesson-body"><p>依法任用的公務人員享有身分保障，非依法律與正當程序，不得任意免職、停職、降級或剝奪重大權益。</p></div></details>
-<details class="lesson-card" ><summary>19-4 忠實義務</summary><div class="lesson-body"><p>公務員應忠實執行職務、遵守憲法法律並維護公共利益，不得以個人或政黨利益凌駕法定職責。</p></div></details>
-<details class="lesson-card" ><summary>19-5 服從義務</summary><div class="lesson-body"><p>對長官合法命令原則應服從；命令明顯違法時，應依法表示意見或拒絕執行，不能以服從命令完全免責。</p></div></details>
-<details class="lesson-card" ><summary>19-6 保密義務</summary><div class="lesson-body"><p>公務員對職務上知悉的國家機密、個資、營業秘密及依法不得公開事項負保密義務，離職後亦可能持續。</p></div></details>
-<details class="lesson-card" ><summary>19-7 廉政與利益衝突</summary><div class="lesson-body"><p>公務員不得假借職務圖利自己或關係人，遇有利益衝突應迴避並依法揭露，收受餽贈與兼職亦受限制。</p></div></details>
-<details class="lesson-card" ><summary>19-8 行政中立</summary><div class="lesson-body"><p>公務員執行職務應保持政治中立，不得利用職權、行政資源或從屬關係從事不當政治活動。</p></div></details>
-<details class="lesson-card" ><summary>19-9 考績</summary><div class="lesson-body"><p>考績是對工作表現與品德的定期評量，可能影響獎金、晉級、留任或免職，應依客觀標準與正當程序辦理。</p></div></details>
-<details class="lesson-card" ><summary>19-10 懲處</summary><div class="lesson-body"><p>懲處是服務機關基於人事管理所為不利措施，例如申誡、記過等，須有法源、事實基礎及比例性。</p></div></details>
-<details class="lesson-card" ><summary>19-11 懲戒</summary><div class="lesson-body"><p>懲戒由法定懲戒機關依司法程序追究違失，目的在維持官箴與公務紀律，與行政懲處不同。</p></div></details>
-<details class="lesson-card" ><summary>19-12 刑事、懲戒與行政責任</summary><div class="lesson-body"><p>同一行為可能同時涉及刑事、懲戒、懲處及民事或國賠責任，各自目的與構成要件不同。</p></div></details>
-<details class="lesson-card" ><summary>19-13 停職與復職</summary><div class="lesson-body"><p>停職涉及暫時停止職務與權利，須依法定事由與程序；原因消滅後，公務員得依法申請復職及相關權益。</p></div></details>
-<details class="lesson-card" ><summary>19-14 復審</summary><div class="lesson-body"><p>公務員對服務機關所為行政處分認為違法或不當，得依公務人員保障法提起復審。</p></div></details>
-<details class="lesson-card" ><summary>19-15 申訴與再申訴</summary><div class="lesson-body"><p>對管理措施或工作條件處置不服，通常循申訴、再申訴程序，而非一律以復審處理。</p></div></details>
-<details class="lesson-card" ><summary>19-16 行政訴訟</summary><div class="lesson-body"><p>對復審決定不服，符合要件時可提行政訴訟。救濟類型取決於爭議是身分、財產給付、考績或其他公法權利。</p></div></details>
-<details class="lesson-card" ><summary>19-17 公務員權利</summary><div class="lesson-body"><p>公務員除職務義務外，亦享有薪俸、休假、退休、訴訟、言論及其他基本權，但可因職務性質受合理限制。</p></div></details>
-<details class="lesson-card" ><summary>19-18 解題流程</summary><div class="lesson-body"><p>先確認公務員定義與爭議性質，再判斷任用、服務義務、考績、懲處或懲戒，最後選復審、申訴或行政訴訟。</p></div></details>
+<details class="lesson-card" open=""><summary>19-1 公務員概念</summary><div class="lesson-body"><p>公務員在不同法律中定義可能不同。考題應先確認適用的是服務法、懲戒法、刑法或國賠法上的公務員概念。</p></div></details>
+<details class="lesson-card" open=""><summary>19-2 任用原則</summary><div class="lesson-body"><p>公務人員任用受法律保留、公開公平、考試用人、資格條件與任用程序拘束，避免恣意或政治酬庸。</p></div></details>
+<details class="lesson-card"><summary>19-3 身分保障</summary><div class="lesson-body"><p>依法任用的公務人員享有身分保障，非依法律與正當程序，不得任意免職、停職、降級或剝奪重大權益。</p></div></details>
+<details class="lesson-card"><summary>19-4 忠實義務</summary><div class="lesson-body"><p>公務員應忠實執行職務、遵守憲法法律並維護公共利益，不得以個人或政黨利益凌駕法定職責。</p></div></details>
+<details class="lesson-card"><summary>19-5 服從義務</summary><div class="lesson-body">
+<p>公務員對長官監督範圍內的命令有服從義務。如認為命令違法，應先報告；長官認為不違法並以書面署名下達時，公務員原則上仍應服從，責任由長官負擔。</p>
+<p>但命令違反刑事法律時，公務員無服從義務。長官拒絕書面署名下達者，視為撤回命令。</p>
+</div></details>
+<details class="lesson-card"><summary>19-6 保密義務</summary><div class="lesson-body"><p>公務員對職務上知悉的國家機密、個資、營業秘密及依法不得公開事項負保密義務，離職後亦可能持續。</p></div></details>
+<details class="lesson-card"><summary>19-7 廉政與利益衝突</summary><div class="lesson-body"><p>公務員不得假借職務圖利自己或關係人，遇有利益衝突應迴避並依法揭露，收受餽贈與兼職亦受限制。</p></div></details>
+<details class="lesson-card"><summary>19-8 行政中立</summary><div class="lesson-body"><p>公務員執行職務應保持政治中立，不得利用職權、行政資源或從屬關係從事不當政治活動。</p></div></details>
+<details class="lesson-card"><summary>19-9 考績</summary><div class="lesson-body"><p>考績是對工作表現與品德的定期評量，可能影響獎金、晉級、留任或免職，應依客觀標準與正當程序辦理。</p></div></details>
+<details class="lesson-card"><summary>19-10 懲處</summary><div class="lesson-body"><p>懲處是服務機關基於人事管理所為不利措施，例如申誡、記過等，須有法源、事實基礎及比例性。</p></div></details>
+<details class="lesson-card"><summary>19-11 懲戒</summary><div class="lesson-body"><p>懲戒由法定懲戒機關依司法程序追究違失，目的在維持官箴與公務紀律，與行政懲處不同。</p></div></details>
+<details class="lesson-card"><summary>19-12 刑事、懲戒與行政責任</summary><div class="lesson-body"><p>同一行為可能同時涉及刑事、懲戒、懲處及民事或國賠責任，各自目的與構成要件不同。</p></div></details>
+<details class="lesson-card"><summary>19-13 停職與復職</summary><div class="lesson-body"><p>停職涉及暫時停止職務與權利，須依法定事由與程序；原因消滅後，公務員得依法申請復職及相關權益。</p></div></details>
+<details class="lesson-card"><summary>19-14 復審</summary><div class="lesson-body"><p>公務員對服務機關所為行政處分認為違法或不當，得依公務人員保障法提起復審。</p></div></details>
+<details class="lesson-card"><summary>19-15 申訴與再申訴</summary><div class="lesson-body"><p>對管理措施或工作條件處置不服，通常循申訴、再申訴程序，而非一律以復審處理。</p></div></details>
+<details class="lesson-card"><summary>19-16 行政訴訟</summary><div class="lesson-body"><p>對復審決定不服，符合要件時可提行政訴訟。救濟類型取決於爭議是身分、財產給付、考績或其他公法權利。</p></div></details>
+<details class="lesson-card"><summary>19-17 權利、安全衛生與職場霸凌保障</summary><div class="lesson-body">
+<p>公務員除薪俸、休假、退休與救濟等權利外，亦享有執行職務的安全及衛生保障。公務人員保障法第19條至第19條之2等修正自115年1月9日施行，機關負有防止職場霸凌、建立申訴調查及安全衛生防護機制的義務。</p>
+</div></details>
+<details class="lesson-card"><summary>19-18 解題流程</summary><div class="lesson-body"><p>先確認公務員定義與爭議性質，再判斷任用、服務義務、考績、懲處或懲戒，最後選復審、申訴或行政訴訟。</p></div></details>
 <div class="chapter-practice">
 <h3>公務員法制｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('公務員法制')">開始本章40題</button>
+<button onclick="startChapterQuiz('公務員法制')">開始本章60題</button>
 <button class="secondary" onclick="startChapterWrong('公務員法制')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('公務員法制')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-公務員法制"></div>
 </div></section>
-<section id="ch20" class="deep-chapter" data-tag="地方制度">
-<h2>第二十章｜地方制度與總複習</h2>
+<section class="deep-chapter" data-tag="地方制度" id="ch20">
+<h2>第二十章｜地方制度與總複習</h2><div class="law-update"><h3>地方制度現行法更新</h3><ul><li>地方自治團體清單已補入直轄市山地原住民區。</li><li>地方制度法於114年12月3日修正部分地方民意代表、地方政府副首長及山地原住民區財源等規定；個別條文施行日須分別確認。</li><li>自治事項原則受合法性監督；委辦事項則受較廣的指揮監督，兩者不得混用。</li></ul></div>
 <div class="chapter-intro"><b>本章規格：</b>18個教材單元＋40題獨立練習＋錯題重練＋進度統計。</div>
-<details class="lesson-card" open><summary>20-1 地方自治團體</summary><div class="lesson-body"><p>直轄市、縣市及鄉鎮市等依法享有公法人地位，在憲法與法律保障範圍內辦理自治事項並負責任。</p></div></details>
-<details class="lesson-card" open><summary>20-2 自治事項</summary><div class="lesson-body"><p>自治事項是地方依憲法法律自主規劃執行的地方公共任務，中央監督原則以合法性監督為主。</p></div></details>
-<details class="lesson-card" ><summary>20-3 委辦事項</summary><div class="lesson-body"><p>委辦事項是上級政府交地方執行的國家或上級任務，地方須受較強指揮監督，但仍應有法律依據。</p></div></details>
-<details class="lesson-card" ><summary>20-4 自治條例</summary><div class="lesson-body"><p>地方立法機關通過、地方行政機關公布的自治法規稱自治條例，可在法律授權下規定罰則，但不得牴觸上位法。</p></div></details>
-<details class="lesson-card" ><summary>20-5 自治規則</summary><div class="lesson-body"><p>地方行政機關就自治事項依職權或法律授權訂定自治規則，原則不得逾越自治條例或法律。</p></div></details>
-<details class="lesson-card" ><summary>20-6 委辦規則</summary><div class="lesson-body"><p>地方行政機關為執行委辦事項，依上級法規或指示訂定委辦規則，其監督與效力不同於自治規則。</p></div></details>
-<details class="lesson-card" ><summary>20-7 自治法規位階</summary><div class="lesson-body"><p>自治條例、自治規則及委辦規則均不得牴觸憲法、法律及合法中央法規；牴觸時可能被函告無效或依法處理。</p></div></details>
-<details class="lesson-card" ><summary>20-8 地方立法與罰則</summary><div class="lesson-body"><p>自治條例規定行政罰須有法律授權，並受處罰法定、明確性與比例原則拘束。</p></div></details>
-<details class="lesson-card" ><summary>20-9 地方行政機關</summary><div class="lesson-body"><p>地方政府及所屬機關負責執行自治與委辦事項，首長、議會及各機關權限依地方制度法與組織自治條例分配。</p></div></details>
-<details class="lesson-card" ><summary>20-10 地方議會</summary><div class="lesson-body"><p>地方議會負責議決自治法規、預算、財產處分及其他重大事項，並監督地方行政機關。</p></div></details>
-<details class="lesson-card" ><summary>20-11 中央監督</summary><div class="lesson-body"><p>中央或上級機關對地方自治事項的監督不得逾越法律；對委辦事項則可有較廣指揮監督。</p></div></details>
-<details class="lesson-card" ><summary>20-12 權限爭議</summary><div class="lesson-body"><p>中央與地方或地方間權限爭議，應依憲法、地方制度法及相關程序解決，不得僅以行政命令片面改變分權。</p></div></details>
-<details class="lesson-card" ><summary>20-13 地方財政</summary><div class="lesson-body"><p>地方自治需有相應財源，預算、地方稅、補助與統籌分配均影響自治實質。財政措施仍受法律與平等原則拘束。</p></div></details>
-<details class="lesson-card" ><summary>20-14 居民參與</summary><div class="lesson-body"><p>地方自治透過選舉、罷免、創制、複決、公聽會及資訊公開，使居民參與地方公共決策。</p></div></details>
-<details class="lesson-card" ><summary>20-15 跨域合作</summary><div class="lesson-body"><p>跨縣市交通、環境、災害或產業議題可透過行政契約、共同組織或法律機制合作，仍須明確責任與監督。</p></div></details>
-<details class="lesson-card" ><summary>20-16 自治救濟</summary><div class="lesson-body"><p>地方自治團體認為自治權受侵害時，可依法律循行政爭訟、憲法訴訟或其他法定程序救濟。</p></div></details>
-<details class="lesson-card" ><summary>20-17 行政法總解題鏈</summary><div class="lesson-body"><p>行政法案件依序檢查主體與管轄、法源與權限、行為形式、程序、實體合法性、效力、執行、救濟及賠償補償。</p></div></details>
-<details class="lesson-card" ><summary>20-18 考前總複習</summary><div class="lesson-body"><p>先辨識題型，再抓法源、程序、期限與救濟。選擇題常以名稱混淆法律性質，應依實質效果判斷。</p></div></details>
+<details class="lesson-card" open=""><summary>20-1 地方自治團體</summary><div class="lesson-body">
+<p>直轄市、縣（市）、鄉（鎮、市）及直轄市山地原住民區，依法具有地方自治團體的公法人地位，在憲法與法律保障範圍內辦理自治事項並承擔責任。</p>
+</div></details>
+<details class="lesson-card" open=""><summary>20-2 自治事項</summary><div class="lesson-body"><p>自治事項是地方依憲法法律自主規劃執行的地方公共任務，中央監督原則以合法性監督為主。</p></div></details>
+<details class="lesson-card"><summary>20-3 委辦事項</summary><div class="lesson-body"><p>委辦事項是上級政府交地方執行的國家或上級任務，地方須受較強指揮監督，但仍應有法律依據。</p></div></details>
+<details class="lesson-card"><summary>20-4 自治條例</summary><div class="lesson-body"><p>地方立法機關通過、地方行政機關公布的自治法規稱自治條例，可在法律授權下規定罰則，但不得牴觸上位法。</p></div></details>
+<details class="lesson-card"><summary>20-5 自治規則</summary><div class="lesson-body"><p>地方行政機關就自治事項依職權或法律授權訂定自治規則，原則不得逾越自治條例或法律。</p></div></details>
+<details class="lesson-card"><summary>20-6 委辦規則</summary><div class="lesson-body"><p>地方行政機關為執行委辦事項，依上級法規或指示訂定委辦規則，其監督與效力不同於自治規則。</p></div></details>
+<details class="lesson-card"><summary>20-7 自治法規位階</summary><div class="lesson-body"><p>自治條例、自治規則及委辦規則均不得牴觸憲法、法律及合法中央法規；牴觸時可能被函告無效或依法處理。</p></div></details>
+<details class="lesson-card"><summary>20-8 地方立法與罰則</summary><div class="lesson-body"><p>自治條例規定行政罰須有法律授權，並受處罰法定、明確性與比例原則拘束。</p></div></details>
+<details class="lesson-card"><summary>20-9 地方行政機關</summary><div class="lesson-body">
+<p>地方政府、鄉（鎮、市）公所及山地原住民區公所等行政機關，分別執行自治與委辦事項；首長、議會或代表會及所屬機關的權限，依地方制度法與組織自治法規分配。</p>
+</div></details>
+<details class="lesson-card"><summary>20-10 地方議會</summary><div class="lesson-body"><p>地方議會負責議決自治法規、預算、財產處分及其他重大事項，並監督地方行政機關。</p></div></details>
+<details class="lesson-card"><summary>20-11 中央監督</summary><div class="lesson-body"><p>中央或上級機關對地方自治事項的監督不得逾越法律；對委辦事項則可有較廣指揮監督。</p></div></details>
+<details class="lesson-card"><summary>20-12 權限爭議</summary><div class="lesson-body"><p>中央與地方或地方間權限爭議，應依憲法、地方制度法及相關程序解決，不得僅以行政命令片面改變分權。</p></div></details>
+<details class="lesson-card"><summary>20-13 地方財政</summary><div class="lesson-body"><p>地方自治需有相應財源，預算、地方稅、補助與統籌分配均影響自治實質。財政措施仍受法律與平等原則拘束。</p></div></details>
+<details class="lesson-card"><summary>20-14 居民參與</summary><div class="lesson-body"><p>地方自治透過選舉、罷免、創制、複決、公聽會及資訊公開，使居民參與地方公共決策。</p></div></details>
+<details class="lesson-card"><summary>20-15 跨域合作</summary><div class="lesson-body"><p>跨縣市交通、環境、災害或產業議題可透過行政契約、共同組織或法律機制合作，仍須明確責任與監督。</p></div></details>
+<details class="lesson-card"><summary>20-16 自治救濟</summary><div class="lesson-body"><p>地方自治團體認為自治權受侵害時，可依法律循行政爭訟、憲法訴訟或其他法定程序救濟。</p></div></details>
+<details class="lesson-card"><summary>20-17 行政法總解題鏈</summary><div class="lesson-body"><p>行政法案件依序檢查主體與管轄、法源與權限、行為形式、程序、實體合法性、效力、執行、救濟及賠償補償。</p></div></details>
+<details class="lesson-card"><summary>20-18 考前總複習</summary><div class="lesson-body"><p>先辨識題型，再抓法源、程序、期限與救濟。選擇題常以名稱混淆法律性質，應依實質效果判斷。</p></div></details>
 <div class="chapter-practice">
 <h3>地方制度與總複習｜本章練習</h3>
-<p>完成本章教材後，可直接進入本章40題；作答、解析、收藏與錯題紀錄會自動保存。</p>
+<p>完成本章教材後，可直接進入本章60題；作答、解析、收藏與錯題紀錄會自動保存。</p>
 <div class="toolbar">
-<button onclick="startChapterQuiz('地方制度')">開始本章40題</button>
+<button onclick="startChapterQuiz('地方制度')">開始本章60題</button>
 <button class="secondary" onclick="startChapterWrong('地方制度')">只練本章錯題</button>
 <button class="secondary" onclick="resetChapter('地方制度')">重設本章作答</button>
 </div>
 <div class="chapter-score" id="score-地方制度"></div>
 </div></section>
-
-
-<section id="smart-study" class="smart-panel">
+<section class="smart-panel" id="smart-study">
 <h2>智慧複習與每日訓練</h2>
 <p>系統依目前的作答紀錄，自動整理錯題、弱點章節與尚未完成的題目。所有分析都在瀏覽器本機完成，不會上傳個人資料。</p>
-
 <div class="smart-grid">
 <div class="smart-card">
 <b>今日20題</b>
@@ -1115,77 +1183,62 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <button onclick="startFavorites()">複習收藏題</button>
 </div>
 </div>
-
 <div class="stats-grid">
 <div class="stat-box"><span>累積作答</span><strong id="statAnswered">0</strong></div>
 <div class="stat-box"><span>累積正確率</span><strong id="statAccuracy">0%</strong></div>
 <div class="stat-box"><span>目前錯題</span><strong id="statWrong">0</strong></div>
 <div class="stat-box"><span>連續學習</span><strong id="statStreak">0天</strong></div>
 </div>
-
 <h3>弱點分析</h3>
-<div id="weaknessSummary" class="weakness-box">尚無足夠作答紀錄。完成題目後會自動產生分析。</div>
+<div class="weakness-box" id="weaknessSummary">尚無足夠作答紀錄。完成題目後會自動產生分析。</div>
 <div class="toolbar">
 <button onclick="startWeakestChapter()">練習最弱章節</button>
 <button class="secondary" onclick="refreshLearningDashboard()">更新分析</button>
 <button class="secondary" onclick="startMock(100)">100題模擬考</button>
 </div>
 </section>
-
-
-
-<section id="past-exams" class="past-wrap">
+<section class="past-wrap" id="past-exams">
 <h2>歷屆考題 500 題</h2>
 <p>內建 110～114 年普通考試與地方特考四等「行政法概要」，共 10 份試卷、500 題。題目、答案與完整解析均寫在本檔案內，不需下載 PDF。</p>
-
 <div class="past-stats">
-  <div class="past-stat"><strong id="pastReadyPapers">10</strong><span>歷屆試卷</span></div>
-  <div class="past-stat"><strong id="pastReadyQuestions">500</strong><span>歷屆題目</span></div>
-  <div class="past-stat"><strong id="pastAllAnswered">0</strong><span>歷屆已作答</span></div>
-  <div class="past-stat"><strong id="pastAllAccuracy">0%</strong><span>歷屆正確率</span></div>
+<div class="past-stat"><strong id="pastReadyPapers">10</strong><span>歷屆試卷</span></div>
+<div class="past-stat"><strong id="pastReadyQuestions">500</strong><span>歷屆題目</span></div>
+<div class="past-stat"><strong id="pastAllAnswered">0</strong><span>歷屆已作答</span></div>
+<div class="past-stat"><strong id="pastAllAccuracy">0%</strong><span>歷屆正確率</span></div>
 </div>
-
 <div class="past-select-box">
-  <label for="pastExamSelect"><b>選擇年度與考試</b></label>
-  <select id="pastExamSelect"></select>
-  <div id="pastExamMessage" class="past-notice"></div>
+<label for="pastExamSelect"><b>選擇年度與考試</b></label>
+<select id="pastExamSelect"></select>
+<div class="past-notice" id="pastExamMessage"></div>
 </div>
-
-<div id="pastHealth" class="past-health">資料檢查中</div>
-
-<div id="pastQuizCard" class="past-quiz-card">
-  <div class="past-qtop">
-    <span id="pastQNo" class="past-qno"></span>
-    <span id="pastTopic" class="past-topic"></span>
-  </div>
-  <div id="pastQText" class="past-question-text"></div>
-  <div id="pastOptions" class="past-options"></div>
-  <div id="pastExplain" class="past-explain past-hidden"></div>
-
-  <div class="toolbar">
-    <button id="pastPrevBtn" class="secondary">上一題</button>
-    <button id="pastNextBtn">下一題</button>
-    <button onclick="pastShowWrong()" class="secondary">本卷錯題</button>
-    <button onclick="pastShowFavorites()" class="secondary">本卷收藏</button>
-    <button onclick="pastShowAll()" class="secondary">完整本卷</button>
-    <button id="pastFavBtn" class="secondary">☆ 收藏此題</button>
-    <button id="pastClearOneBtn" class="secondary">清除此題</button>
-    <button id="pastResetBtn" class="warn">重設本卷</button>
-  </div>
-
-  <div class="past-progress"><i id="pastProgressBar"></i></div>
-  <p id="pastExamProgress" class="past-progress-text"></p>
-  <div id="pastNavigator" class="past-navgrid"></div>
+<div class="past-health" id="pastHealth">資料檢查中</div>
+<div class="past-quiz-card" id="pastQuizCard">
+<div class="past-qtop">
+<span class="past-qno" id="pastQNo"></span>
+<span class="past-topic" id="pastTopic"></span>
+</div>
+<div class="past-question-text" id="pastQText"></div>
+<div class="past-options" id="pastOptions"></div>
+<div class="past-explain past-hidden" id="pastExplain"></div>
+<div class="toolbar">
+<button class="secondary" id="pastPrevBtn">上一題</button>
+<button id="pastNextBtn">下一題</button>
+<button class="secondary" onclick="pastShowWrong()">本卷錯題</button>
+<button class="secondary" onclick="pastShowFavorites()">本卷收藏</button>
+<button class="secondary" onclick="pastShowAll()">完整本卷</button>
+<button class="secondary" id="pastFavBtn">☆ 收藏此題</button>
+<button class="secondary" id="pastClearOneBtn">清除此題</button>
+<button class="warn" id="pastResetBtn">重設本卷</button>
+</div>
+<div class="past-progress"><i id="pastProgressBar"></i></div>
+<p class="past-progress-text" id="pastExamProgress"></p>
+<div class="past-navgrid" id="pastNavigator"></div>
 </div>
 </section>
-
-
-
-
 <section id="search-tools">
 <h2>全站搜尋與題庫模式</h2>
 <div class="toolbar">
-<input id="globalSearch" type="search" placeholder="搜尋教材或題目關鍵字" oninput="searchAll()" style="flex:1;min-width:220px;padding:9px 12px;border:1px solid #cbd5e1;border-radius:9px">
+<input id="globalSearch" oninput="searchAll()" placeholder="搜尋教材或題目關鍵字" style="flex:1;min-width:220px;padding:9px 12px;border:1px solid #cbd5e1;border-radius:9px" type="search"/>
 <select id="chapterFilter" onchange="filterQuestions()" style="padding:9px 12px;border:1px solid #cbd5e1;border-radius:9px">
 <option value="">全部題目</option>
 <option value="行政罰法">行政罰</option><option value="行政調查">行政調查</option>
@@ -1210,7 +1263,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <button onclick="startMock(50)">50題模擬考</button><button onclick="startMock(100)">100題模擬考</button>
 <button class="secondary" onclick="activeIndices=null;activeMode='all';render()">回全部題庫</button>
 </div>
-<div id="searchResult" class="note">可搜尋教材標題、內文、題目與解析。</div>
+<div class="note" id="searchResult">可搜尋教材標題、內文、題目與解析。</div>
 </section>
 <div class="quizbox" id="quiz">
 <h2>行政法章節題庫 866 題分級練習</h2>
@@ -1226,8 +1279,6 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 </div>
 <div id="questions"></div>
 </div>
-
-
 <section id="install-guide">
 <h2>安裝到手機與平板</h2>
 <div class="grid2">
@@ -1235,7 +1286,7 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <div class="summary"><b>iPhone／iPad Safari</b><span>按下方「分享」按鈕 →「加入主畫面」→「新增」。請使用 Safari，不要使用 LINE 內建瀏覽器。</span></div>
 </div>
 <div class="note"><b>離線使用：</b>第一次請保持網路並完整開啟網站。快取完成後，即使暫時沒有網路，仍可開啟已下載的教材與題庫。</div>
-<p id="networkState" class="memory"></p>
+<p class="memory" id="networkState"></p>
 </section>
 <section id="portable">
 <h2>跨裝置備份與轉移</h2>
@@ -1245,10 +1296,10 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <button onclick="exportProgress()">匯出學習進度</button>
 <label style="display:inline-flex;align-items:center;gap:8px;background:#475569;color:white;padding:9px 14px;border-radius:9px;font-weight:700;cursor:pointer">
 匯入學習進度
-<input id="importFile" type="file" accept="application/json" onchange="importProgress(event)" style="display:none">
+<input accept="application/json" id="importFile" onchange="importProgress(event)" style="display:none" type="file"/>
 </label>
 </div>
-<div id="syncMsg" aria-live="polite"></div>
+<div aria-live="polite" id="syncMsg"></div>
 </div>
 </section>
 <div class="sources" id="sources">
@@ -1257,15 +1308,15 @@ header{padding-top:calc(34px + env(safe-area-inset-top))}
 <li>全國法規資料庫－行政程序法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055" target="_blank">官方法規頁面</a></li>
 <li>全國法規資料庫－中華民國憲法：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001" target="_blank">官方法規頁面</a></li>
 <li>考選部－110～114年普通考試戶政與地方特考四等戶政考畢試題：已整合於「最新五年官方歷屆考題」區。</li>
-<li>考選部－公務人員考試命題大綱：<a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&menu_id=154" target="_blank">官方命題大綱頁</a></li>
-<li>憲法法庭112年憲判字第5號判決摘要：<a href="https://cons.judicial.gov.tw/docdata.aspx?fid=77&id=348179" target="_blank">憲法法庭官方頁面</a></li>
+<li>考選部－公務人員考試命題大綱：<a href="https://wwwc.moex.gov.tw/main/content/wfrmcontentlink4.aspx?inc_url=1&amp;menu_id=154" target="_blank">官方命題大綱頁</a></li>
+<li>憲法法庭112年憲判字第5號判決摘要：<a href="https://cons.judicial.gov.tw/docdata.aspx?fid=77&amp;id=348179" target="_blank">憲法法庭官方頁面</a></li>
 </ul>
-<div class="danger"><b>版本管理：</b>V33 保留原 V32 的 20 章、866 題與學習功能，並內建 110～114 年普考及地方特考四等行政法概要共 500 題。各年度解析依考試當時法規與官方答案整理。</div>
+<div class="danger"><b>版本管理：</b>V34 保留 V33 的 20 章、866 題章節題庫與 500 題歷屆題庫，並依 2026 年 7 月 27 日查證結果修正教材錯誤、現行法制度及章節題數顯示。歷屆題目仍依各年度官方答案與當時法規判讀。</div>
 </div>
 </main></div>
-<footer>戶政國考行政法｜V33 統整版｜章節題庫 866 題＋歷屆題庫 500 題</footer>
-<div class="install-panel" id="installPanel" hidden>
-<p><b>安裝到手機或電腦</b><br>安裝後可像 App 一樣開啟，並支援離線閱讀。</p>
+<footer>戶政國考行政法｜V34 教材修正版｜章節題庫 866 題＋歷屆題庫 500 題</footer>
+<div class="install-panel" hidden="" id="installPanel">
+<p><b>安裝到手機或電腦</b><br/>安裝後可像 App 一樣開啟，並支援離線閱讀。</p>
 <div class="toolbar" style="margin:0">
 <button id="installBtn">安裝</button>
 <button class="secondary" onclick="document.getElementById('installPanel').hidden=true">稍後</button>
