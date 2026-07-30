@@ -1,4 +1,4 @@
-const CACHE_NAME = "hujeng-v47-clean-20260730";
+const CACHE_NAME = "hujeng-v47-title-20260730";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", event => {
