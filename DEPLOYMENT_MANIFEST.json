@@ -1,0 +1,78 @@
+{
+  "build": "V1-07C",
+  "generatedAt": "2026-08-04T09:19:14.994122+00:00",
+  "repository": "emma710619-cyber/hujeng-study",
+  "rootServiceWorker": false,
+  "subjects": [
+    {
+      "id": "administrative-law",
+      "cachePrefix": "hujeng-admin-law-",
+      "source": "戶政國考行政法_V47_500題答案與年度法規總整合版(1)(1).html",
+      "sourceSha256": "be7a3b041071bbd5f62f16c8685e4414b7ae52a42f90d480b2d5ac5808151c39"
+    },
+    {
+      "id": "nationality-household",
+      "cachePrefix": "hujeng-nationality-household-",
+      "source": "國籍與戶政法規概要_V1-07A正式候選.html",
+      "sourceSha256": "da7b3f0594f1356618bd068d33baa243a1e2c54b9e76c89a230f8dcee31b3e88",
+      "storageNamespace": "hujeng_nh_law_v1"
+    }
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 4513,
+      "sha256": "cd648fa310643f91a1ef12da287766723c89f0155dc019abd9658caf0222be43"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shared/icon-192.png",
+      "bytes": 1189,
+      "sha256": "3716bd842f5d594d48f71e65984f050bcff4e3de0335760cc17607c9c2b30573"
+    },
+    {
+      "path": "shared/icon-512.png",
+      "bytes": 3542,
+      "sha256": "4fb88cb1c7b6b9c00fc675413931b8d3fdf5daab3984caac5f66ff3a6fd5fc7d"
+    },
+    {
+      "path": "administrative-law/index.html",
+      "bytes": 1094385,
+      "sha256": "093da84e874897119922573ba7b32ddd405a4de4bc064a8f0c7678b67fe13f0a"
+    },
+    {
+      "path": "administrative-law/manifest.webmanifest",
+      "bytes": 542,
+      "sha256": "e42bea18ff536e7920630681f2921896699ba3f3bfd9c633df3882c4712b8caf"
+    },
+    {
+      "path": "administrative-law/service-worker.js",
+      "bytes": 1721,
+      "sha256": "4a3ce1d3a777fbd81efb487c6171bf6b94a1e76dfd380caa4f0ae4815cc278c7"
+    },
+    {
+      "path": "nationality-household/index.html",
+      "bytes": 2385816,
+      "sha256": "c9dd47c9f14c6b7d48c0f587fa14c747469acc7ba4340752e829cd252da3c7de"
+    },
+    {
+      "path": "nationality-household/manifest.webmanifest",
+      "bytes": 556,
+      "sha256": "d8e750576d2f3786a943a2b3c23bc49823d7831b8cd9509a79d27e6ca7c37284"
+    },
+    {
+      "path": "nationality-household/service-worker.js",
+      "bytes": 1733,
+      "sha256": "85f72e881b47adcfdff65920e135ce80f1b8e9f0bf353ed0fe56b740b7bb6a5a"
+    }
+  ],
+  "runtimeFixes": [
+    "移除V1-06F及V1-06G遺留的空白試卷誤判檢查",
+    "正式頁面分科Service Worker隔離",
+    "瀏覽器驗收改為獨立文件環境"
+  ]
+}
